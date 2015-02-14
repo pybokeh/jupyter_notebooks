@@ -1,0 +1,37 @@
+After installing ipython using: pip install ipython
+Install dependencies for the IPython notebook:
+pip install pyzmq
+pip install tornado
+pip install jinja2
+
+Install MathJax by starting ipython session(at terminal: ipython), then execute:
+from IPython.external.mathjax import install_mathjax
+install_mathjax()
+
+To setup a notebook server, go here for details:
+http://ipython.org/ipython-doc/stable/notebook/public_server.html
+
+then at the terminal, execute:
+ipython profile create ipynb3
+
+Then edit the ipython_notebook_config.py file:
+uncomment the following lines, if not already:
+c = get_config()
+c.IPKernelApp.pylab = 'inline'
+c.NotebookApp.ip = '127.0.0.1'
+c.NotebookApp.port = 8888
+c.NotebookApp.open_browser = False
+c.NotebookApp.base_url = '/ipython/'
+c.NotebookApp.tornado_settings = {'static_url_prefix':'/ipython/static/'}
+c.FileNotebookManager.notebook_dir = '/home/pybokeh/ipython'
+
+That should be it
+
+4 Top Resources for IPython:
+http://nbviewer.ipython.org/github/ipython/ipython/blob/2.x/examples/Index.ipynb
+https://github.com/ipython/ipython/tree/master/examples/notebooks#a-collection-of-notebooks-for-using-ipython-effectively
+https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+http://nbviewer.ipython.org/
+
+To make slides:
+From command line: ipython nbconvert myslides.ipynb --to slides --post serve
