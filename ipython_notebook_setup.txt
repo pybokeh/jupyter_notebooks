@@ -1,10 +1,5 @@
-pip install --pre "ipython[all]"
-
-After installing ipython using: pip install ipython
-Install dependencies for the IPython notebook:
-pip install pyzmq
-pip install tornado
-pip install jinja2
+conda install ipython
+conda install ipython-notebook
 
 Install MathJax by starting ipython session(at terminal: ipython), then execute:
 from IPython.external.mathjax import install_mathjax
@@ -14,7 +9,7 @@ To setup a notebook server, go here for details:
 http://ipython.org/ipython-doc/stable/notebook/public_server.html
 
 then at the terminal, execute:
-ipython profile create ipynb3
+ipython profile create jupyter
 
 Then edit the ipython_notebook_config.py file:
 uncomment the following lines, if not already:
