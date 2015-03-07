@@ -1,0 +1,3 @@
+if installing choroplethr package fails because of XML errors,
+try the following:
+sudo apt-get install libxml2 libxml2-dev
