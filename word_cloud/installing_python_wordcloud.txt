@@ -1,0 +1,17 @@
+dependencies:
+Cython>=0.19.1
+Image>=1.1.7
+numpy>=1.7.1
+
+numpy and cython are available in conda, but pillow isn't available for windows
+
+download pillow from:
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow
+
+and then install using easy_install path_to_pillow.exe
+
+On OSes other than Ubuntu, need to set font_path per this documentation:
+http://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html#wordcloud.WordCloud
+
+This article may explain where the Windows fonts are physically stored at:
+http://superuser.com/questions/407804/where-are-the-physical-font-files-stored
