@@ -2,8 +2,9 @@ dependencies:
 Cython>=0.19.1
 Image>=1.1.7
 numpy>=1.7.1
+pillow
 
-numpy and cython are available in conda, but pillow isn't available for windows
+numpy and cython are available in conda, but pillow and image aren't available for windows
 
 download pillow from:
 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pillow
