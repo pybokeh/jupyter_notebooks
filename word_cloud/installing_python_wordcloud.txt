@@ -16,3 +16,6 @@ http://amueller.github.io/word_cloud/generated/wordcloud.WordCloud.html#wordclou
 
 This article may explain where the Windows fonts are physically stored at:
 http://superuser.com/questions/407804/where-are-the-physical-font-files-stored
+
+# Ubuntu, use git:
+pip install git+git://github.com/amueller/word_cloud.git
