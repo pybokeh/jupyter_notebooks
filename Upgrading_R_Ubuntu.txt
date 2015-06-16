@@ -4,3 +4,7 @@
 4. sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 5. sudo apt-get update
 6. sudo apt-get install r-base
+
+Recommend also doing:
+sudo apt-get install r-base-dev
+sudo apt-get install libcurl4-openssl-dev libxml2-dev
