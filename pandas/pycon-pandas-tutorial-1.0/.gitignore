@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+build/ApplyDiffs*
+build/README
+build/filesizes*
+build/*.list.gz
+build/*.csv
+data/*.csv
+*.html
+*.png
