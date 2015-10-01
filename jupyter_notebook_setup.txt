@@ -11,7 +11,7 @@ http://jupyter-notebook.readthedocs.org/en/latest/public_server.html
 then at the terminal, execute this to create a profile:
 jupyter notebook --generate-config
 
-Then edit the ipython_notebook_config.py file:
+Then edit the jupyter_notebook_config.py file:
 uncomment the following lines, if not already:
 c = get_config()
 c.NotebookApp.ip = '127.0.0.1'
