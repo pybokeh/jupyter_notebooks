@@ -1,15 +1,15 @@
-conda install ipython
-conda install ipython-notebook
+# Per the docs at:  http://jupyter.readthedocs.org/en/latest/install.html
+conda install jupyter
 
 Install MathJax by starting ipython session(at terminal: ipython), then execute:
 from IPython.external.mathjax import install_mathjax
 install_mathjax()
 
 To setup a notebook server, go here for details:
-http://ipython.org/ipython-doc/stable/notebook/public_server.html
+http://jupyter-notebook.readthedocs.org/en/latest/public_server.html
 
-then at the terminal, execute:
-ipython profile create jupyter
+then at the terminal, execute this to create a profile:
+jupyter notebook --generate-config
 
 Then edit the ipython_notebook_config.py file:
 uncomment the following lines, if not already:
