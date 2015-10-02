@@ -1,0 +1,38 @@
+# http://irkernel.github.io/installation/
+
+# Installing IRkernel on Windows:
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
+                 repos = c('http://irkernel.github.io/', getOption('repos')))
+IRkernel::installspec()
+
+# or system-wide:
+IRkernel::installspec(user=FALSE)
+
+# Installing IRkernel on Ubuntu
+# First do:
+sudo apt-get install r-base-dev
+sudo apt-get install libzmq3-dev
+sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev
+sudo apt-get install r-base
+
+# Then:
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
+                 repos = c('http://irkernel.github.io/', getOption('repos')),
+                 type = 'source')
+IRkernel::installspec()
+
+# To update your source installation, repeat the install.packages step.
+
+# Installing development version of IRkernel on Ubuntu:
+install.packages('devtools')
+# Need RCurl for install_github
+install.packages('RCurl')
+library(devtools)
+# Install the packages
+install_github('IRkernel/repr')
+install_github('IRkernel/IRdisplay')
+install_github('IRkernel/IRkernel')
+# Install the kernel spec
+IRkernel::installspec()
+
+# To update the git versions, repeat the install_github('IRkernel/...') steps.
