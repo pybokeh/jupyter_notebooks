@@ -1,0 +1,4 @@
+install.packages("choroplethr")
+install.packages("choroplethrMaps")
+install.packages("ggplot2")
+install.packages("forecast")
