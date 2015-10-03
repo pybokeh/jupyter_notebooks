@@ -11,6 +11,16 @@ http://jupyter-notebook.readthedocs.org/en/latest/public_server.html
 then at the terminal, execute this to create a profile:
 jupyter notebook --generate-config
 
+# location of config file can be found by executing these lines in ipython console:
+from __future__ import print_function
+from jupyter_core.paths import jupyter_config_dir, jupyter_config_path
+print(jupyter_config_dir())
+
+# location where notebook extensions should be installed can be found by executing these lines:
+from __future__ import print_function
+from jupyter_core.paths import jupyter_data_dir, jupyter_path
+print(jupyter_data_dir())
+
 Then edit the jupyter_notebook_config.py file:
 uncomment the following lines, if not already:
 c = get_config()

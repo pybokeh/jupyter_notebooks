@@ -1,0 +1,11 @@
+1. sudo gvim /etc/apt/sources.list
+2. Then add the line: deb http://cran.case.edu/bin/linux/ubuntu trusty/   # Ubuntu 14.04
+3. Exit gvim / editor
+4. sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+5. sudo apt-get update
+6. sudo apt-get install r-base
+
+Recommend also doing:
+sudo apt-get install r-base-dev
+sudo apt-get install libzmq3-dev
+sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev

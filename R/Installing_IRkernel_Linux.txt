@@ -1,0 +1,10 @@
+# Run this first:
+sudo apt-get install libzmq3-dev
+
+# Then activate virtual environment
+
+# Then run these lines in R:
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
+                 repos = c('http://irkernel.github.io/', getOption('repos')),
+                 type = 'source')
+IRkernel::installspec()

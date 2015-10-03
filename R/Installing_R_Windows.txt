@@ -1,0 +1,6 @@
+# Set environment variables WITHOUT semicolon!
+set R_HOME=path_to_R but WITHOUT semicolon!
+set R_USER=path_to_username but WITHOUT semicolon!
+
+# Set PATH
+set PATH=%PATH%;path_to_R_BIN;path_to_R_BIN_i386;path_to_R_BIN_x64;
