@@ -15,6 +15,8 @@ sudo apt-get install libzmq3-dev
 sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev
 sudo apt-get install r-base
 
+# Then activate virtual environment, then start R
+
 # Then:
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
                  repos = c('http://irkernel.github.io/', getOption('repos')),
