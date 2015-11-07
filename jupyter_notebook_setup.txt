@@ -38,5 +38,5 @@ http://nb.bianp.net/sort/views/
 https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
 http://nbviewer.ipython.org/
 
-To make slides:
-From command line: ipython nbconvert myslides.ipynb --to slides --post serve
+# Installing notebook extentions:
+https://github.com/ipython-contrib/IPython-notebook-extensions/wiki/Home-4.x-%28Jupyter%29
