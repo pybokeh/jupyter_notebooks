@@ -1,9 +1,8 @@
-# Installing IRkernel on Windows
-# If you get warning message or error when executing the following from R:
+# Activate environment first
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
                  repos = c('http://irkernel.github.io/', getOption('repos')))
 IRkernel::installspec()
 
-
+# Still get errors, then do:
 # Then exit R, with environment activated, execute the following from the terminal:
 ipython kernelspec install --replace --name ir --user "D:/R_Project/R-3.2.0/library/IRkernel/kernelspec"
