@@ -1,5 +1,7 @@
 # http://irkernel.github.io/installation/
 
+#### IMPORTANT!  Activate environment first! ####
+
 # Installing IRkernel on Windows:
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
                  repos = c('http://irkernel.github.io/', getOption('repos')))
