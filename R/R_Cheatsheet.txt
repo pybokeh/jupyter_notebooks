@@ -1,0 +1,15 @@
+# Functions
+args(function_name) to get info of the arguments
+
+# Look up how muche memory space an object is taking up
+object.size(plants)
+
+# View column names:
+names(object)
+
+# View descriptive info on an object
+str(object)
+
+# In general, you want to use these functions to view data:
+dim(), names(), head(), tail(), str() and summary()
+

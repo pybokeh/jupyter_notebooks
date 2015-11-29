@@ -1,0 +1,40 @@
+# Must-have R packages
+devtools     # installing packages from github
+data.table   # working with large data sets
+dplyr        # data wrangling
+ggplot2      # plotting library
+forecast     # time series forecasting
+installr     # for windows - updates R and R packages
+lubridate    # working with dates
+qcc          # making quality control charts
+readxl       # reading Excel files
+readr        # reading large csv files
+reshape2     # data wrangling
+RODBC        # connecting to ODBC data sources
+sqldf        # using SQL to filter data frames
+stringr      # working with strings
+zoo          # working with time series
+
+# Novelties
+choroplethr  # making choropleth / heat maps
+choroplethrMap
+choroplethrZip # but it is on github, not CRAN
+	install.packages("devtools")
+	library(devtools)
+	install_github('arilamstein/choroplethrZip@v1.4.0')
+knitr        # documenting R code with markdown
+plotly       # javascript based plotting library
+RColorBrewer # color schemes for maps
+shiny        # making web dash boards
+wordcloud    # making word clouds
+
+# Swirl - Learn R within R
+# Swirl commands:
+esc - exit swirl
+bye() - exit and save
+skip() - skip the current question
+play() - let's you experiment with R on your own; swirl will ignore you until you type:
+	nxt() - which will regain swirl's attention
+	bye() - causes swirl to exit; progress will be saved
+	main() - returns you to swirl's main menu
+	info() - displays these options again
