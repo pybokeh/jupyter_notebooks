@@ -3,3 +3,6 @@ sudo zypper install readline-devel
 sudo zypper install libicu-devel
 sudo zypper install pcre-devel
 sudo zypper install libbz2-devel
+
+## Tip: use zypper search to find missig development headers
+zypper search "*icu*-devel"
