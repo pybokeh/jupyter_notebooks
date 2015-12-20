@@ -1,6 +1,10 @@
 # Run this first:
 sudo apt-get install libzmq3-dev
 
+# For OpenSUSE
+sudo zypper install czmq-devel
+# Also need to install gnu C++ compiler, Fortran compiler, libcurl-devel, zlib-devel, and libopenssl-devel
+
 # Then activate virtual environment
 
 # Then run these lines in R:
