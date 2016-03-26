@@ -1,17 +1,26 @@
 # Per the docs at:  http://jupyter.readthedocs.org/en/latest/install.html
 conda install jupyter
 
-Install MathJax by starting ipython session(at terminal: ipython), then execute:
+# Install MathJax by starting ipython session(at terminal: ipython), then execute:
 from IPython.external.mathjax import install_mathjax
 install_mathjax()
 
-To setup a notebook server, go here for details:
+# To setup a notebook server, go here for details:
 http://jupyter-notebook.readthedocs.org/en/latest/public_server.html
 
-then at the terminal, execute this to create a profile:
+# Create JUPYTER_CONFIG_DIR (where config file will be saved) and JUPYTER_DATA_DIR (where extensions will be saved) environment variables
+
+# then at the terminal, execute this to create a profile:
 jupyter notebook --generate-config
 
-# location of config file can be found by executing these lines in ipython console:
+# location of JUPYTER_CONFIG_DIR can be confirmed via terminal:
+jupyter --config-dir
+
+# location of JUPYTER_DATA_DIR can be confirmed via terminal:
+jupyter --data-dir
+
+# or using ipython console:
+# location of config file can be confirmed by executing these lines in ipython console:
 from __future__ import print_function
 from jupyter_core.paths import jupyter_config_dir, jupyter_config_path
 print(jupyter_config_dir())
@@ -33,7 +42,7 @@ c.NotebookApp.notebook_dir = '/home/pybokeh/jupyter'
 
 That should be it
 
-Top Resources for IPython:
+# Top Resources for IPython:
 http://nb.bianp.net/sort/views/
 https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
 http://nbviewer.ipython.org/
