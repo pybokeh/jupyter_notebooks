@@ -1,0 +1,53 @@
+numpy / scipy (sudo apt-get install build-essential python3-dev libblas-dev libatlas-base-dev libopenblas-base liblapack-dev gcc g++ gfortran cython)
+pandas
+	python-dateutil
+	pytz
+	six
+		Optional dependencies:
+		numexpr
+		bottleneck
+cycler
+pyparsing
+matplotlib
+	sudo apt-get install libfreetype6-dev libpng12-dev
+	or 
+	download tar.gz from https://github.com/matplotlib/matplotlib/downloads
+	with python 3 virtual environment activated, execute:
+		python setup.py build
+		python setup.py install
+pyyaml (due to bug in jupyter installation setup.py, need to install this prior to installing jupyter)
+jupyter
+	sudo apt-get install libzmq-dev
+	pip install jupyter
+lxml
+	sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev
+	or sudo apt-get build-dep python-lxml
+beautifulsoup4
+patsy
+cython
+statsmodels
+scikit-learn
+pillow
+	sudo apt-get install libjpeg-dev zlib1g-dev libtiff5-dev libfreetype6-dev liblcms2-dev libwebp-dev libopenjpeg-dev
+wordcloud
+seaborn
+brewer2mpl (ggplot dependency)
+ggplot
+requests
+arrow
+rpy2
+xlrd (windows)
+openpyxl (windows)
+pyodbc (windows)
+pywin32 (windows)
+
+## Install R kernel for Jupyter Notebook
+# Install R first
+sudo apt-get install r-base-dev
+sudo apt-get install libzmq3-dev
+sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libssl-dev
+With environment activated, launch R from terminal:
+install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
+                 repos = c('http://irkernel.github.io/', getOption('repos')),
+                 type = 'source')
+IRkernel::installspec()

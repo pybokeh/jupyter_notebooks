@@ -17,11 +17,11 @@ zoo          # working with time series
 
 # Novelties
 choroplethr  # making choropleth / heat maps
-choroplethrMap
-choroplethrZip # but it is on github, not CRAN
+choroplethrMaps
+choroplethrZip # but it is on github, not CRAN at: https://github.com/arilamstein/choroplethrZip
 	install.packages("devtools")
 	library(devtools)
-	install_github('arilamstein/choroplethrZip@v1.4.0')
+	install_github('arilamstein/choroplethrZip@v1.5.0')
 knitr        # documenting R code with markdown
 plotly       # javascript based plotting library
 RColorBrewer # color schemes for maps

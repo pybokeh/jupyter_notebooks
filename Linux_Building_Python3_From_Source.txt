@@ -1,0 +1,23 @@
+######  Python 3.5.x  ######
+sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
+sudo apt-get install libreadline-dev libncursesw5-dev libncurses5-dev zlib1g-dev libssl-dev tk-dev
+wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz
+tar xf Python-3.5.1.tar.xz
+cd Python-3.5.1
+./configure --prefix=/opt/python3.5.1
+make && sudo make install
+
+whereis python
+mkdir ~/venv
+cd ~/venv    # move to venv directory
+/opt/python3.5.1/bin/pyvenv-3.5 bottle   # create bottle virtual environment using Python 3.5's pyvenv
+cd bottle
+source bin/activate  # activate the environment
+pip --version        # double-check the pip version
+
+# to deactivate environment:
+deactivate
+
+######  Installing Same Packages as Prior Python Version  ######
+pip freeze > installed.txt  (on older Python version)
+pip install -r installed.txt (current Python version)

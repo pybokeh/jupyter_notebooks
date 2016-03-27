@@ -1,14 +1,16 @@
 # Per the docs at:  http://jupyter.readthedocs.org/en/latest/install.html
 conda install jupyter
 
-# Install MathJax by starting ipython session(at terminal: ipython), then execute:
-from IPython.external.mathjax import install_mathjax
-install_mathjax()
-
 # To setup a notebook server, go here for details:
 http://jupyter-notebook.readthedocs.org/en/latest/public_server.html
 
 # Create JUPYTER_CONFIG_DIR (where config file will be saved) and JUPYTER_DATA_DIR (where extensions will be saved) environment variables
+# Windows
+set JUPYTER_CONFIG_DIR=your_path
+set JUPYTER_DATA_DIR=your_path
+# Linux at end of ~/.profile
+export JUPYTER_CONFIG_DIR=your_path
+export JUPYTER_DATA_DIR=your_path
 
 # then at the terminal, execute this to create a profile:
 jupyter notebook --generate-config
@@ -42,10 +44,8 @@ c.NotebookApp.notebook_dir = '/home/pybokeh/jupyter'
 
 That should be it
 
-# Top Resources for IPython:
-http://nb.bianp.net/sort/views/
-https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
-http://nbviewer.ipython.org/
-
 # Installing notebook extentions:
-https://github.com/ipython-contrib/IPython-notebook-extensions/wiki/Home-4.x-%28Jupyter%29
+pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip --user
+
+# To enable/disable extensions:
+http://localhost:8888/jupyter/nbextensions/
