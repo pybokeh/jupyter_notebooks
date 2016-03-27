@@ -2,10 +2,13 @@
 devtools     # installing packages from github
 data.table   # working with large data sets
 dplyr        # data wrangling
+downloader   # for downloading stuff
 ggplot2      # plotting library
+foreach      # better for loops in R
 forecast     # time series forecasting
 installr     # for windows - updates R and R packages
 lubridate    # working with dates
+openxlsx     # writing or reading Excel files
 qcc          # making quality control charts
 readxl       # reading Excel files
 readr        # reading large csv files
@@ -13,6 +16,7 @@ reshape2     # data wrangling
 RODBC        # connecting to ODBC data sources
 sqldf        # using SQL to filter data frames
 stringr      # working with strings
+tidyr        # a better reshape2?
 zoo          # working with time series
 
 # Novelties
