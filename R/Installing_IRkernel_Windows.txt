@@ -1,9 +1,11 @@
 # Activate environment first
 install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
-                 repos = c('http://irkernel.github.io/', getOption('repos')),
-                 type = 'source')
+                 repos = c('http://irkernel.github.io/', getOption('repos')))
 IRkernel::installspec()
 
 # Still get errors, then do:
 # Then exit R, with environment activated, execute the following from the terminal:
 ipython kernelspec install --replace --name ir --user "D:/R_Project/R-3.2.0/library/IRkernel/kernelspec"
+
+# To update R kernel package:
+update.packages(repos = c('http://irkernel.github.io/', getOption('repos')))
