@@ -1,4 +1,4 @@
-# Google's Machine Learning Tutorials
+# Google's Machine Learning YouTube Tutorials
 
 ### Prequel
 https://www.youtube.com/watch?v=IcDV9ZjQ6qk
