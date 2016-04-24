@@ -47,5 +47,10 @@ That should be it
 # Installing notebook extentions:
 pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip --user
 
-# To enable/disable extensions:
+# To enable/disable extensions, you can visit url below or hopefully by now, a GUI button exists:
 http://localhost:8888/jupyter/nbextensions/
+
+# To enable conversion of jupyter notebooks to pdf, install pandoc and textlive:
+# On Debian/Ubuntu Linux:
+sudo apt-get install pandoc
+sudo apt-get install texlive-generic-recommended
