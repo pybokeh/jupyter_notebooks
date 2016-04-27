@@ -1,0 +1,33 @@
+### Useful packages in PyData stack
+numpy
+scipy
+pandas
+statsmodels
+prettypandas
+pandas-profiling
+dask
+feather
+jupyter
+pydataset
+dataspyre
+
+# visualization libraries
+matplotlib
+seaborn
+bokeh
+ggplot
+jmpy
+pyqtgraph
+plotly (need to install cufflinks too for dataframe integration)
+probscale
+adjustText
+
+# database related
+pyodbc
+pandasql
+db.py
+arrow
+
+# R related
+rpy2
+dplython
