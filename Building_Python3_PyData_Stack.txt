@@ -51,3 +51,8 @@ install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
                  repos = c('http://irkernel.github.io/', getOption('repos')),
                  type = 'source')
 IRkernel::installspec()
+
+# Javascript Visualiztion Libraries
+plotly
+	cufflinks # needed for for plotly to integrate tightly with pandas dataframes
+bokeh
