@@ -56,3 +56,4 @@ IRkernel::installspec()
 plotly
 	cufflinks # needed for for plotly to integrate tightly with pandas dataframes
 bokeh
+altair
