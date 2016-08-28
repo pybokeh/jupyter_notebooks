@@ -1,0 +1,7 @@
+http://frnsys.com/ai_notes/
+https://github.com/hangtwenty/dive-into-machine-learning
+https://github.com/donnemartin/data-science-ipython-notebooks
+https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal
+https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb
+https://github.com/ujjwalkarn/DataSciencePython
+https://pythonprogramming.net/machine-learning-tutorials/
