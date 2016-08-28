@@ -1,3 +1,4 @@
+http://pythonforengineers.com/machine-learning-for-complete-beginners/
 http://frnsys.com/ai_notes/
 https://github.com/hangtwenty/dive-into-machine-learning
 https://github.com/donnemartin/data-science-ipython-notebooks
