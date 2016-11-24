@@ -24,8 +24,7 @@ class SalesApp(server.App):
                            {"label": "2016", "value": "2016"}
                           ],
                "value": '2016',  # default value
-               "key": 'year',
-               "action_id": "update_data"
+               "key": 'year'
               },
               {
                "type": 'dropdown',
@@ -56,25 +55,25 @@ class SalesApp(server.App):
                            {"label": "ZDX", "value": "ZDX"}
                           ],
                "value": 'Accord',  # default value
-               "key": 'model',
-               "action_id": "update_data"
+               "key": 'model'
               }
              ]
 
-    controls = [{"type": "hidden",
-                 "id": "update_data"
+    controls = [{"control_type": "button",
+                 "label": "Update",
+                 "control_id": "update_data"
                 }
                ]
 
     tabs = ["Plot", "Table"]
 
     outputs = [{"type": "plot",
-                "id": "plot",
+                "output_id": "plot_id",
                 "control_id": "update_data",
                 "tab": "Plot"
                },
                {"type": "table",
-                 "id": "table_id",
+                 "output_id": "table_id",
                  "control_id": "update_data",
                  "tab": "Table",
                  "on_page_load": True
@@ -87,12 +86,15 @@ class SalesApp(server.App):
         df = pd.read_csv("sales.csv")
         yr_crit = df.MDL_YR == mdl_yr
         mdl_crit = df.MDL_NM == model
-        return df[yr_crit & mdl_crit]
+        data = df[yr_crit & mdl_crit]
+        grouped = pd.pivot_table(data, values='QTY', index='SALE_MTH', aggfunc='sum')
+        # result = pd.DataFrame(grouped.values, index=grouped.index, columns=['Qty'])
+        result = pd.DataFrame(data={'Sale_Month': grouped.index, 'Qty': grouped.values}, columns=['Sale_Month', 'Qty'])
+        return result
 
     def getPlot(self, params):
         df = self.getData(params)
-        grouped = pd.pivot_table(df, values='QTY', index='SALE_MTH', aggfunc='sum')
-        plot_object = grouped.plot.bar()
+        plot_object = df.plot.bar(x='Sale_Month', y='Qty')
         plot_object.set_title('Sales by Sales Month - U.S. Market ONLY')
         plot_object.set_ylabel('Qty')
         plot_object.tick_params(labelsize=8)
