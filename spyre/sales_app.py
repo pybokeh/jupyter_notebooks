@@ -92,8 +92,10 @@ class SalesApp(server.App):
 
     def getPlot(self, params):
         df = self.getData(params)
+        total_sales = df.Qty.sum()
+        print(total_sales)
         plot_object = df.plot.bar(x='Sale_Month', y='Qty')
-        plot_object.set_title('Sales by Sales Month - U.S. Market ONLY')
+        plot_object.set_title('Total Sales: ' + "{:,}".format(total_sales))  # Add formatting to add comma
         plot_object.set_ylabel('Qty')
         plot_object.tick_params(labelsize=8)
         return plot_object
