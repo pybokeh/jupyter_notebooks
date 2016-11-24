@@ -1,5 +1,4 @@
-# tested with python2.7 and 3.4
-# must be run from same directory as stock_data.json (in spyre examples directory)
+# Fix if you want to use seaborn library: https://github.com/adamhajari/spyre/issues/34
 from spyre import server
 
 import pandas as pd
@@ -88,7 +87,6 @@ class SalesApp(server.App):
         mdl_crit = df.MDL_NM == model
         data = df[yr_crit & mdl_crit]
         grouped = pd.pivot_table(data, values='QTY', index='SALE_MTH', aggfunc='sum')
-        # result = pd.DataFrame(grouped.values, index=grouped.index, columns=['Qty'])
         result = pd.DataFrame(data={'Sale_Month': grouped.index, 'Qty': grouped.values}, columns=['Sale_Month', 'Qty'])
         return result
 
