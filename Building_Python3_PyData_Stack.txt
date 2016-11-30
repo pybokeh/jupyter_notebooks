@@ -58,3 +58,7 @@ plotly
 	cufflinks # needed for for plotly to integrate tightly with pandas dataframes
 bokeh
 altair
+
+
+# If using miniconda3, add conda-forge channel:
+conda config --add channels conda-forge

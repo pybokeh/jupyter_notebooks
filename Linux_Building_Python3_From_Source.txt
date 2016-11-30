@@ -22,3 +22,6 @@ deactivate
 ######  Installing Same Packages as Prior Python Version  ######
 pip freeze > installed.txt  (on older Python version)
 pip install -r installed.txt (current Python version)
+
+# If using miniconda3, add conda-forge channel
+conda config --add channels conda-forge
