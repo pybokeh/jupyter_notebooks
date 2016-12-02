@@ -32,7 +32,7 @@ class Altair(server.App):
                 "control_id": "load_table",
                 "tab": "Table"},
                {"type": "html",
-                "output_id": "getHTML",
+                "output_id": "getAltair",
                 "on_page_load": True,
                 "tab": "About"}]
 
@@ -62,7 +62,7 @@ class Altair(server.App):
         fig.autofmt_xdate(rotation=45)
         return splt
 
-    def getHTML(self, params):
+    def getAltair(self, params):
         cars = load_dataset('cars')
 
         c = Chart(cars).mark_point().encode(
@@ -70,7 +70,7 @@ class Altair(server.App):
             y='Miles_per_Gallon',
             color='Origin'
         )
-        print(c.to_html())
+        # print(c.to_html())
         return c.to_html()
 
 if __name__ == '__main__':
