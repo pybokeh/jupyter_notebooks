@@ -8,11 +8,11 @@ class Altair(server.App):
 
     outputs = [{"type": "html",
                 "output_id": "getAltair",
-                "tab": "Altair"}
+                "tab": "Altair",
+                "on_page_load": True}
               ]
 
     tabs = ["Altair"]
-
 
     def getAltair(self, params):
         cars = load_dataset('cars')
@@ -24,6 +24,14 @@ class Altair(server.App):
         )
 
         return c.to_html()
+
+    def getCustomJS(self):
+        js1 = open('d3.v3.min.js', 'r').read()
+        js2 = open('vega.js', 'r').read()
+        js3 = open('vega-embed.js', 'r').read()
+        js4 = open('vega-lite.js', 'r').read()
+
+        return js1 + ' ' + js2 + ' ' + js3 + ' ' + js4
 
 if __name__ == '__main__':
     app = Altair()
