@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+fig, axis = plt.subplots(figsize=(10, 8))
+data.plot.bar()
+axis.set_title('Hard Drive Failures', fontsize=14, weight='bold')
+axis.set_xlabel('Build Month')
+axis.set_ylabel('Defect Rate (%)')
+axis.grid(True, alpha=0.5)
+sns.despine(left=True, bottom=True)
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_vbar</tabTrigger>
+<scope>source.python</scope>
+<description> - Vertical Bar Chart</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+fig, axis = plt.subplots(figsize=(10, 8))
+
+df = pd.DataFrame(np.random.rand(10, 5), columns=['A', 'B', 'C', 'D', 'E'])
+
+df.boxplot(ax=axis)
+for i in range(len(df.columns)):
+    y = df.iloc[:, i]
+    # Add some random "jitter" to the x-axis
+    x = np.random.normal(i + 1, 0.04, size=len(y))
+    plt.plot(x, y, 'r.', alpha=0.5)
+
+axis.set_title('5 Sets of Random Normal Values', fontsize=14, weight='bold')
+axis.set_ylabel('Value')
+axis.grid(True, alpha=0.5)
+sns.despine(top=True, right=True)
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_boxplot_scatter</tabTrigger>
+<scope>source.python</scope>
+<description> - Boxplot overlayed with scatter</description>
+</snippet>

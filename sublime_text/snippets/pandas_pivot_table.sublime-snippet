@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+# Calculate aggregate mean
+df.pivot_table(values='ounces',index='group',aggfunc=np.mean)
+
+# Calculate aggregate counts
+df.pivot_table(values='ounces',index='group',aggfunc='count')
+
+# Calculate running total
+df.pivot_table(values='ounces',index='group',aggfunc='count').cumsum()
+]]></content>
+<tabTrigger>pandas_pivot_table</tabTrigger>
+<scope>source.python</scope>
+<description> - Pivot table example</description>
+</snippet>

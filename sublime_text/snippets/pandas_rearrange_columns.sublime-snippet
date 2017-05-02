@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+# re-arranging dataframe columns
+df = df[['col1', 'col2']]
+]]></content>
+<tabTrigger>pandas_rearrange_columns</tabTrigger>
+<scope>source.python</scope>
+<description> - Rearranging columns</description>
+</snippet>

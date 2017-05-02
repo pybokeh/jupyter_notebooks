@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+import pandas as pd
+
+data = pd.DataFrame({'food': ['bacon', 'pulled pork', 'bacon', 'Pastrami','corned beef', 'Bacon', 'pastrami', 'honey ham','nova lox'], 'ounces': [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})
+
+# 2 ways to do this:
+#     1) using a Python dictionary
+meat_to_animal = {
+'bacon': 'pig',
+'pulled pork': 'pig',
+'pastrami': 'cow',
+'corned beef': 'cow',
+'honey ham': 'pig',
+'nova lox': 'salmon'
+}
+
+#    2) using a function
+def meat2animal(series):
+    if series["food"]=='bacon':
+        return 'pig'
+    elif series["food"]=='pulled pork':
+        return 'pig'
+    elif series["food"]=='pastrami':
+        return 'cow'
+    elif series["food"]=='corned beef':
+        return 'cow'
+    elif series["food"]=='honey ham':
+        return 'pig'
+    else:
+        return 'salmon'
+
+# Use map() when using a Python dict
+data['animal'] = data['food'].map(str.lower).map(meat_to_animal)
+
+# Use apply() when using a user-defined function
+data['animal2'] = data.apply(meat2animal, axis='columns')
+
+]]></content>
+<tabTrigger>pandas_creating_new_column</tabTrigger>
+<scope>source.python</scope>
+<description> - Creating new column based on values from other column</description>
+</snippet>

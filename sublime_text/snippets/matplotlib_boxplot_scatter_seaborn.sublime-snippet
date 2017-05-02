@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+sns.set(style="whitegrid")
+
+fig, axis = plt.subplots(figsize=(10, 8))
+
+df = pd.DataFrame(np.random.rand(100, 5), columns=['A', 'B', 'C', 'D', 'E'])
+
+sns.boxplot(data=df, ax=axis, orient='v')
+sns.stripplot(data=df, ax=axis,
+              jitter=True, size=3, color=".3", linewidth=0, orient='v')
+
+axis.set_title('5 Sets of Random Normal Values', fontsize=14, weight='bold')
+axis.set_ylabel('Value')
+axis.grid(True, alpha=0.2)
+sns.despine(top=True, right=True)
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_boxplot_scatter_seaborn</tabTrigger>
+<scope>source.python</scope>
+<description> - Seaborn boxplot overlayed with scatter</description>
+</snippet>

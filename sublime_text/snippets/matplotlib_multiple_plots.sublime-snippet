@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+import matplotlib.pyplot as plt
+import seaborn as sns
+# plt.style.available
+plt.style.use('seaborn-whitegrid')
+
+# Get data
+df = pd.read_excel("https://github.com/chris1610/pbpython/blob/master/data/sample-salesv3.xlsx?raw=true")
+
+# Aggregate the data
+top_10 = (df.groupby('name')['ext price', 'quantity'].agg({'ext price': 'sum', 'quantity': 'count'})
+          .sort_values(by='ext price', ascending=False))[:10].reset_index()
+top_10.rename(columns={'name': 'Name', 'ext price': 'Sales', 'quantity': 'Purchases'}, inplace=True)
+
+# Get the figure and the axes
+fig, (ax0, ax1) = plt.subplots(nrows=1,ncols=2, sharey=True, figsize=(7, 4))
+top_10.plot(kind='barh', y="Sales", x="Name", ax=ax0)
+ax0.set_xlim([-10000, 140000])
+ax0.set(title='Revenue', xlabel='Total Revenue', ylabel='Customers')
+
+# Plot the average as a vertical line
+avg = top_10['Sales'].mean()
+ax0.axvline(x=avg, color='b', label='Average', linestyle='--', linewidth=1)
+
+# Repeat for the unit plot
+top_10.plot(kind='barh', y="Purchases", x="Name", ax=ax1)
+avg = top_10['Purchases'].mean()
+ax1.set(title='Units', xlabel='Total Units', ylabel='')
+ax1.axvline(x=avg, color='b', label='Average', linestyle='--', linewidth=1)
+
+# Title the figure
+fig.suptitle('2014 Sales Analysis', fontsize=14, fontweight='bold');
+
+# Hide the legends
+ax1.legend().set_visible(False)
+ax0.legend().set_visible(False)
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_multiple_plots</tabTrigger>
+<scope>source.python</scope>
+<description> - Creating multiple plots</description>
+</snippet>

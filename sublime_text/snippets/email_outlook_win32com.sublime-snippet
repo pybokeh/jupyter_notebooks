@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+import win32com.client as win32
+
+outlook = win32.Dispatch('outlook.application')
+mail = outlook.CreateItem(0)
+mail.To = "email1@some_company.com; email2@some_company.com"
+mail.Subject = 'Your email subject'
+mail.HTMLBody = "This email was automatically sent via Python Script"
+mail.Send()
+]]></content>
+<tabTrigger>email_outlook_win32com</tabTrigger>
+<scope>source.python</scope>
+<description> - Microsoft Outlook - send email via win32com</description>
+</snippet>

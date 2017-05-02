@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+# dropping a column, pass in a list to drop multiple columns
+data.drop('animal2', axis='columns', inplace=True)
+]]></content>
+<tabTrigger>pandas_dropping_column</tabTrigger>
+<scope>source.python</scope>
+<description> - Dropping a column example</description>
+</snippet>

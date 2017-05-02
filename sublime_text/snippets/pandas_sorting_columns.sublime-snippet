@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+data.sort_values(by=['group','ounces'], ascending=[False, True], inplace=True)
+]]></content>
+<tabTrigger>pandas_sort_columns</tabTrigger>
+<scope>source.python</scope>
+<description> - Sort dataframe by 2 or more columns</description>
+</snippet>

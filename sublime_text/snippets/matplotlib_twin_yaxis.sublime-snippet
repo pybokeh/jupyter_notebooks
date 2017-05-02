@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+def plotWpiWpt(df):
+    linecolor = "#c39bd3"
+    barcolor = "#884ea0"
+    fig = plt.figure(figsize=(6,3))
+    ax1 = fig.add_axes([0, 0, 1.5, 1])
+    ax1.set_ylabel("% Analyzed", color=linecolor)
+
+    x = range(len(df.values))
+
+    ax1.plot(df.Perc_Analyzed.values, label='% Analyzed', color=linecolor)
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(df.index, rotation=-90)
+    ax1.xaxis.set_tick_params(labelsize=7)
+    for tl in ax1.get_yticklabels():
+        tl.set_color(linecolor)
+
+    ax2 = ax1.twinx()
+    ax2.set_ylabel("Qty Received", color=barcolor)
+    ax2.bar(left=x, height=data.QTY_REC, label='QTY Rec', align='center', color=barcolor)
+    for tl in ax2.get_yticklabels():
+        tl.set_color(barcolor)
+
+    # http://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend
+    h1, l1 = ax1.get_legend_handles_labels()
+    h2, l2 = ax2.get_legend_handles_labels()
+    # http://stackoverflow.com/questions/4700614/how-to-put-the-legend-out-of-the-plot
+    ax1.legend(h1+h2, l1+l2, loc='upper center', bbox_to_anchor=(0.5, -0.15), fancybox=True, shadow=True, ncol=2)
+    ax1.set_title("% Parts Analyzed versus Qty Parts Received")
+
+    plt.show()
+]]></content>
+<tabTrigger>matplotlib_twin_yaxis</tabTrigger>
+<scope>source.python</scope>
+<description> - Chart with twin y-axis</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+import pandas as pd
+
+df = pd.DataFrame({'Order':[383080, 383080, 383080, 412290, 412290, 412290, 412290, 412290, 218895, 218895, 218895, 218895],
+					'Ext Price':[235.83, 232.32, 107.97,  2679.36 , 286.02, 832.95, 3472.04, 915.12, 3061.12, 518.65, 216.90, -72.18]})
+
+df = df[['Order', 'Ext Price']]
+
+df["Order_Total"] = df.groupby('Order')["Ext Price"].transform('sum')
+df["Percent_of_Order"] = df["Ext Price"] / df["Order_Total"]
+]]></content>
+<tabTrigger>pandas_transform</tabTrigger>
+<scope>source.python</scope>
+<description> - transform() example</description>
+</snippet>

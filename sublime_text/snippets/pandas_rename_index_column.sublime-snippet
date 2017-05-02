@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+df.rename(index={'Ohio': 'INDIANA'},columns={'three': 'peekaboo'},inplace=True)
+]]></content>
+<tabTrigger>pandas_renaming_index_column</tabTrigger>
+<scope>source.python</scope>
+<description> - Renaming index and/or column</description>
+</snippet>

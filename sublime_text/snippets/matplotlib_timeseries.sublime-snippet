@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+import matplotlib.pyplot as plt
+from matplotlib.dates import MonthLocator, WeekdayLocator, DayLocator, DateFormatter
+from pandas_datareader import data as web
+import datetime
+import dateutil
+plt.style.use('seaborn-whitegrid')
+
+start = datetime.datetime(2017,2,1)
+end   = datetime.datetime(2017,4,27)
+
+united = web.DataReader("UAL", 'yahoo', start, end)
+
+fig = plt.figure(figsize=(10,6))
+ax = plt.subplot(1,1,1)
+
+# Let's define x-axis date interval sizes to choose from: month, week, or day
+month_interval = 1   
+months = MonthLocator(interval=month_interval)
+month  = MonthLocator(bymonth=range(1,13),  bymonthday=1, interval=1)
+week   = WeekdayLocator(byweekday=dateutil.rrule.MO)  # Every MOnday
+day    = DayLocator(bymonthday=range(1,32), interval=1)
+
+# Choose formatting
+dayFmt = DateFormatter("%Y-%m-%d")
+mthFmt = DateFormatter("%Y-%m")
+yrFmt = DateFormatter("%Y")
+
+ax.xaxis.set_major_locator(week)
+ax.xaxis.set_major_formatter(dayFmt)
+
+plt.plot_date(united.index, united['Adj Close'].values, '-')
+plt.xticks(rotation=270, fontsize=10)
+plt.title("United Airlines Stock Price - Adj Close", weight='bold', fontsize=14)
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_time_series</tabTrigger>
+<scope>source.python</scope>
+<description> - Time Series example</description>
+</snippet>

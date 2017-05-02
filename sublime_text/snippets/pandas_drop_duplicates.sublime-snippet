@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+# by default, duplicate is defined by all columns
+data.drop_duplicates()
+
+# duplicate in col1
+data.drop_duplicates(subset='col1')
+]]></content>
+<tabTrigger>pandas_drop_duplicates</tabTrigger>
+<scope>source.python</scope>
+<description> - Dropping/removing duplicates</description>
+</snippet>

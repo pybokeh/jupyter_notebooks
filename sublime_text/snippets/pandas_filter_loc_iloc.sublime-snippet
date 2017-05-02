@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+# All rows, certain columns
+df.loc[:, ['col1', 'col3']]
+
+# All columns, certain rows
+df.loc[['row1', 'row2'], :]
+
+# Filtering by index integers using iloc
+# First 5 rows, all columns
+df.iloc[0:4, :]
+
+# First 5 rows, first 3 columns
+df.iloc[0:4, 0:2]
+
+# All rows, specific columns: 1st column and 3rd column
+df.iloc[:, [0, 2]]
+]]></content>
+<tabTrigger>pandas_filter_loc_iloc</tabTrigger>
+<scope>source.python</scope>
+<description> - Pandas filtering via loc or iloc</description>
+</snippet>

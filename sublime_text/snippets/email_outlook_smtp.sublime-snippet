@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+import smtplib
+from email.mime.text import MIMEText
+from email.utils import COMMASPACE
+from getpass import getpass
+
+OUTLOOK_USER = input("Enter your Outlook email: ")
+OUTLOOK_PWD = getpass("Enter password: ")
+OUTLOOK_SERVER = 'smtp.office365.com:587'
+
+SUBJECT = 'Test Email'
+BODY = 'Just a Test'
+TO = 'recipient@somecompany.com'
+
+def sendEmail(sender, pwd, to, subject, message):
+    recipient = to if type(to) is list else [to]
+    msg = MIMEText(message)
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = COMMASPACE.join(recipient)
+    server = smtplib.SMTP(OUTLOOK_SERVER)
+    server.ehlo()
+    server.starttls()
+
+    try:
+        server.login(sender,pwd)
+        print('Successfully authenticated...')
+    except smtplib.SMTPAuthenticationError:               # Check for authentication error
+        return " Authentication ERROR"
+
+    try:
+        server.sendmail(sender,recipient,msg.as_string())
+        print('Email sent!')
+    except smtplib.SMTPRecipientsRefused:                # Check if recipient's email was accepted by the server
+        return "ERROR"
+    server.quit()
+
+sendEmail(OUTLOOK_USER, OUTLOOK_PWD, TO, SUBJECT, BODY)
+]]></content>
+<tabTrigger>email_outlook_smtp</tabTrigger>
+<scope>source.python</scope>
+<description> - Sending Outlook Email via smtp</description>
+</snippet>

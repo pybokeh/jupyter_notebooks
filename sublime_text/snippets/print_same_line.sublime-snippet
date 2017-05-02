@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+import time
+
+message = 'ALL YOUR BASE ARE BELONG TO US!'
+
+for i in range(1, len(message)+1):
+    time.sleep(0.3)
+    print('\r'+message[:i],end='')
+]]></content>
+<tabTrigger>print_same_line</tabTrigger>
+<scope>source.python</scope>
+<description> - Printing on same line</description>
+</snippet>

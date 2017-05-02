@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+inner_joined = pd.merge(left, right, how='inner', left_on='group', right_on='label')
+]]></content>
+<tabTrigger>pandas_merge</tabTrigger>
+<scope>source.python</scope>
+<description> - Merge 2 dataframes</description>
+</snippet>
