@@ -1,0 +1,46 @@
+<snippet>
+    <content><![CDATA[
+from datetime import datetime
+import pytz
+import time
+
+end_date = datetime(2017,12,24,13,0,0,0,pytz.UTC)  # explicitly make time zone UTC
+
+while True:
+    time_till_end_date = end_date - datetime.now(pytz.UTC)  # explicitly make time zone UTC
+    total_seconds = time_till_end_date.total_seconds()
+    
+    minutes, seconds = divmod(total_seconds, 60)
+    hours, minutes = divmod(minutes, 60)
+    days, hours = divmod(hours, 24)
+    
+    if days > 1:
+        strDays = ' days'
+    else:
+        strDays = ' day'
+
+    if int(hours) > 1:
+        strHours = ' hours'
+    else:
+        strHours = ' hour'
+
+    if int(minutes) > 1:
+        strMinutes = ' minutes'
+    else:
+        strMinutes = ' minute'
+
+    if int(seconds) > 1:
+        strSeconds = ' seconds'
+    else:
+        strSeconds = ' second'
+
+    # print on the same line
+    print('\r' + str(int(days)) + strDays + ' | ' + str(int(hours)) + strHours + ' | ' + str(int(minutes)) + \
+          strMinutes + ' | ' + "{0:.1f}".format(seconds) + strSeconds,end='')
+    
+    time.sleep(0.05)
+]]></content>
+<tabTrigger>dates_countdown</tabTrigger>
+<scope>source.python</scope>
+<description>Countdown example</description>
+</snippet>

@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+# If you want date and time, then import datetime
+from datetime import datetime
+
+mydate_withtime = datetime.now()
+
+# Use 'strftime' to 'format' a Python date object to a specific format
+# (ex. 'mm/dd/YYYY - hr:min) - See http://strftime.org/ for all formats
+mydate_withtime.strftime("%m/%d/%Y - %I:%M%p")
+
+# Use 'strptime' to 'parse' a string into a Python date
+# method signature: strptime(str, format)
+a_new_date = datetime.strptime('2017-01-01', '%Y-%m-%d')
+
+# If you just need date, them import date
+from datetime import date
+
+mydate = date.today()
+year  = mydate.year
+month = mydate.month
+day   = mydate.day
+
+
+# For date/time arithmetic, import timedelta from the datetime module
+from datetime import timedelta
+
+ten_days_ago = today - timedelta(days=10)
+four_weeks_ago = today - timedelta(weeks=4)
+
+# Popular 3rd-party datetime libraries: arrow, delorean, pendulum, & udatetime
+# udatetime is NOT supported on Windows
+]]></content>
+<tabTrigger>python_dates</tabTrigger>
+<scope>source.python</scope>
+<description> - Working with Python dates</description>
+</snippet>

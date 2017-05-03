@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+word_freq = pd.DataFrame(data={'word':word, 'qty':count})
+
+fig, axis = plt.subplots(figsize=(12, 8))
+
+top_x = 20
+word_freq.sort_values(by='qty', ascending=False)[:top_x].set_index('word').sort_values(by='qty').plot.barh(alpha=0.5, ax=axis)
+axis.set_title("Top " +str(top_x) + " Words", fontsize=14, weight='bold')
+axis.yaxis.set_tick_params(labelsize=14)
+axis.set_xticks([])
+axis.set_xlabel('')
+axis.set_ylabel('')
+axis.legend().set_visible(False)
+axis.grid(False)
+sns.despine(top=True, right=True, bottom=True, left=True)
+
+# Logic needed to add qty labels to the right of each bar
+x=[]
+y=[]
+for value in word_freq.sort_values(by='qty', ascending=False)[:top_x].sort_values(by='qty').values:
+    x.append(value[1])
+    y.append(value[0])
+
+for p, value in zip(range(len(y)), y):
+    axis.text(x=(value + 1), y=p, s=str(value), va='center')
+##########################################################
+
+plt.show()
+]]></content>
+<tabTrigger>matplotlib_pareto_chart</tabTrigger>
+<scope>source.python</scope>
+<description> - pareto chart</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+axis.set_title("My title", fontsize=14, weight='bold')
+axis.set_ylabel('Word', fontsize=14)
+axis.set_xlabel('Count', fontsize=14)
+axis.yaxis.set_tick_params(labelsize=14)
+axis.xaxis.set_tick_params(labelsize=12)
+axis.grid(True, alpha=0.5)
+axis.legend().set_visible(False)
+]]></content>
+<tabTrigger>matplotlib_labels_ticks</tabTrigger>
+<scope>source.python</scope>
+<description> - Setting label and tick properties</description>
+</snippet>

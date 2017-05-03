@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+pd.set_option("display.max_columns",50)
+pd.set_option("display.max_rows",999)
+]]></content>
+<tabTrigger>pandas_set_options</tabTrigger>
+<scope>source.python</scope>
+<description>Setting display options</description>
+</snippet>

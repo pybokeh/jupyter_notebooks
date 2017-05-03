@@ -1,0 +1,24 @@
+{
+    "font_face": "Ubuntu Mono",
+    "font_size": 16.0,
+    "font_options": ["subpixel_antialias", "no_bold"],
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "translate_tabs_to_spaces": true,
+    "tab_size": 4,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "rulers": [4, 79],
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "find_selected_text": true,
+    "caret_style": "wide",
+    "wide_caret": "true",
+    "caret_extra_width": 1,
+    "highlight_line": true,
+    "scroll_past_end": false,
+    "show_full_path": true
+}

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+for k, v in d.items():
+    print(k, v)
+]]></content>
+<tabTrigger>dictionary_unpacking</tabTrigger>
+<scope>source.python</scope>
+<description> - Unpacking dictionary into key-value pairs</description>
+</snippet>

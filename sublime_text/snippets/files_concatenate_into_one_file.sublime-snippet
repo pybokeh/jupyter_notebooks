@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+from os import listdir
+from os.path import isfile, join
+
+mypath = r'D:\temp\BobV'
+
+onlyfiles = [join(mypath,f) for f in listdir(mypath) if isfile(join(mypath, f))]
+
+with open(r'D:\temp\BobV\concatenated_file.txt', 'w') as outfile:
+    for fname in onlyfiles:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(' ' + line)  # add a space in front to ensure we don't concatenate 2 words together
+]]></content>
+<tabTrigger>files_concatenate_into_one_file</tabTrigger>
+<scope>source.python</scope>
+<description> - Concatenate contents of multiple files into one file</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+from os import listdir
+from os.path import isfile, join
+
+mypath = r'D:\temp\BobV'
+
+onlyfiles = [join(mypath,f) for f in listdir(mypath) if isfile(join(mypath, f))]
+]]></content>
+<tabTrigger>files_list_in_directory</tabTrigger>
+<scope>source.python</scope>
+<description> - Get list of files in a directory</description>
+</snippet>
