@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+# Sort dictionary by values
+import operator
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+sorted_x = sorted(x.items(), key=operator.itemgetter(1))
+
+# Sort dictionary by keys
+import operator
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+sorted_x = sorted(x.items(), key=operator.itemgetter(0))
+
+# Add reverse=True for descending order
+]]></content>
+<tabTrigger>sorting_dict</tabTrigger>
+<scope>source.python</scope>
+<description> - Sorting dictionary by keys or by values</description>
+</snippet>
