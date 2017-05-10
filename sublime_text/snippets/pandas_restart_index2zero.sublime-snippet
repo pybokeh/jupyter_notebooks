@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # reset index so that it starts with zero: 0, 1 , 2, etc
-df.reset_index(drop=True)
+df.reset_index(drop=True, inplace=True)
 ]]></content>
 <tabTrigger>pandas_restart_index2zero</tabTrigger>
 <scope>source.python</scope>
