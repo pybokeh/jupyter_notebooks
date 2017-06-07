@@ -1,8 +1,6 @@
 import warnings
 from speedml import Speedml
-import matplotlib.pyplot as plt
-warnings.simplefilter("ignore", category=DeprecationWarning)
-#warnings.warn("deprecated", DeprecationWarning)
+import pandas as pd
 
 sml = Speedml('train.csv', 
               'test.csv', 
