@@ -1,6 +1,0 @@
-# Copy/clone extensions from https://github.com/ipython-contrib/IPython-notebook-extensions
-# to folder: JUPYTER_DATA_DIR
-# Then to install
-jupyter nbextension enable usability/hide_input_all/main
-
-# My fav that is not part of official extensions is: https://github.com/minrk/nbextension-scratchpad
