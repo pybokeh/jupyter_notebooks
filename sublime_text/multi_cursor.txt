@@ -1,0 +1,7 @@
+# Multiple Lines Multi-Cursor
+Select multiple lines by clicking first line then holding shift and clicking last line. Then press CTRL+SHIFT+L.
+Alternatively you can select lines and go to SELECTION MENU >> SPLIT INTO LINES.
+Now you can edit multiple lines, move cursors etc. for all selected lines.
+
+# Edit all instances of a variable by clicking on it and then do ctrl+d twice
+
