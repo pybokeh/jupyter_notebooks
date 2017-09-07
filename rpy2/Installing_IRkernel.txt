@@ -1,10 +1,10 @@
 # http://irkernel.github.io/installation/
 
-#### IMPORTANT!  Activate environment first! ####
+#### IMPORTANT!  Activate virtual environment first before launching R console
 
 # Installing IRkernel on Windows:
-install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
-                 repos = c('http://irkernel.github.io/', getOption('repos')))
+install.packages(c('crayon', 'pbdZMQ', 'devtools'))
+devtools::install_github(paste0('IRkernel/', c('repr', 'IRdisplay', 'IRkernel')))
 IRkernel::installspec()
 
 # or system-wide:
@@ -20,9 +20,8 @@ sudo apt-get install r-base
 # Then activate virtual environment, then start R
 
 # Then:
-install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
-                 repos = c('http://irkernel.github.io/', getOption('repos')),
-                 type = 'source')
+install.packages(c('crayon', 'pbdZMQ', 'devtools'))
+devtools::install_github(paste0('IRkernel/', c('repr', 'IRdisplay', 'IRkernel')))
 IRkernel::installspec()
 
 # To update your source installation, repeat the install.packages step.
