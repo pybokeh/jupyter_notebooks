@@ -9,3 +9,10 @@ Recommend also doing:
 sudo apt-get install r-base-dev
 sudo apt-get install libzmq3-dev
 sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev
+sudo apt-get install libudunits2-dev
+sudo apt-get install libgdal1-dev
+sudo apt-get install libproj-dev
+
+If having trouble installing "choroplethr" due to "sf" package failing to
+install due to older version of GDAL, upgrade GDAL per this SO question:
+https://stackoverflow.com/questions/37294127/python-gdal-2-1-installation-on-ubuntu-16-04

@@ -1,4 +1,7 @@
+install.packages("tidyverse")
+install.packages("devtools") so that you can install packages in GitHub
 install.packages("choroplethr")
 install.packages("choroplethrMaps")
-install.packages("ggplot2")
 install.packages("forecast")
+install.packages("ggjoy")
+install.packages("shiny")
