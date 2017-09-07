@@ -1,7 +1,7 @@
 # Functions
 args(function_name) to get info of the arguments
 
-# Look up how muche memory space an object is taking up
+# Look up how much memory space an object is taking up
 object.size(plants)
 
 # View column names:
