@@ -1,4 +1,5 @@
 # Must-have R packages
+tidyverse    # hadley wickham packages
 devtools     # installing packages from github
 data.table   # working with large data sets
 dplyr        # data wrangling

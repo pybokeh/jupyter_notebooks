@@ -1,3 +1,6 @@
 # Download wheel installer from http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2
 # Then do:
 pip install rpy2‑2.6.0‑cp34‑none‑win32.whl
+
+# or via conda
+conda install rpy2
