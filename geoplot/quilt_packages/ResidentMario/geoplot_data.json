@@ -1,0 +1,193 @@
+{
+  "children": {
+    "README": {
+      "hashes": [
+        "541fc9abd92d5c1e9f842a1a7fcdf667eb15dfd0358f47b84626909134b294c0"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "README.md",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "boston_airbnb_listings": {
+      "hashes": [
+        "c794f51e6c045c775483df5f071881b9dde247ab4a62916897d952de92e87a75"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "boston-airbnb-listings.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "boston_zip_codes": {
+      "hashes": [
+        "babd0c3d702e85dacc7ad2f08250bf9823a6a7295367a110f130188e356fa7db"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "boston-zip-codes.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "contiguous_usa": {
+      "hashes": [
+        "777fcc2d4ccda556acb1786990b14ae99e420d46f40b3c4edbd99a3fa63760b8"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "contiguous-usa.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "dc_roads": {
+      "hashes": [
+        "a015564a938943ce2aea8f317e1e53058233ce58a5bd4cdd125e59f782ef064e"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "dc-roads.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "la_flights": {
+      "hashes": [
+        "ff65dd10cb042b95a1cf5489aab3812e1e468eedc51fba7e3933e47b16b2775a"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "la-flights.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "napoleon_troop_movements": {
+      "hashes": [
+        "6ed12561ef35e5a1c9494fd23d565020649abccded02ce01ee105599826552ae"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "napoleon-troop-movements.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "ny_census_partial": {
+      "hashes": [
+        "c19a467e07d134f78b35f0d90354f50a7b696919ecbf53fb205f39780007e372"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "ny-census-partial.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_boroughs": {
+      "hashes": [
+        "ba883b9d8a194028cb83f2fc75fedbc88cc072bfa863337a554bf972f4d604d5"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-boroughs.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_census_tracts": {
+      "hashes": [
+        "d2dcdbb925f5b02c9bf8600fe632db0ba0c1ea3b598e9b0ff24b8826f6e805b3"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-census-tracts.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_collision_factors": {
+      "hashes": [
+        "f1609dd6f76946cc6c1bdb17134ee598fe346bd013a6e7a749534acaf4d73d57"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-collision-factors.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_fatal_collisions": {
+      "hashes": [
+        "2ed72f0dcadd6ae5754664b6dc81ac0f52555d68f285f5f15267bea05d8496a5"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-fatal-collisions.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_injurious_collisions": {
+      "hashes": [
+        "e134e406457a79959f52545b0d1fc75a8fb217b737889836685c878fc8d7e6e1"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-injurious-collisions.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_parking_tickets_sample": {
+      "hashes": [
+        "a01523501f4f24d413299ffb92a797b2cc84d503a4d90dfefa67901aa6c2c445"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-parking-tickets-sample.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "nyc_police_precincts": {
+      "hashes": [
+        "cbdfc111c7f8b69c7da6a4c0ee191f780355deaafd90ac3b504262445f9638dc"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "nyc-police-precincts.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    },
+    "obesity_by_state": {
+      "format": "PARQUET",
+      "hashes": [
+        "34bd0416df19c624f79475cf22bd9380f9c442a013ac5f2376157ad482e18aed"
+      ],
+      "metadata": {
+        "q_ext": "tsv",
+        "q_path": "obesity-by-state.tsv",
+        "q_target": "pandas"
+      },
+      "type": "TABLE"
+    },
+    "usa_cities": {
+      "hashes": [
+        "e128404cfc2cd0c4c749671ade13e9be39b22e924ddb601370ac3ff02c2bbd81"
+      ],
+      "metadata": {
+        "q_ext": "",
+        "q_path": "usa-cities.geojson",
+        "q_target": "file"
+      },
+      "type": "FILE"
+    }
+  },
+  "type": "ROOT"
+}
