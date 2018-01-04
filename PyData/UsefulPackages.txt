@@ -44,7 +44,7 @@ plotnine (ggplot2 clone)
 # Machine Learning Related
 scikit-learn
 imbalanced-learn
-hyyperopt-sklearn
+hyperopt-sklearn
 tpot
 xgboost
 fasText
