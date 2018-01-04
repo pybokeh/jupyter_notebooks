@@ -1,21 +1,28 @@
-### Useful packages in PyData stack
+# PyData stack
 numpy
 scipy
 pandas
 statsmodels
 prettypandas
 pandas-profiling
+pyflux: timeseries
+lifelines: survival analysis
 dask
 feather
 jupyter
 pydataset
-dataspyre
+pyarrow
+fastparquet
 
 # visualization libraries
-matplotlib
+MATPLOTLIB
 seaborn
+altair
 bokeh
-ggplot
+dash: dashboard library from plotly
+dataspyre: dashboard with flask backend
+matplotlib
+plotnine
 jmpy
 pyqtgraph
 plotly (need to install cufflinks too for dataframe integration)
@@ -24,10 +31,26 @@ adjustText
 
 # database related
 pyodbc
+turbodbc
 pandasql
 db.py
-arrow
 
 # R related
 rpy2
 dplython
+dplydata
+plotnine (ggplot2 clone)
+
+# Machine Learning Related
+scikit-learn
+imbalanced-learn
+hyyperopt-sklearn
+tpot
+xgboost
+fasText
+
+# Utilities
+tqdm: progress bar
+glances: CPU/memory monitoring
+pendulum: a better datetime library
+schedule: job scheduling for humans
