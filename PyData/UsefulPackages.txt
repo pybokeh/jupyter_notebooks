@@ -13,6 +13,7 @@ jupyter
 pydataset
 pyarrow
 fastparquet
+vaex: https://github.com/maartenbreddels/vaex
 
 # visualization libraries
 MATPLOTLIB
@@ -23,6 +24,7 @@ dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
 matplotlib
 plotnine
+bqplot
 jmpy
 pyqtgraph
 plotly (need to install cufflinks too for dataframe integration)
