@@ -36,6 +36,8 @@ pyodbc
 turbodbc
 pandasql
 db.py
+sqlalchemy
+sqlalchemy-turbodbc
 
 # R related
 rpy2
@@ -50,6 +52,11 @@ hyperopt-sklearn
 tpot
 xgboost
 fasText
+
+# Webscraping
+beautifulsoup
+mechanicalsoup
+selenium
 
 # Utilities
 tqdm: progress bar
