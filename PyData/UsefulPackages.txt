@@ -2,15 +2,13 @@
 numpy
 scipy
 pandas
+jupyter
 statsmodels
 prettypandas
 pandas-profiling
 pyflux: timeseries
 lifelines: survival analysis
 dask
-feather
-jupyter
-pydataset
 pyarrow
 fastparquet
 vaex: https://github.com/maartenbreddels/vaex
@@ -22,14 +20,13 @@ altair
 bokeh
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
-matplotlib
-plotnine
+plotnine: clone of R's ggplot2
 bqplot
 jmpy
 pyqtgraph
 plotly (need to install cufflinks too for dataframe integration)
-probscale
-adjustText
+probscale: easily make probability scaled axis
+adjustText: easily add annotated text
 
 # database related
 pyodbc
@@ -41,8 +38,7 @@ sqlalchemy-turbodbc
 
 # R related
 rpy2
-dplython
-dplydata
+plydata
 plotnine (ggplot2 clone)
 
 # Machine Learning Related
@@ -51,12 +47,13 @@ imbalanced-learn
 hyperopt-sklearn
 tpot
 xgboost
-fasText
+fastText: use this instead of Word2Vec!
 
 # Webscraping
 beautifulsoup
 mechanicalsoup
 selenium
+scrapy
 
 # Utilities
 tqdm: progress bar
