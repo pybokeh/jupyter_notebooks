@@ -6,7 +6,8 @@ jupyter
 statsmodels
 prettypandas
 pandas-profiling
-pyflux: timeseries
+pyflux: time series
+fbprophet: time series forecasting (additive model)
 lifelines: survival analysis
 dask
 pyarrow
@@ -17,28 +18,36 @@ vaex: https://github.com/maartenbreddels/vaex
 MATPLOTLIB
 seaborn
 altair
+pdvega
 bokeh
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
+folium
+geoplot
 plotnine: clone of R's ggplot2
 bqplot
 jmpy
 pyqtgraph
-plotly (need to install cufflinks too for dataframe integration)
+plotly (need to install cufflinks too for pandas dataframe integration)
+toyplot
 probscale: easily make probability scaled axis
-adjustText: easily add annotated text
+adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
+
+# Jupyter Notebook Extension
+ipysheet
+ipypivot
 
 # database related
 pyodbc
 turbodbc
-pandasql
-db.py
+ipython-sql
+db.py (dead project?)
 sqlalchemy
 sqlalchemy-turbodbc
 
 # R related
 rpy2
-plydata
+plydata (dplyr clone)
 plotnine (ggplot2 clone)
 
 # Machine Learning Related
@@ -56,7 +65,15 @@ selenium
 scrapy
 
 # Utilities
+psutil
 tqdm: progress bar
 glances: CPU/memory monitoring
 pendulum: a better datetime library
 schedule: job scheduling for humans
+pyautogui
+ptpython: better REPL
+xlwings: Excel VBA, but with Python instead
+
+# debugging
+ipdb
+pudb: https://github.com/inducer/pudb
