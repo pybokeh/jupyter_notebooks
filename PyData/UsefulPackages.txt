@@ -63,8 +63,10 @@ beautifulsoup
 mechanicalsoup
 selenium
 scrapy
+https://github.com/kennethreitz/requests-html
 
 # Utilities
+requests
 psutil
 tqdm: progress bar
 glances: CPU/memory monitoring
