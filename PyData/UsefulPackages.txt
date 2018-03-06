@@ -13,6 +13,7 @@ dask
 pyarrow
 fastparquet
 vaex: https://github.com/maartenbreddels/vaex
+Pandas Ray: https://github.com/ray-project/ray
 
 # visualization libraries
 MATPLOTLIB

@@ -55,3 +55,9 @@ pipenv install <package_name>
 
 # To exit
 exit
+
+### To add environment variables to your profile
+edit .profile file, then:
+export <your_environment_variable_name>=<value>
+
+To "update" the .profile file, do: source .profile
