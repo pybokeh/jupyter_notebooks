@@ -46,6 +46,11 @@ db.py (dead project?)
 sqlalchemy
 sqlalchemy-turbodbc
 
+# ETL or data engineering related sorted from lightest to heaviest frameowrk
+bonobo
+luigi
+Apache Airflow
+
 # R related
 rpy2
 plydata (dplyr clone)
