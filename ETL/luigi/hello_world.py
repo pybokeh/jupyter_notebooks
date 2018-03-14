@@ -63,6 +63,5 @@ class HelloWorldTask(luigi.Task):
         return luigi.LocalTarget('hello_world.txt')
 
 
-
 if __name__ == '__main__':
     luigi.run()
