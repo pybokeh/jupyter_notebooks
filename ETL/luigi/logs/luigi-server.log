@@ -446,3 +446,6 @@
 2018-03-12 20:34:55,509 tornado.access[8314] INFO: 200 GET /api/ping (127.0.0.1) 0.55ms
 2018-03-12 20:34:56,305 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 2.87ms
 2018-03-12 20:34:56,314 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 1.30ms
+2018-03-12 20:46:30,645 luigi.scheduler[8314] INFO: Removing task 'HelloWorldTask__99914b932b'
+2018-03-12 20:46:30,645 luigi.scheduler[8314] INFO: Removing task 'HelloTask__99914b932b'
+2018-03-12 20:46:30,645 luigi.scheduler[8314] INFO: Removing task 'WorldTask__99914b932b'

@@ -1,5 +1,17 @@
 import luigi
 from time import sleep
+import datetime
+
+
+class MyGlobals(luigi.Config):
+    """Define 'global' parameter values here"""
+
+    labor_rate = input("Enter labor rate in GBP: ")
+    part_factor = input("Enter part cost factor: ")
+    handling_factor = input("Enter handling cost factor: ")
+    start_voucher_date = input("Enter start voucher date: ")
+    end_voucher_date = input("Enter end voucher date: ")
+
 
 class HelloTask(luigi.Task):
     """Task that writes 'Hello' to a text file"""
@@ -49,6 +61,7 @@ class HelloWorldTask(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget('hello_world.txt')
+
 
 
 if __name__ == '__main__':
