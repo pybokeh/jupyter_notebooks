@@ -1,7 +1,6 @@
 from datetime import datetime
 import luigi
 import pandas as pd
-import sys
 
 
 class MyGlobals(luigi.Config):
@@ -63,47 +62,6 @@ class FilterClaims(luigi.Task):
         with self.output().open('w') as outfile:
             HUM_ZF.to_csv(outfile, index=False)
 
-"""
-class AddWrpColumn(luigi.Task):
-
-class AddReplPart5(luigi.Task):
-
-class AddHourlyRateGBP(luigi.Task):
-
-class AddEndVoucherDate(luigi.Task):
-
-class AddKiQtr(luigi.Task):
-
-class AddGBP2USD(luigi.Task):
-
-class AddTransSerialNo(luigi.Task):
-
-class AddAsnReceiveDate(luigi.Task):
-
-class AddTransDTF(luigi.Task):
-
-class AddDealerNetGBP(luigi.Task):
-
-class AddDealerNeLaborUSD(luigi.Task):
-
-class AddCalculatedCosts(luigi.Task):
-
-class AddEquotePartNum(luigi.Task):
-
-class AddMassProUSD(luigi.Task):
-
-class AddRowNum(luigi.Task):
-
-class ZeroOutColumns(luigi.Task):
-
-class AddClaimLevelTotalCost(luigi.Task):
-
-class ZeroOutClaimLevelTotalCost(luigi.Task):
-
-class ExportFinalExcel(luigi.Task):
-
-"""
 
 if __name__ == '__main__':
-    luigi.run()
-    
+    luigi.build([FilterClaims()], local_scheduler=True)

@@ -49,7 +49,7 @@ sqlalchemy-turbodbc
 # ETL or data engineering related sorted from lightest to heaviest frameowrk
 bonobo
 luigi
-Apache Airflow
+Apache Airflow - Windows not supported
 
 # R related
 rpy2
@@ -62,7 +62,7 @@ imbalanced-learn
 hyperopt-sklearn
 tpot
 xgboost
-fastText: use this instead of Word2Vec!
+fastText
 
 # Webscraping
 beautifulsoup
@@ -72,6 +72,7 @@ scrapy
 https://github.com/kennethreitz/requests-html
 
 # Utilities
+pytest
 requests
 psutil
 tqdm: progress bar
@@ -81,7 +82,9 @@ schedule: job scheduling for humans
 pyautogui
 ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
+https://github.com/SimonBiggs/scriptedforms
+black: source code formatter
 
 # debugging
 ipdb
-pudb: https://github.com/inducer/pudb
+pudb: https://github.com/inducer/pudb - Windows not supported
