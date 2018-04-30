@@ -9,6 +9,8 @@ pandas-profiling
 pyflux: time series
 fbprophet: time series forecasting (additive model)
 lifelines: survival analysis
+
+# "Large Data" libraries
 dask
 pyarrow
 fastparquet
@@ -58,6 +60,7 @@ plotnine (ggplot2 clone)
 
 # Machine Learning Related
 scikit-learn
+sklearn-pandas
 imbalanced-learn
 hyperopt-sklearn
 tpot
@@ -84,7 +87,8 @@ ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
 https://github.com/SimonBiggs/scriptedforms
 black: source code formatter
+cerberus: data validation framework
 
 # debugging
 ipdb
-pudb: https://github.com/inducer/pudb - Windows not supported
+pudb: https://github.com/inducer/pudb - Windows not supported, need cygwin
