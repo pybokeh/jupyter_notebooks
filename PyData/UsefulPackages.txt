@@ -9,6 +9,7 @@ pandas-profiling
 pyflux: time series
 fbprophet: time series forecasting (additive model)
 lifelines: survival analysis
+visidata: https://jsvine.github.io/intro-to-visidata/index.html
 
 # "Large Data" libraries
 dask
