@@ -1,20 +1,20 @@
-########### Python 3.6.x ###############
+########### Python 3.7x ###############
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
 sudo apt-get install python3-dev libblas-dev libatlas-base-dev libopenblas-base liblapack-dev gcc g++ gfortran cython
 sudo apt-get install libreadline-dev libncursesw5-dev libncurses5-dev zlib1g-dev libssl-dev tk-dev
 sudo apt-get install libfreetype6-dev libpng-dev
 sudo apt-get install libjpeg-dev zlib1g-dev libtiff5-dev libfreetype6-dev liblcms2-dev libwebp-dev libopenjpeg-dev
 
-wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz
-tar xf Python-3.6.2.tar.xz
-cd Python-3.6.2
-./configure --prefix=/opt/python3.6.2 --enable-optimizations
+wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
+tar xf Python-3.7.0.tar.xz
+cd Python-3.7.0
+./configure --prefix=/opt/python3.7.0 --enable-optimizations
 make && sudo make install
 
 whereis python  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
-/opt/python3.6.2/bin/python3.6 -m venv bottle   # create bottle virtual environment using Python 3.6's pyvenv
+/opt/python3.7.0/bin/python3.7 -m venv bottle   # create bottle virtual environment using Python 3.7's venv
 or python -m venv bottle
 cd bottle
 source bin/activate  # activate the environment
@@ -40,7 +40,7 @@ conda config --add channels conda-forge
 ###  UPDATED for pipenv which is now the official means for making Python virtual environments  ###
 
 After installing Python 3 from source, then do:
-/opt/python3.6.2/bin/pip3 install pipenv
+/opt/python3.7.0/bin/pip3 install pipenv
 
 # Then:
 mkdir your_env_name
