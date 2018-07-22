@@ -9,21 +9,20 @@ pandas-profiling
 pyflux: time series
 fbprophet: time series forecasting (additive model)
 lifelines: survival analysis
-visidata: https://jsvine.github.io/intro-to-visidata/index.html
 
 # "Large Data" libraries
 dask
 pyarrow
 fastparquet
 vaex: https://github.com/maartenbreddels/vaex
-Pandas Ray: https://github.com/ray-project/ray
+Pandas on Ray: https://github.com/modin-project/modin
 
 # visualization libraries
 MATPLOTLIB
 seaborn
 altair
 pdvega
-bokeh
+bokeh / HoloViews / hvplot
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
 folium
@@ -34,10 +33,11 @@ jmpy
 pyqtgraph
 plotly (need to install cufflinks too for pandas dataframe integration)
 toyplot
+https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis
 adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 
-# Jupyter Notebook Extension
+# Jupyter Notebook Extensions
 ipysheet
 ipypivot
 
@@ -51,6 +51,8 @@ sqlalchemy-turbodbc
 
 # ETL or data engineering related sorted from lightest to heaviest frameowrk
 bonobo
+https://github.com/mara/data-integration
+https://www.getdbt.com/
 luigi
 Apache Airflow - Windows not supported
 
@@ -81,7 +83,8 @@ requests
 psutil
 tqdm: progress bar
 glances: CPU/memory monitoring
-pendulum: a better datetime library
+pendulum: a better datetime library, better than arrow
+visidata: https://jsvine.github.io/intro-to-visidata/index.html
 schedule: job scheduling for humans
 pyautogui
 ptpython: better REPL
