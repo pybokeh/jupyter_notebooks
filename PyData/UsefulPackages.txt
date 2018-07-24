@@ -7,7 +7,12 @@ statsmodels
 prettypandas
 pandas-profiling
 pyflux: time series
+
+# Forecasting
+pyramid-arima https://github.com/tgsmith61591/pyramid
 fbprophet: time series forecasting (additive model)
+
+# Niche stats libraries
 lifelines: survival analysis
 
 # "Large Data" libraries
@@ -22,7 +27,7 @@ MATPLOTLIB
 seaborn
 altair
 pdvega
-bokeh / HoloViews / hvplot
+bokeh / HoloViews / hvplot (pyviz stack)
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
 folium
@@ -32,6 +37,7 @@ bqplot
 jmpy
 pyqtgraph
 plotly (need to install cufflinks too for pandas dataframe integration)
+joyplot https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 toyplot
 https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis
