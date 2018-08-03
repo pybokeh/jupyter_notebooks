@@ -6,11 +6,12 @@ jupyter
 statsmodels
 prettypandas
 pandas-profiling
-pyflux: time series
+line_profiling
 
 # Forecasting
 pyramid-arima https://github.com/tgsmith61591/pyramid
-fbprophet: time series forecasting (additive model)
+fbprophet: time series forecasting (additive model) which performs best with high frequency data
+pyflux: time series
 
 # Niche stats libraries
 lifelines: survival analysis
@@ -36,7 +37,7 @@ plotnine: clone of R's ggplot2
 bqplot
 jmpy
 pyqtgraph
-plotly (need to install cufflinks too for pandas dataframe integration)
+plotly (need to install cufflinks too for pandas dataframe integration), cufflinks don't support Plotly version 3 yet!
 joyplot https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 toyplot
 https://github.com/jupyter-widgets/ipyleaflet/
