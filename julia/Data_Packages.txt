@@ -1,0 +1,21 @@
+# Working with tabula data
+Queryverse
+DataFrames
+DataFramesMeta
+IndexedTables
+JuliaDB - for out of core data sets
+
+# Working with databases
+ODBC
+
+# Visualizaing data
+Plots
+VegaLite
+Gadfly
+
+# Machine Learning
+https://juliaml.github.io
+Flux
+
+# Misc
+Unitful
