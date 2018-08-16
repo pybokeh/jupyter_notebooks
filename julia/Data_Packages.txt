@@ -5,6 +5,9 @@ DataFramesMeta
 IndexedTables
 JuliaDB - for out of core data sets
 
+# Useful statistical packages
+Distributions
+
 # Working with databases
 ODBC
 
@@ -19,3 +22,6 @@ Flux
 
 # Misc
 Unitful
+AxisArrays
+Interact
+Revise
