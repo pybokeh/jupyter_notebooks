@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+pandas = "*"
+statsmodels = "*"
+dask = {version = "*", extras = ["complete"]}
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+jupyter-nbextensions-configurator = "*"
+plotly = "==2.7.0"
+altair = "*"
+"autopep8" = "*"
+seaborn = "*"
+
+[requires]
+python_version = "3.6"
