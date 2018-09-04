@@ -34,6 +34,7 @@ dataspyre: dashboard with flask backend
 folium
 geoplot
 plotnine: clone of R's ggplot2
+joypy - joy plots in MATPLOTLIB and Pandas
 bqplot
 jmpy
 pyqtgraph
