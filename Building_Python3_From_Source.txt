@@ -16,7 +16,7 @@ sudo apt-get install python3-venv
 whereis python  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
-/opt/python3.7.0/bin/python3.7 -m venv bottle   # create bottle virtual environment using Python 3.7's venv
+/usr/local/bin/python3.7 -m venv bottle   # create bottle virtual environment using Python 3.7's venv
 or python -m venv bottle
 cd bottle
 source bin/activate  # activate the environment
@@ -42,7 +42,7 @@ conda config --add channels conda-forge
 ###  UPDATED for pipenv which is now the official means for making Python virtual environments  ###
 
 After installing Python 3 from source, then do:
-/opt/python3.7.0/bin/pip3 install pipenv
+/usr/local/bin/pip3 install pipenv
 
 # Then:
 mkdir your_env_name

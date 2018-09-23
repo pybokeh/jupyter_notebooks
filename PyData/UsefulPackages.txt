@@ -61,7 +61,7 @@ sqlalchemy-turbodbc
 bonobo
 https://github.com/mara/data-integration
 https://www.getdbt.com/
-luigi
+Spotify Luigi
 Apache Airflow - Windows not supported
 
 # R related
