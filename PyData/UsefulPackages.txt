@@ -57,8 +57,10 @@ db.py (dead project?)
 sqlalchemy
 sqlalchemy-turbodbc
 
-# ETL or data engineering related sorted from lightest to heaviest frameowrk
+# ETL or data engineering related sorted from lightest to heaviest framework
 bonobo
+pypeln - https://github.com/cgarciae/pypeln/
+botflow - https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 https://www.getdbt.com/
 Spotify Luigi
