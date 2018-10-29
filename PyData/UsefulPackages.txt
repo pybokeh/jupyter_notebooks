@@ -87,8 +87,10 @@ mechanicalsoup
 selenium
 scrapy
 https://github.com/kennethreitz/requests-html
+https://newspaper.readthedocs.io  # easily extract text from articles
 
 # Utilities
+inspect https://docs.python.org/3/library/inspect.html
 pytest
 requests
 psutil
