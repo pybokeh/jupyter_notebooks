@@ -5,6 +5,8 @@ pandas
 jupyter
 statsmodels
 prettypandas
+
+# Profiling
 pandas-profiling
 line_profiling
 
@@ -22,6 +24,7 @@ pyarrow
 fastparquet
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
+dampr: https://github.com/Refefer/Dampr
 
 # visualization libraries
 MATPLOTLIB
@@ -29,6 +32,7 @@ seaborn
 altair
 pdvega
 bokeh / HoloViews / hvplot (pyviz stack)
+https://github.com/spotify/chartify
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
 folium
@@ -90,10 +94,15 @@ https://github.com/kennethreitz/requests-html
 https://newspaper.readthedocs.io  # easily extract text from articles
 
 # Utilities
+https://github.com/tldr-pages/tldr-python-client # replacement for man pages
+bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
+https://github.com/gleitz/howdoi
 inspect https://docs.python.org/3/library/inspect.html
 pytest
 requests
 psutil
+click - for making CLI
+fire - for making CLI
 tqdm: progress bar
 glances: CPU/memory monitoring
 pendulum: a better datetime library, better than arrow
@@ -104,7 +113,11 @@ ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
 https://github.com/SimonBiggs/scriptedforms
 black: source code formatter
+
+# Data validation and cleaning frameworks
 cerberus: data validation framework
+https://github.com/great-expectations/great_expectations
+https://pyjanitor.readthedocs.io/
 
 # debugging
 ipdb

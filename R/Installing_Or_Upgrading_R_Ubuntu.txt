@@ -1,7 +1,7 @@
 1. sudo gvim /etc/apt/sources.list
-2. Then add the line: deb http://cran.case.edu/bin/linux/ubuntu trusty/   # Ubuntu 14.04
+2. Then add the line: deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/   # Ubuntu 18.04
 3. Exit gvim / editor
-4. sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+4. sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 5. sudo apt-get update
 6. sudo apt-get install r-base
 
@@ -12,6 +12,7 @@ sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev
 sudo apt-get install libudunits2-dev
 sudo apt-get install libgdal1-dev
 sudo apt-get install libproj-dev
+sudo apt-get install libssl-dev
 
 If having trouble installing "choroplethr" due to "sf" package failing to
 install due to older version of GDAL, upgrade GDAL per this SO question:

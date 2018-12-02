@@ -5,9 +5,9 @@ sudo apt-get install libreadline-dev libncursesw5-dev libncurses5-dev zlib1g-dev
 sudo apt-get install libfreetype6-dev libpng-dev
 sudo apt-get install libjpeg-dev zlib1g-dev libtiff5-dev libfreetype6-dev liblcms2-dev libwebp-dev libopenjpeg-dev
 
-wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
-tar xf Python-3.7.0.tar.xz
-cd Python-3.7.0
+wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
+tar xf Python-3.7.1.tar.xz
+cd Python-3.7.1
 ./configure --enable-optimizations
 make -j <number of cpu cores>  # To get number of cores: nproc --all
 sudo make altinstall
@@ -16,8 +16,7 @@ sudo apt-get install python3-venv
 whereis python  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
-/usr/local/bin/python3.7 -m venv bottle   # create bottle virtual environment using Python 3.7's venv
-or python -m venv bottle
+/usr/local/bin/python3.7 -m venv bottle  # create virtual environment using venv
 cd bottle
 source bin/activate  # activate the environment
 pip --version        # double-check the pip version
@@ -42,7 +41,7 @@ conda config --add channels conda-forge
 ###  UPDATED for pipenv which is now the official means for making Python virtual environments  ###
 
 After installing Python 3 from source, then do:
-/usr/local/bin/pip3 install pipenv
+/opt/python3.7.0/bin/pip3 install pipenv
 
 # Then:
 mkdir your_env_name
