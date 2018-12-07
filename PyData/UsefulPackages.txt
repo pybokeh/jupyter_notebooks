@@ -17,6 +17,7 @@ pyflux: time series
 
 # Niche stats libraries
 lifelines: survival analysis
+https://better.engineering/convoys/
 
 # "Large Data" libraries
 dask
@@ -73,7 +74,6 @@ Apache Airflow - Windows not supported
 # R related
 rpy2
 plydata (dplyr clone)
-dfply (also a dplyr clone)
 plotnine (ggplot2 clone)
 
 # Machine Learning Related
