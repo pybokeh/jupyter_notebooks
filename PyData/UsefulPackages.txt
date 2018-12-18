@@ -4,7 +4,6 @@ scipy
 pandas
 jupyter
 statsmodels
-prettypandas
 
 # Profiling
 pandas-profiling
@@ -98,6 +97,7 @@ https://github.com/tldr-pages/tldr-python-client # replacement for man pages
 bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
 https://github.com/gleitz/howdoi
 inspect https://docs.python.org/3/library/inspect.html
+prettypandas
 pytest
 requests
 psutil
