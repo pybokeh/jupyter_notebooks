@@ -31,7 +31,7 @@ MATPLOTLIB
 seaborn
 altair
 pdvega
-bokeh / HoloViews / hvplot (pyviz stack)
+bokeh / HoloViews / hvplot (pyviz stack) / pandas-bokeh
 https://github.com/spotify/chartify
 dash: dashboard library from plotly
 dataspyre: dashboard with flask backend
@@ -42,7 +42,7 @@ joypy - joy plots in MATPLOTLIB and Pandas
 bqplot
 jmpy
 pyqtgraph
-plotly (need to install cufflinks too for pandas dataframe integration), cufflinks don't support Plotly version 3 yet!
+plotly (need to install cufflinks too for pandas dataframe integration)
 joyplot https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 toyplot
 https://github.com/jupyter-widgets/ipyleaflet/
@@ -104,6 +104,7 @@ psutil
 click - for making CLI
 fire - for making CLI
 tqdm: progress bar
+Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
 glances: CPU/memory monitoring
 pendulum: a better datetime library, better than arrow
 visidata: https://jsvine.github.io/intro-to-visidata/index.html
