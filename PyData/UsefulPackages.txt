@@ -29,7 +29,7 @@ dampr: https://github.com/Refefer/Dampr
 # visualization libraries
 MATPLOTLIB
 seaborn
-altair
+altair / https://github.com/justinbois/altair-catplot
 pdvega
 bokeh / HoloViews / hvplot (pyviz stack) / pandas-bokeh
 https://github.com/spotify/chartify
@@ -52,6 +52,7 @@ adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 # Jupyter Notebook Extensions
 ipysheet
 ipypivot
+jupytext (early stages right now)
 
 # database related
 pyodbc
@@ -83,6 +84,7 @@ hyperopt-sklearn
 tpot
 xgboost
 fastText
+https://github.com/kvh/recurrent  - extract datetimes from English sentence
 
 # Webscraping
 beautifulsoup
@@ -98,12 +100,19 @@ bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install
 https://github.com/gleitz/howdoi
 inspect https://docs.python.org/3/library/inspect.html
 prettypandas
+https://github.com/RobinL/fuzzymatcher
 pytest
 requests
 psutil
+
+# CLI
 click - for making CLI
 fire - for making CLI
+
+# Progress Bars
 tqdm: progress bar
+https://github.com/fastai/fastprogress
+
 Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
 glances: CPU/memory monitoring
 pendulum: a better datetime library, better than arrow
