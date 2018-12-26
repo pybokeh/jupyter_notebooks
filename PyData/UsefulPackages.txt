@@ -100,6 +100,7 @@ bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install
 https://github.com/gleitz/howdoi
 inspect https://docs.python.org/3/library/inspect.html
 prettypandas
+https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
 pytest
 requests
