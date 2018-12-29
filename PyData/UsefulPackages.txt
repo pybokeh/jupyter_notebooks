@@ -128,7 +128,10 @@ black: source code formatter
 # Data validation and cleaning frameworks
 cerberus: data validation framework
 https://github.com/great-expectations/great_expectations
+https://github.com/cosmicBboy/pandera
 https://pyjanitor.readthedocs.io/
+https://github.com/keleshev/schema
+https://github.com/TMiguelT/PandasSchema
 
 # debugging
 ipdb
