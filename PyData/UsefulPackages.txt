@@ -80,19 +80,20 @@ plotnine (ggplot2 clone)
 scikit-learn
 sklearn-pandas
 imbalanced-learn
-hyperopt-sklearn
+hyperopt-sklearn: https://github.com/hyperopt/hyperopt-sklearn # Not pip installable yet
 tpot
 xgboost
 fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
 
 # Webscraping
-beautifulsoup
+beautifulsoup4
 mechanicalsoup
 selenium
 scrapy
 https://github.com/kennethreitz/requests-html
 https://newspaper.readthedocs.io  # easily extract text from articles
+requests-html
 
 # Utilities
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
@@ -104,11 +105,13 @@ https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
 pytest
 requests
+requests-html
 psutil
 
 # CLI
 click - for making CLI
 fire - for making CLI
+https://github.com/tmbo/questionary
 
 # Progress Bars
 tqdm: progress bar

@@ -5,9 +5,15 @@ sudo apt-get install libreadline-dev libncursesw5-dev libncurses5-dev zlib1g-dev
 sudo apt-get install libfreetype6-dev libpng-dev
 sudo apt-get install libjpeg-dev zlib1g-dev libtiff5-dev libfreetype6-dev liblcms2-dev libwebp-dev libopenjpeg-dev
 
-wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tar.xz
-tar xf Python-3.7.1.tar.xz
-cd Python-3.7.1
+For raspberry pi, these are needed to build Python 3 per this wiki: https://github.com/pyenv/pyenv/wiki/Common-build-problems
+sudo apt-get install gcc gfortran python-dev libopenblas-dev liblapack-dev cython
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+
+wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
+tar xf Python-3.7.2.tar.xz
+cd Python-3.7.2
 ./configure --enable-optimizations
 make -j <number of cpu cores>  # To get number of cores: nproc --all
 sudo make altinstall
