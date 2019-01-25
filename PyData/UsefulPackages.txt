@@ -6,8 +6,8 @@ jupyter
 statsmodels
 
 # Profiling
-pandas-profiling
-line_profiling
+pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+memory_profiler: https://github.com/pythonprofilers/memory_profiler
 
 # Forecasting
 pyramid-arima https://github.com/tgsmith61591/pyramid
@@ -38,14 +38,13 @@ dataspyre: dashboard with flask backend
 folium
 geoplot
 plotnine: clone of R's ggplot2
-joypy - joy plots in MATPLOTLIB and Pandas
+joypy: https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 bqplot
 jmpy
 pyqtgraph
-plotly (need to install cufflinks too for pandas dataframe integration)
-joyplot https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
+plotly / cufflinks (need to install cufflinks too for pandas dataframe integration)
 toyplot
-https://github.com/jupyter-widgets/ipyleaflet/
+ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis
 adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 
@@ -70,6 +69,15 @@ https://github.com/mara/data-integration
 https://www.getdbt.com/
 Spotify Luigi
 Apache Airflow - Windows not supported
+
+# Data validation and cleaning frameworks
+cerberus: data validation framework
+https://github.com/great-expectations/great_expectations
+https://github.com/cosmicBboy/pandera
+https://pyjanitor.readthedocs.io/
+https://github.com/keleshev/schema
+https://github.com/TMiguelT/PandasSchema
+https://github.com/TomAugspurger/engarde
 
 # R related
 rpy2
@@ -127,14 +135,6 @@ ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
 https://github.com/SimonBiggs/scriptedforms
 black: source code formatter
-
-# Data validation and cleaning frameworks
-cerberus: data validation framework
-https://github.com/great-expectations/great_expectations
-https://github.com/cosmicBboy/pandera
-https://pyjanitor.readthedocs.io/
-https://github.com/keleshev/schema
-https://github.com/TMiguelT/PandasSchema
 
 # debugging
 ipdb
