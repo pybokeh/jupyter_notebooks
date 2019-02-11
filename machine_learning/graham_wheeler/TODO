@@ -1,0 +1,9 @@
+SCIKIT
+
+In breast cancer example, use other model types too (1-hot encode etc)
+Add a little bit of theory on each type of algorithm used.
+
+ALL
+
+Move exercises into a separate notebook
+Make a lot of the pedagogical text that is in comments markdown instead.

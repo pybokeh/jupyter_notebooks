@@ -53,6 +53,7 @@ adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 # Jupyter Notebook Extensions
 ipysheet
 ipypivot
+https://github.com/nteract/papermill (parameterized notebooks)
 jupytext (early stages right now)
 
 # database related
@@ -64,6 +65,7 @@ sqlalchemy
 sqlalchemy-turbodbc
 
 # ETL or data engineering related sorted from lightest to heaviest framework
+https://github.com/petl-developers/petl
 bonobo
 pypeln - https://github.com/cgarciae/pypeln/
 botflow - https://github.com/kkyon/botflow
@@ -118,6 +120,9 @@ requests
 requests-html
 psutil
 
+# Amazon Web Services
+PyAthena
+
 # CLI
 click - for making CLI
 fire - for making CLI
@@ -128,6 +133,7 @@ tqdm: progress bar
 https://github.com/fastai/fastprogress
 
 Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
+https://github.com/malja/zroya
 glances: CPU/memory monitoring
 pendulum: a better datetime library, better than arrow
 visidata: https://jsvine.github.io/intro-to-visidata/index.html
