@@ -17,8 +17,8 @@ fbprophet: time series forecasting (additive model) which performs best with hig
 pyflux: time series
 
 # Niche stats libraries
-lifelines: survival analysis
-https://better.engineering/convoys/
+lifelines: survival analysis: https://github.com/CamDavidsonPilon/lifelines
+convoys: https://better.engineering/convoys/
 
 # "Large Data" libraries
 dask
@@ -33,10 +33,10 @@ MATPLOTLIB
 seaborn
 altair / https://github.com/justinbois/altair-catplot
 pdvega
-bokeh / HoloViews / hvplot (pyviz stack) / pandas-bokeh
+bokeh / HoloViews / hvplot / pandas-bokeh (pyviz stack)
 https://github.com/spotify/chartify
 dash: dashboard library from plotly
-dataspyre: dashboard with flask backend
+dataspyre: dashboard framework with flask backend
 folium
 geoplot
 plotnine: clone of R's ggplot2
@@ -54,7 +54,7 @@ adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 ipysheet
 ipypivot
 https://github.com/nteract/papermill (parameterized notebooks)
-jupytext (early stages right now)
+jupytext (1.0 has better jupyter integration)
 
 # database related
 pyodbc
@@ -121,7 +121,7 @@ requests-html
 psutil
 
 # Amazon Web Services
-PyAthena
+PyAthena: https://github.com/laughingman7743/PyAthena
 
 # CLI
 click - for making CLI
@@ -129,15 +129,16 @@ fire - for making CLI
 https://github.com/tmbo/questionary
 
 # Progress Bars
-tqdm: progress bar
-https://github.com/fastai/fastprogress
+tqdm: https://github.com/tqdm/tqdm
+fastprogress: https://github.com/fastai/fastprogress
 
+# Misc.
 Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
-https://github.com/malja/zroya
+Another Windows notification library: https://github.com/malja/zroya
 glances: CPU/memory monitoring
 pendulum: a better datetime library, better than arrow
 visidata: https://jsvine.github.io/intro-to-visidata/index.html
-schedule: job scheduling for humans
+schedule: job scheduling for humans:https://github.com/dbader/schedule
 pyautogui
 ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
@@ -147,3 +148,6 @@ black: source code formatter
 # debugging
 ipdb
 pudb: https://github.com/inducer/pudb - Windows not supported, need cygwin
+
+# logging
+https://github.com/Delgan/loguru
