@@ -50,7 +50,7 @@ ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis
 adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
 
-# Jupyter Notebook Extensions
+# Jupyter Notebook Related
 ipysheet
 ipypivot
 https://github.com/nteract/papermill (parameterized notebooks)
@@ -75,7 +75,7 @@ Spotify Luigi
 Apache Airflow - Windows not supported
 
 # Data validation and cleaning frameworks
-cerberus: data validation framework
+https://github.com/pyeve/cerberus
 https://github.com/great-expectations/great_expectations
 https://github.com/cosmicBboy/pandera
 https://pyjanitor.readthedocs.io/
@@ -95,6 +95,7 @@ imbalanced-learn
 hyperopt-sklearn: https://github.com/hyperopt/hyperopt-sklearn # Not pip installable yet
 tpot
 xgboost
+lightgbm
 fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
 
