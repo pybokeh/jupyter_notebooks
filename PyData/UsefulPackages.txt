@@ -14,7 +14,7 @@ pyflame: https://github.com/uber/pyflame   # Does not support Windows
 # Forecasting
 pyramid-arima https://github.com/tgsmith61591/pyramid
 fbprophet: time series forecasting (additive model) which performs best with high frequency data
-pyflux: time series
+pyflux: time series library: https://github.com/RJT1990/pyflux
 
 # Niche stats libraries
 lifelines: survival analysis: https://github.com/CamDavidsonPilon/lifelines
@@ -47,14 +47,17 @@ pyqtgraph
 plotly / cufflinks (need to install cufflinks too for pandas dataframe integration)
 toyplot
 ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
-probscale: easily make probability scaled axis
-adjustText: easily add annotated text (https://github.com/Phlya/adjustText)
+probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
+adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 
 # Jupyter Notebook Related
-ipysheet
-ipypivot
-https://github.com/nteract/papermill (parameterized notebooks)
-jupytext (1.0 has better jupyter integration)
+ipysheet: https://github.com/QuantStack/ipysheet
+ipypivot: https://github.com/PierreMarion23/ipypivot
+papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
+nteract-scapbook: https://github.com/nteract/scrapbook
+how to pass a dataframe between notebooks: https://github.com/nteract/papermill/issues/215
+but instead, you should really save the dataframe somewhere and then just pass the path of the saved dataframe
+jupytext: edit notebooks as text files!  https://github.com/mwouts/jupytext
 
 # database related
 pyodbc
