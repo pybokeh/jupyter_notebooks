@@ -68,12 +68,13 @@ sqlalchemy
 sqlalchemy-turbodbc
 
 # ETL or data engineering related sorted from lightest to heaviest framework
-https://github.com/petl-developers/petl
+dequindre: https://github.com/vogt4nick/dequindre
+petl: https://github.com/petl-developers/petl
 bonobo
-pypeln - https://github.com/cgarciae/pypeln/
-botflow - https://github.com/kkyon/botflow
+pypeln: https://github.com/cgarciae/pypeln/
+botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
-https://www.getdbt.com/
+dbt: https://www.getdbt.com/
 Spotify Luigi
 Apache Airflow - Windows not supported
 
