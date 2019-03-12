@@ -49,6 +49,7 @@ toyplot
 ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
+make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -68,6 +69,8 @@ sqlalchemy
 sqlalchemy-turbodbc
 
 # ETL or data engineering related sorted from lightest to heaviest framework
+papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
+nteract-scapbook: https://github.com/nteract/scrapbook (for passing data between notebooks)
 dequindre: https://github.com/vogt4nick/dequindre
 petl: https://github.com/petl-developers/petl
 bonobo
@@ -75,8 +78,8 @@ pypeln: https://github.com/cgarciae/pypeln/
 botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
-Spotify Luigi
-Apache Airflow - Windows not supported
+Spotify Luigi - (works with Windows)
+Apache Airflow - Windows not supported (it is a PITA to try to install on Windows)
 
 # Data validation and cleaning frameworks
 https://github.com/pyeve/cerberus
@@ -92,7 +95,7 @@ rpy2
 plydata (dplyr clone)
 plotnine (ggplot2 clone)
 
-# Machine Learning Related
+# Machine Learning Related - mostly for tabular data or non-NN
 scikit-learn
 sklearn-pandas
 imbalanced-learn
@@ -106,11 +109,10 @@ https://github.com/kvh/recurrent  - extract datetimes from English sentence
 # Webscraping
 beautifulsoup4
 mechanicalsoup
-selenium
-scrapy
-https://github.com/kennethreitz/requests-html
-https://newspaper.readthedocs.io  # easily extract text from articles
-requests-html
+selenium (headless-browser framework for extracting javascript data)
+scrapy (OOP framework)
+newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articles
+requests-html: requests-html: https://github.com/kennethreitz/requests-html
 
 # Utilities
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
@@ -122,11 +124,11 @@ https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
 pytest
 requests
-requests-html
+requests-html: https://github.com/kennethreitz/requests-html
 psutil
 
 # Amazon Web Services
-PyAthena: https://github.com/laughingman7743/PyAthena
+PyAthena - use plain 'ol SQL: https://github.com/laughingman7743/PyAthena
 
 # CLI
 click - for making CLI
@@ -147,6 +149,7 @@ schedule: job scheduling for humans:https://github.com/dbader/schedule
 pyautogui
 ptpython: better REPL
 xlwings: Excel VBA, but with Python instead
+openpyxl: https://openpyxl.readthedocs.io/en/stable/
 https://github.com/SimonBiggs/scriptedforms
 black: source code formatter
 
