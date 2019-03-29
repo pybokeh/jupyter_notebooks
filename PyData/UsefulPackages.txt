@@ -82,6 +82,7 @@ https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi - (works with Windows)
 Apache Airflow - Windows not supported (it is a PITA to try to install on Windows)
+prefect: https://docs.prefect.io
 
 # Data validation and cleaning frameworks
 https://github.com/pyeve/cerberus
