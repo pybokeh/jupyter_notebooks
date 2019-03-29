@@ -129,6 +129,7 @@ requests
 requests-html: https://github.com/kennethreitz/requests-html
 psutil
 pdir2: https://github.com/laike9m/pdir2
+helping: https://github.com/ConquerProgramming1/helping
 
 # Amazon Web Services
 PyAthena - use plain 'ol SQL: https://github.com/laughingman7743/PyAthena
