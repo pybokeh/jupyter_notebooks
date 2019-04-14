@@ -1,0 +1,3 @@
+# PySpark Resources
+https://docs.databricks.com/index.html
+https://github.com/ericxiao251/spark-syntax
