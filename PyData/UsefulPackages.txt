@@ -2,8 +2,10 @@
 numpy
 scipy
 pandas
+matplotlib
 jupyter
 statsmodels
+scikit-learn
 
 # Profiling
 pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
@@ -55,6 +57,7 @@ make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
 ipypivot: https://github.com/PierreMarion23/ipypivot
+ipyaggrid: https://gitlab.com/DGothrek/ipyaggrid or visit https://medium.com/@olivier.borderies/harnessing-the-power-of-ag-grid-in-jupyter-3ae27fb21012
 ipytree: https://github.com/QuantStack/ipytree
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
 nteract-scapbook: https://github.com/nteract/scrapbook
@@ -82,7 +85,7 @@ https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi - (works with Windows)
 Apache Airflow - Windows not supported (it is a PITA to try to install on Windows)
-prefect: https://docs.prefect.io
+prefect: https://docs.prefect.io (windows not supported)
 
 # Data validation and cleaning frameworks
 https://github.com/pyeve/cerberus
@@ -159,7 +162,9 @@ https://github.com/SimonBiggs/scriptedforms
 black: source code formatter
 
 # debugging
-ipdb
+ipdb: https://github.com/gotcha/ipdb
+pudb: https://github.com/inducer/pudb  (windows not supported)
+pysnooper: https://github.com/cool-RR/pysnooper  (debugging with decorators!)
 pudb: https://github.com/inducer/pudb - Windows not supported, need cygwin
 
 # logging
