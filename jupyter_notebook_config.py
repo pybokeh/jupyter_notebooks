@@ -1,22 +1,22 @@
 # Configuration file for jupyter-notebook.
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Configurable configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # SingletonConfigurable configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # A configurable that only allows one instance.
-# 
+#
 # This class is for classes that should only have one instance of itself or
 # *any* subclass. To create and retrieve such a class use the
 # :meth:`SingletonConfigurable.instance` method.
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Application configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # This is an application.
 
@@ -29,9 +29,9 @@
 # The date format used by logging formatters for %(asctime)s
 # c.Application.log_datefmt = '%Y-%m-%d %H:%M:%S'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # JupyterApp configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Base class for Jupyter applications
 
@@ -47,16 +47,16 @@
 # Full path of a config file.
 # c.JupyterApp.config_file = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # NotebookApp configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Extra variables to supply to jinja templates when rendering.
 # c.NotebookApp.jinja_template_vars = traitlets.Undefined
 
 # The base URL for websockets, if it differs from the HTTP server (hint: it
 # almost certainly doesn't).
-# 
+#
 # Should be in the form of an HTTP origin: ws[s]://hostname[:port]
 # c.NotebookApp.websocket_url = ''
 
@@ -71,7 +71,7 @@ c.NotebookApp.tornado_settings = {'static_url_prefix':'/jupyter/static/'}
 
 # The kernel spec manager class to use. Should be a subclass of
 # `jupyter_client.kernelspec.KernelSpecManager`.
-# 
+#
 # The Api of KernelSpecManager is provisional and might change without warning
 # between this version of IPython and the next stable one.
 # c.NotebookApp.kernel_spec_manager_class = <class 'jupyter_client.kernelspec.KernelSpecManager'>
@@ -93,32 +93,32 @@ c.NotebookApp.tornado_settings = {'static_url_prefix':'/jupyter/static/'}
 # c.NotebookApp.pylab = 'disabled'
 
 # Set the Access-Control-Allow-Origin header
-# 
+#
 # Use '*' to allow any origin to access your server.
-# 
+#
 # Takes precedence over allow_origin_pat.
 # c.NotebookApp.allow_origin = ''
 
-# 
+#
 # c.NotebookApp.file_to_run = ''
 
 # Use a regular expression for the Access-Control-Allow-Origin header
-# 
+#
 # Requests from an origin matching the expression will get replies with:
-# 
+#
 #     Access-Control-Allow-Origin: origin
-# 
+#
 # where `origin` is the origin of the request.
-# 
+#
 # Ignored if allow_origin is set.
 # c.NotebookApp.allow_origin_pat = ''
 
 # Hashed password to use for web authentication.
-# 
+#
 # To generate, type in a python/IPython shell:
-# 
+#
 #   from notebook.auth import passwd; passwd()
-# 
+#
 # The string should be of the form type:salt:hashed-password.
 # c.NotebookApp.password = ''
 
@@ -135,7 +135,7 @@ c.NotebookApp.tornado_settings = {'static_url_prefix':'/jupyter/static/'}
 c.NotebookApp.port = 9999
 
 # Extra paths to search for serving jinja templates.
-# 
+#
 # Can be used to override templates from notebook.templates.
 # c.NotebookApp.extra_template_paths = traitlets.Undefined
 
@@ -145,7 +145,7 @@ c.NotebookApp.port = 9999
 c.NotebookApp.base_url = '/jupyter/'
 
 # Extra paths to search for serving static files.
-# 
+#
 # This allows adding javascript/css to be available from the notebook server
 # machine, or overriding individual files in the IPython
 # c.NotebookApp.extra_static_paths = traitlets.Undefined
@@ -179,11 +179,11 @@ c.NotebookApp.open_browser = True
 # c.NotebookApp.mathjax_url = ''
 
 # Whether to enable MathJax for typesetting math/TeX
-# 
+#
 # MathJax is the javascript library IPython uses to render math/LaTeX. It is
 # very large, so you may want to disable it if you have a slow internet
 # connection, or for offline use of the notebook.
-# 
+#
 # When disabled, equations etc. will appear as their untransformed TeX source.
 # c.NotebookApp.enable_mathjax = True
 
@@ -217,7 +217,7 @@ c.NotebookApp.notebook_dir = '/home/pybokeh/Dropbox/python/jupyter/notebooks'
 # The random bytes used to secure cookies. By default this is a new random
 # number every time you start the Notebook. Set it to a value in a config file
 # to enable logins to persist across server sessions.
-# 
+#
 # Note: Cookie secrets should be kept private, do not share config files with
 # cookie_secret stored in plaintext (you can read the value from a file).
 # c.NotebookApp.cookie_secret = b''
@@ -225,18 +225,18 @@ c.NotebookApp.notebook_dir = '/home/pybokeh/Dropbox/python/jupyter/notebooks'
 # The IP address the notebook server will listen on.
 c.NotebookApp.ip = 'localhost'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # LoggingConfigurable configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # A parent class for Configurables that log.
-# 
+#
 # Subclasses have a log trait, and the default behavior is to get the logger
 # from the currently running Application.
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # ConnectionFileMixin configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Mixin for configurable classes that work with connection files
 
@@ -244,7 +244,7 @@ c.NotebookApp.ip = 'localhost'
 # c.ConnectionFileMixin.control_port = 0
 
 # JSON file in which to store connection info [default: kernel-<pid>.json]
-# 
+#
 # This file will contain the IP, ports, and authentication key needed to connect
 # clients to this kernel. By default, this file will be created in the security
 # dir of the current profile, but can be specified by absolute path.
@@ -256,7 +256,7 @@ c.NotebookApp.ip = 'localhost'
 # set the shell (ROUTER) port [default: random]
 # c.ConnectionFileMixin.shell_port = 0
 
-# 
+#
 # c.ConnectionFileMixin.transport = 'tcp'
 
 # set the iopub (PUB) port [default: random]
@@ -270,19 +270,19 @@ c.NotebookApp.ip = 'localhost'
 # to connect to the Kernel, so be careful!
 # c.ConnectionFileMixin.ip = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # KernelManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Manages a single kernel in a subprocess on this host.
-# 
+#
 # This version starts kernels with Popen.
 
 # Should we autorestart the kernel if it dies.
 # c.KernelManager.autorestart = False
 
 # DEPRECATED: Use kernel_name instead.
-# 
+#
 # The Popen Command to launch the kernel. Override this if you have a custom
 # kernel. If kernel_cmd is specified in a configuration file, Jupyter does not
 # pass any arguments to the kernel, because it cannot make any assumptions about
@@ -291,32 +291,32 @@ c.NotebookApp.ip = 'localhost'
 # line.
 # c.KernelManager.kernel_cmd = traitlets.Undefined
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Session configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Object for handling serialization and sending of messages.
-# 
+#
 # The Session object handles building messages and sending them with ZMQ sockets
 # or ZMQStream objects.  Objects can communicate with each other over the
 # network via Session objects, and only need to work with the dict-based IPython
 # message spec. The Session will handle serialization/deserialization, security,
 # and metadata.
-# 
+#
 # Sessions support configurable serialization via packer/unpacker traits, and
 # signing with HMAC digests via the key/keyfile traits.
-# 
+#
 # Parameters ----------
-# 
+#
 # debug : bool
 #     whether to trigger extra debugging statements
 # packer/unpacker : str : 'json', 'pickle' or import_string
 #     importstrings for methods to serialize message parts.  If just
 #     'json' or 'pickle', predefined JSON and pickle packers will be used.
 #     Otherwise, the entire importstring must be used.
-# 
+#
 #     The functions must accept at least valid JSON input, and output *bytes*.
-# 
+#
 #     For example, to use msgpack:
 #     packer = 'msgpack.packb', unpacker='msgpack.unpackb'
 # pack/unpack : callables
@@ -364,7 +364,7 @@ c.NotebookApp.ip = 'localhost'
 # c.Session.buffer_threshold = 1024
 
 # The maximum number of digests to remember.
-# 
+#
 # The digest history will be culled when it exceeds this value.
 # c.Session.digest_history_size = 65536
 
@@ -379,9 +379,9 @@ c.NotebookApp.ip = 'localhost'
 # path to file containing execution key.
 # c.Session.keyfile = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # MultiKernelManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # A class for managing multiple kernels.
 
@@ -392,27 +392,27 @@ c.NotebookApp.ip = 'localhost'
 # The name of the default kernel to start
 # c.MultiKernelManager.default_kernel_name = 'python3'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # MappingKernelManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # A KernelManager that handles notebook mapping and HTTP error handling
 
-# 
+#
 # c.MappingKernelManager.root_dir = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # ContentsManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Base class for serving files and directories.
-# 
+#
 # This serves any text or binary file, as well as directories, with special
 # handling for JSON notebook documents.
-# 
+#
 # Most APIs take a path argument, which is always an API-style unicode path, and
 # always refers to a directory.
-# 
+#
 # - unicode, not url-escaped
 # - '/'-separated
 # - leading and trailing '/' will be stripped
@@ -420,29 +420,29 @@ c.NotebookApp.ip = 'localhost'
 #   indicating the root path.
 
 # Python callable or importstring thereof
-# 
+#
 # To be called on a contents model prior to save.
-# 
+#
 # This can be used to process the structure, such as removing notebook outputs
 # or other side effects that should not be saved.
-# 
+#
 # It will be called as (all arguments passed by keyword)::
-# 
+#
 #     hook(path=path, model=model, contents_manager=self)
-# 
+#
 # - model: the model to be saved. Includes file contents.
 #   Modifying this dict will affect the file that is stored.
 # - path: the API path of the save destination
 # - contents_manager: this ContentsManager instance
 # c.ContentsManager.pre_save_hook = None
 
-# 
+#
 # c.ContentsManager.checkpoints_kwargs = traitlets.Undefined
 
-# 
+#
 # c.ContentsManager.checkpoints_class = <class 'notebook.services.contents.checkpoints.Checkpoints'>
 
-# 
+#
 # c.ContentsManager.checkpoints = traitlets.Undefined
 
 # The base name used when creating untitled directories.
@@ -457,34 +457,34 @@ c.NotebookApp.ip = 'localhost'
 # The base name used when creating untitled files.
 # c.ContentsManager.untitled_file = 'untitled'
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # FileContentsManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
-# 
+#
 # c.FileContentsManager.root_dir = ''
 
 # DEPRECATED, use post_save_hook
 # c.FileContentsManager.save_script = False
 
 # Python callable or importstring thereof
-# 
+#
 # to be called on the path of a file just saved.
-# 
+#
 # This can be used to process the file on disk, such as converting the notebook
 # to a script or HTML via nbconvert.
-# 
+#
 # It will be called as (all arguments passed by keyword)::
-# 
+#
 #     hook(os_path=os_path, model=model, contents_manager=instance)
-# 
+#
 # - path: the filesystem path to the file just written - model: the model
 # representing the file - contents_manager: this ContentsManager instance
 # c.FileContentsManager.post_save_hook = None
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # NotebookNotary configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # A class for computing and verifying notebook signatures.
 
@@ -506,11 +506,11 @@ c.NotebookApp.ip = 'localhost'
 # The file where the secret key is stored.
 # c.NotebookNotary.secret_file = ''
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # KernelSpecManager configuration
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Whitelist of allowed kernel names.
-# 
+#
 # By default, all installed kernels are allowed.
 # c.KernelSpecManager.whitelist = traitlets.Undefined

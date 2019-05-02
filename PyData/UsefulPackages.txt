@@ -16,6 +16,7 @@ pyflame: https://github.com/uber/pyflame   # Does not support Windows
 # Forecasting
 pyramid-arima https://github.com/tgsmith61591/pyramid
 fbprophet: time series forecasting (additive model) which performs best with high frequency data
+PmProphet: https://github.com/luke14free/pm-prophet
 pyflux: time series library: https://github.com/RJT1990/pyflux
 
 # Niche stats libraries
