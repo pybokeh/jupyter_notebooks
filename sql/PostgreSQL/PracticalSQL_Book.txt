@@ -1,0 +1,3 @@
+https://nostarch.com/practicalSQL
+
+Book's SQL code: https://github.com/anthonydb/practical-sql
