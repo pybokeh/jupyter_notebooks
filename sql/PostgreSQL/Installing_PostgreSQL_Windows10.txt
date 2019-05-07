@@ -1,0 +1,39 @@
+Step 1) Download and extract the zip installation file for Windows: https://www.enterprisedb.com/download-postgresql-binaries
+
+Step 2) Then create a “data” folder in your root postgres installation directory.
+
+Step 3) Then create a batch file per this article: https://www.postgresonline.com/journal/index.php?/archives/172-Starting-PostgreSQL-in-windows-without-install.html  Remember to uncomment/un-REM the line with the initdb command.
+
+Step 4) Then launch pgAdmin4.exe, create new Server, under connection tab, choose “localhost”, enter correct port #, and then click on Save.  To check if everything is working ok in pgAdmin4, select or highlight the postgres database, then right-mouse click and choose “Query Tool...”  A new tab should be created with the connection port icon over on the left should be green.  You should then be able to type SQL statements.
+
+ 
+To change the default browser from IE to Chrome, see this StackOverflow answer: https://stackoverflow.com/questions/50435656/pgadmin-4-always-open-in-browser-not-as-a-standalone-desktop-application
+
+ 
+To set password for the default “postgres” user, do the following at command prompt:
+psql.exe –U postgres
+
+Then at the postgres=# prompt, enter: \password postgres      You will then be prompted to enter the password twice.
+
+ 
+To create a new “role” or “user”, do this at the command prompt:
+createuser.exe -U postgres –interactive   then follow the prompts
+
+ 
+Then you need to create a database as the same name as the role/user you just created:
+createdb.exe –U postgres <user_name>
+
+ 
+
+Now you need to set password for the new role/user you have just created.  Do this at the command prompt:
+psql.exe –U <user_name>
+
+Then at the <user_name>=#  prompt, enter: \password <user_name> then you’ll be prompted to enter the password twice
+
+ 
+
+That should be it!  To open the database server outside of local host/120.0.0.1, then of course you have to make additionally changes and settings.
+
+ 
+
+For free SQL scripts for PostgreSQL, go to this GitHub site:  https://github.com/anthonydb/practical-sql
