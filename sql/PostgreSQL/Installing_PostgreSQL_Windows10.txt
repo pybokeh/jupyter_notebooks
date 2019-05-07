@@ -32,7 +32,7 @@ Then at the <user_name>=#  prompt, enter: \password <user_name> then you’ll be
 
  
 
-That should be it!  To open the database server outside of local host/127.0.0.1, then of course you have to make additionally changes and settings.
+That should be it!  To open the database server outside of localhost/127.0.0.1, then of course you have to make additional changes and settings.
 
  
 
