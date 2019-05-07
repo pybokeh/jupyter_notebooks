@@ -2,7 +2,7 @@ Step 1) Download and extract the zip installation file for Windows: https://www.
 
 Step 2) Then create a “data” folder in your root postgres installation directory.
 
-Step 3) Then create a batch file per this article: https://www.postgresonline.com/journal/index.php?/archives/172-Starting-PostgreSQL-in-windows-without-install.html  Remember to uncomment/un-REM the line with the initdb command.
+Step 3) Then create a batch file per this article: https://www.postgresonline.com/journal/index.php?/archives/172-Starting-PostgreSQL-in-windows-without-install.html  Remember to uncomment/un-REM the line with the initdb command when first executing the batch file.  Then afterwards, comment out or REM the initdb line.
 
 Step 4) Then launch pgAdmin4.exe, create new Server, under connection tab, choose “localhost”, enter correct port #, and then click on Save.  To check if everything is working ok in pgAdmin4, select or highlight the postgres database, then right-mouse click and choose “Query Tool...”  A new tab should be created with the connection port icon over on the left should be green.  You should then be able to type SQL statements.
 
@@ -32,7 +32,7 @@ Then at the <user_name>=#  prompt, enter: \password <user_name> then you’ll be
 
  
 
-That should be it!  To open the database server outside of local host/120.0.0.1, then of course you have to make additionally changes and settings.
+That should be it!  To open the database server outside of local host/127.0.0.1, then of course you have to make additionally changes and settings.
 
  
 
