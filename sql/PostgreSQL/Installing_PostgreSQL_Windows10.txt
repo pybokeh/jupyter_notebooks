@@ -1,3 +1,5 @@
+If you don't have admin rights to your Windows machine, then you have to resort to .zip installation method, which is more complicated and requires expert knowledge in OS/DOS/batch scripting.
+
 Step 1) Download and extract the zip installation file for Windows: https://www.enterprisedb.com/download-postgresql-binaries
 
 Step 2) Then create a “data” folder in your root postgres installation directory.
@@ -9,7 +11,10 @@ Step 4) Then launch pgAdmin4.exe, create new Server, under connection tab, choos
  
 To change the default browser from IE to Chrome, see this StackOverflow answer: https://stackoverflow.com/questions/50435656/pgadmin-4-always-open-in-browser-not-as-a-standalone-desktop-application
 
- 
+
+The below procedures assumes the <postgresql_root_folder>\bin directory is part of your PATH environment variable.
+Otherwise, you will have to navigate to the <postgresql_root_folder\bin directory which contains all the .exe files.
+
 To set password for the default “postgres” user, do the following at command prompt:
 psql.exe –U postgres
 

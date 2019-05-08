@@ -12,7 +12,8 @@ It will then prompt you to enter a password twice
 
 Then launch pgAdmin4, create server. In the connection tab, change Host to "localhost", change user to "pybokeh" and enter your password.
 
-That should be it!
+That should be it!  Of course if you want to expose your server to the "outside" or beyond localhost/127.0.0.1, you have to make
+additional changes or settings.
 
 Useful command line commands:
 pg_lsclusters - will output postgres server info and where log file is located at

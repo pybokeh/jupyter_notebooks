@@ -65,6 +65,7 @@ nteract-scapbook: https://github.com/nteract/scrapbook
 how to pass a dataframe between notebooks: https://github.com/nteract/papermill/issues/215
 but instead, you should really save the dataframe somewhere and then just pass the path of the saved dataframe
 jupytext: edit notebooks as text files!  https://github.com/mwouts/jupytext
+nbinteract: https://www.nbinteract.com/index.html
 
 # database related
 pyodbc
