@@ -66,6 +66,7 @@ how to pass a dataframe between notebooks: https://github.com/nteract/papermill/
 but instead, you should really save the dataframe somewhere and then just pass the path of the saved dataframe
 jupytext: edit notebooks as text files!  https://github.com/mwouts/jupytext
 nbinteract: https://www.nbinteract.com/index.html
+nbconflux - upload your jupyter notebook to your company's Confluence page: https://github.com/Valassis-Digital-Media/nbconflux
 
 # database related
 pyodbc
@@ -106,7 +107,7 @@ plotnine (ggplot2 clone)
 # Machine Learning Related - mostly for tabular data or non-NN
 scikit-learn
 sklearn-pandas
-imbalanced-learn
+imbalanced-learn: https://github.com/scikit-learn-contrib/imbalanced-learn
 hyperopt-sklearn: https://github.com/hyperopt/hyperopt-sklearn # Not pip installable yet
 tpot
 xgboost
@@ -138,6 +139,7 @@ pdir2: https://github.com/laike9m/pdir2
 helping: https://github.com/ConquerProgramming1/helping
 
 # Big Data
+PyHive: https://github.com/dropbox/PyHive
 Amazon S3 with SQL syntax: PyAthena - use plain 'ol SQL: https://github.com/laughingman7743/PyAthena
 Pandas syntax with Apache Spark: koalas - https://github.com/databricks/koalas
 
