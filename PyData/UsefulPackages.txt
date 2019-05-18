@@ -170,7 +170,6 @@ black: source code formatter
 ipdb: https://github.com/gotcha/ipdb
 pudb: https://github.com/inducer/pudb  (windows not supported)
 pysnooper: https://github.com/cool-RR/pysnooper  (debugging with decorators!)
-pudb: https://github.com/inducer/pudb - Windows not supported, need cygwin
 
 # logging
 https://github.com/Delgan/loguru
