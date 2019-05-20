@@ -114,6 +114,7 @@ xgboost
 lightgbm
 fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
+automatic feature engineering: https://github.com/Featuretools/featuretools
 
 # Webscraping
 beautifulsoup4
