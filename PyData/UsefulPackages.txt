@@ -125,6 +125,7 @@ newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articl
 requests-html: requests-html: https://github.com/kennethreitz/requests-html
 
 # Utilities
+Faster pandas apply: https://github.com/jmcarpenter2/swifter
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
 bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
 https://github.com/gleitz/howdoi
