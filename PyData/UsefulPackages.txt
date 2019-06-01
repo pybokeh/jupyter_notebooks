@@ -75,6 +75,7 @@ ipython-sql
 db.py (dead project?)
 sqlalchemy
 sqlalchemy-turbodbc
+pugsql: https://pugsql.org/tutorial
 
 # ETL or data engineering related sorted from lightest to heaviest framework
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
@@ -172,6 +173,7 @@ black: source code formatter
 ipdb: https://github.com/gotcha/ipdb
 pudb: https://github.com/inducer/pudb  (windows not supported)
 pysnooper: https://github.com/cool-RR/pysnooper  (debugging with decorators!)
+pydebug: https://github.com/benmezger/pydebug
 
 # logging
 https://github.com/Delgan/loguru
