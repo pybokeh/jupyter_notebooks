@@ -30,6 +30,7 @@ fastparquet
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
 dampr: https://github.com/Refefer/Dampr
+datatable: https://github.com/h2oai/datatable (Windows not support yet)
 
 # visualization libraries
 MATPLOTLIB
@@ -46,6 +47,7 @@ plotnine: clone of R's ggplot2
 joypy: https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 bqplot
 jmpy
+panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 pyqtgraph
 plotly / cufflinks (need to install cufflinks too for pandas dataframe integration)
 plotly express (competes with cufflinks): https://github.com/plotly/plotly_express
