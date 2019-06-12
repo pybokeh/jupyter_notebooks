@@ -56,6 +56,8 @@ ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
+Dashboards with panel: https://panel.pyviz.org/
+From jupyter notebooks to apps: https://github.com/QuantStack/voila
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -118,6 +120,7 @@ lightgbm
 fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
 automatic feature engineering: https://github.com/Featuretools/featuretools
+Explaining ML algorithms: https://github.com/slundberg/shap
 
 # Webscraping
 beautifulsoup4
