@@ -14,7 +14,7 @@ plt.plot([], [], label='Channel 2')
 
 
 def animate(i):
-    data = pd.read_csv('data.csv')
+    data = pd.read_csv('data/data.csv')
     x = data['x_value']
     y1 = data['total_1']
     y2 = data['total_2']
