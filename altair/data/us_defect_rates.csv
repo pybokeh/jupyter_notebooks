@@ -1,0 +1,53 @@
+state	id	defect_rate
+Alabama	1	0.875
+Alaska	2	0.01
+Arizona	4	0.7654
+Arkansas	5	0.756
+California	6	0.3455
+Colorado	8	0.123
+Connecticut	9	0.0455
+Delaware	10	0.098097
+District of Columbia	11	0.0234
+Florida	12	0.9567
+Georgia	13	0.7655
+Hawaii	15	0.88776
+Idaho	16	0.234
+Illinois	17	0.0234
+Indiana	18	0.034
+Iowa	19	0.0342
+Kansas	20	0.342
+Kentucky	21	0.235
+Louisiana	22	0.9872
+Maine	23	0.045546
+Maryland	24	0.067778
+Massachusetts	25	0.0234
+Michigan	26	0.023456
+Minnesota	27	0.0345
+Mississippi	28	0.77866
+Missouri	29	0.72456
+Montana	30	0.0123
+Nebraska	31	0.05677
+Nevada	32	0.67789
+New Hampshire	33	0.0755345
+New Jersey	34	0.0989979
+New Mexico	35	0.89766
+New York	36	0.01234
+North Carolina	37	0.4566
+North Dakota	38	0.05667
+Ohio	39	0.0678889
+Oklahoma	40	0.455677
+Oregon	41	0.01234
+Pennsylvania	42	0.0134
+Rhode Island	44	0.09156
+South Carolina	45	0.7865
+South Dakota	46	0.02345
+Tennessee	47	0.323456
+Texas	48	0.79887
+Utah	49	0.5667
+Vermont	50	0.01245
+Virginia	51	0.2345
+Washington	53	0.01345
+West Virginia	54	0.0897
+Wisconsin	55	0.0097
+Wyoming	56	0.09887
+Puerto Rico	72	0.87665

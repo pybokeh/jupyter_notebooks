@@ -39,8 +39,14 @@ df_long.columns = ['Month', 'Component', 'Defect_Rate']
 # %%
 df_long
 
-# %%
-px.line(df_long, x='Month', line_group='Component', y='Defect_Rate', color='Component', title='Cum. Defect Rate')
+# %% [markdown]
+# ### List of plotly-express templates:
 
+# %%
+import plotly.io as pio
+list(pio.templates)
 
 # %%
+px.line(df_long, x='Month', line_group='Component', y='Defect_Rate', color='Component', title='Cum. Defect Rate', 
+        template='presentation')
+
