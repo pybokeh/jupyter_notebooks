@@ -14,7 +14,8 @@ py-spy: https://github.com/benfred/py-spy/blob/master/README.md
 pyflame: https://github.com/uber/pyflame   # Does not support Windows
 
 # Forecasting
-pyramid-arima https://github.com/tgsmith61591/pyramid
+pmdarim (formerly pyramid-arima): https://github.com/tgsmith61591/pmdarima/
+https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
 fbprophet: time series forecasting (additive model) which performs best with high frequency data
 PmProphet: https://github.com/luke14free/pm-prophet
 pyflux: time series library: https://github.com/RJT1990/pyflux
@@ -30,7 +31,7 @@ fastparquet
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
 dampr: https://github.com/Refefer/Dampr
-datatable: https://github.com/h2oai/datatable (Windows not support yet)
+datatable: https://github.com/h2oai/datatable (Windows not supported yet)
 
 # visualization libraries
 MATPLOTLIB
