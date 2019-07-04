@@ -58,7 +58,6 @@ probscale: easily make probability scaled axis: https://github.com/matplotlib/mp
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 Dashboards with panel: https://panel.pyviz.org/
-From jupyter notebooks to apps: https://github.com/QuantStack/voila
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -72,6 +71,8 @@ but instead, you should really save the dataframe somewhere and then just pass t
 jupytext: edit notebooks as text files!  https://github.com/mwouts/jupytext
 nbinteract: https://www.nbinteract.com/index.html
 nbconflux - upload your jupyter notebook to your company's Confluence page: https://github.com/Valassis-Digital-Media/nbconflux
+notebook to Excel: https://github.com/ideonate/nb2xls/blob/master/README.md
+From jupyter notebooks to apps: https://github.com/QuantStack/voila
 
 # database related
 pyodbc
