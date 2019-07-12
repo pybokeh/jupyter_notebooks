@@ -73,6 +73,8 @@ nbinteract: https://www.nbinteract.com/index.html
 nbconflux - upload your jupyter notebook to your company's Confluence page: https://github.com/Valassis-Digital-Media/nbconflux
 notebook to Excel: https://github.com/ideonate/nb2xls/blob/master/README.md
 From jupyter notebooks to apps: https://github.com/QuantStack/voila
+Executable Pandoc Markdown: https://github.com/pystitch/stitch
+Executable Pandoc Markdown: https://github.com/gpoore/codebraid
 
 # database related
 pyodbc
