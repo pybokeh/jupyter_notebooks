@@ -58,6 +58,7 @@ probscale: easily make probability scaled axis: https://github.com/matplotlib/mp
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 Dashboards with panel: https://panel.pyviz.org/
+Rain clouds viz: https://github.com/pog87/PtitPrince
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -184,6 +185,7 @@ black: source code formatter
 ipdb: https://github.com/gotcha/ipdb
 pudb: https://github.com/inducer/pudb  (windows not supported)
 pysnooper: https://github.com/cool-RR/pysnooper  (debugging with decorators!)
+snoop built on top of pysnooper: https://github.com/alexmojaki/snoop
 pydebug: https://github.com/benmezger/pydebug
 
 # logging
