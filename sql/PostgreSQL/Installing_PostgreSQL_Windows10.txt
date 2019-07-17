@@ -37,7 +37,9 @@ Then at the <user_name>=#  prompt, enter: \password <user_name> then you’ll be
 
  
 
-That should be it!  To open the database server outside of localhost/127.0.0.1, then of course you have to make additional changes and settings.
+That should be it!  Of course if you want to expose your server to the "outside" or beyond localhost/127.0.0.1, you have to make
+additional changes or settings to 2 files, namely: postgresql.conf and pg_hba.conf located at your postgresql installation's "data" folder
+Example instructions: https://blog.bigbinary.com/2016/01/23/configure-postgresql-to-allow-remote-connection.html
 
  
 

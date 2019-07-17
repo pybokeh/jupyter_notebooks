@@ -2,7 +2,7 @@ For installation steps, view this URL: https://www.digitalocean.com/community/tu
 
 But after doing Step 5, need to set password for your account or user in order to use pgAdmin4.
 
-For example, after logging in as you/pybokeh: sudo -u pybokeh psql
+For example, after logging in as you or in my case, pybokeh: sudo -u pybokeh psql
 
 Then in the interactive postgres prompt, enter \password pybokeh as depicted below:
 
@@ -13,7 +13,8 @@ It will then prompt you to enter a password twice
 Then launch pgAdmin4, create server. In the connection tab, change Host to "localhost", change user to "pybokeh" and enter your password.
 
 That should be it!  Of course if you want to expose your server to the "outside" or beyond localhost/127.0.0.1, you have to make
-additional changes or settings.
+additional changes or settings to 2 files, namely: postgresql.conf and pg_hba.conf located at: /etc/postgresql/11/main/
+Example instructions: https://blog.bigbinary.com/2016/01/23/configure-postgresql-to-allow-remote-connection.html
 
 Useful command line commands:
 pg_lsclusters - will output postgres server info and where log file is located at
