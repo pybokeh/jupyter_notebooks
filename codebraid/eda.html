@@ -1,0 +1,50 @@
+<h3 id="library-imports">Library imports</h3>
+<div class="sourceCode" id="cb1" data-startFrom="1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+<h3 id="load-sample-mpg-data-set">Load sample mpg data set</h3>
+<div class="sourceCode" id="cb2" data-startFrom="5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 4;"><span id="cb2-5"><a href="#cb2-5"></a>mpg <span class="op">=</span> sns.load_dataset(<span class="st">&#39;mpg&#39;</span>)</span></code></pre></div>
+<h3 id="peek-at-sample-data">Peek at sample data</h3>
+<div class="sourceCode" id="cb3" data-startFrom="6"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 5;"><span id="cb3-6"><a href="#cb3-6"></a>mpg.head()</span></code></pre></div>
+<pre><code>    mpg  cylinders  displacement  horsepower  weight  acceleration  \
+0  18.0          8         307.0       130.0    3504          12.0   
+1  15.0          8         350.0       165.0    3693          11.5   
+2  18.0          8         318.0       150.0    3436          11.0   
+3  16.0          8         304.0       150.0    3433          12.0   
+4  17.0          8         302.0       140.0    3449          10.5   
+
+   model_year origin                       name  
+0          70    usa  chevrolet chevelle malibu  
+1          70    usa          buick skylark 320  
+2          70    usa         plymouth satellite  
+3          70    usa              amc rebel sst  
+4          70    usa                ford torino  </code></pre>
+<h3 id="plot-mean-mpg-by-model-year">Plot mean mpg by Model Year</h3>
+<div class="sourceCode" id="cb5" data-startFrom="7"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 6;"><span id="cb5-7"><a href="#cb5-7"></a>mpg.groupby([<span class="st">&#39;model_year&#39;</span>]).agg({<span class="st">&#39;mpg&#39;</span>: <span class="st">&#39;mean&#39;</span>}).plot()</span>
+<span id="cb5-8"><a href="#cb5-8"></a>plt.title(<span class="st">&#39;Mean MPG by Year&#39;</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a>plt.xlabel(<span class="st">&#39;Year&#39;</span>)</span>
+<span id="cb5-10"><a href="#cb5-10"></a>plt.ylabel(<span class="st">&#39;Mean MPG&#39;</span>)</span>
+<span id="cb5-11"><a href="#cb5-11"></a>sns.despine()</span></code></pre></div>
+<p><img src="_codebraid/050feb8f4366209c/python3--004-01.png" /></p>
+<h3 id="summary-statistics">Summary Statistics</h3>
+<div class="sourceCode" id="cb6" data-startFrom="12"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 11;"><span id="cb6-12"><a href="#cb6-12"></a>mpg.describe()</span></code></pre></div>
+<pre><code>              mpg   cylinders  displacement  horsepower       weight  \
+count  398.000000  398.000000    398.000000  392.000000   398.000000   
+mean    23.514573    5.454774    193.425879  104.469388  2970.424623   
+std      7.815984    1.701004    104.269838   38.491160   846.841774   
+min      9.000000    3.000000     68.000000   46.000000  1613.000000   
+25%     17.500000    4.000000    104.250000   75.000000  2223.750000   
+50%     23.000000    4.000000    148.500000   93.500000  2803.500000   
+75%     29.000000    8.000000    262.000000  126.000000  3608.000000   
+max     46.600000    8.000000    455.000000  230.000000  5140.000000   
+
+       acceleration  model_year  
+count    398.000000  398.000000  
+mean      15.568090   76.010050  
+std        2.757689    3.697627  
+min        8.000000   70.000000  
+25%       13.825000   73.000000  
+50%       15.500000   76.000000  
+75%       17.175000   79.000000  
+max       24.800000   82.000000</code></pre>

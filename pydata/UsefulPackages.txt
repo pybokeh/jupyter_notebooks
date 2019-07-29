@@ -57,6 +57,7 @@ ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
+Edit matplotlib plots with GUI editor: https://pylustrator.readthedocs.io/en/latest/
 Dashboards with panel: https://panel.pyviz.org/
 Rain clouds viz: https://github.com/pog87/PtitPrince
 
@@ -164,6 +165,7 @@ https://github.com/tmbo/questionary
 # Progress Bars
 tqdm: https://github.com/tqdm/tqdm
 fastprogress: https://github.com/fastai/fastprogress
+https://codingdose.info/2019/06/15/how-to-use-a-progress-bar-in-python/
 
 # Misc.
 Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
@@ -190,3 +192,6 @@ pydebug: https://github.com/benmezger/pydebug
 
 # logging
 https://github.com/Delgan/loguru
+
+# Interesting GitHub repos
+https://github.com/PhantomInsights/baby-names-analysis/blob/master/README.md

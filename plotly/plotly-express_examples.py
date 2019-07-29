@@ -15,14 +15,14 @@
 
 # %%
 import pandas as pd
-import plotly_express as px
+import plotly.express as px
 
 # %%
 df = pd.read_csv('data/defect_rate.csv')
 
 
 # %% [markdown]
-# ### Data is in "long format":
+# ### Data is in "wide format":
 
 # %%
 df.head()

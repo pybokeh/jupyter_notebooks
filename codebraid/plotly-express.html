@@ -1,0 +1,58 @@
+<h3 id="library-imports">Library imports</h3>
+<div class="sourceCode" id="cb1" data-startFrom="1"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span></code></pre></div>
+<h3 id="read-in-sample-data">Read in sample data</h3>
+<div class="sourceCode" id="cb2" data-startFrom="3"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 2;"><span id="cb2-3"><a href="#cb2-3"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;/home/pybokeh/Dropbox/python/jupyter_notebooks/plotly/data/defect_rate.csv&#39;</span>)</span></code></pre></div>
+<h3 id="data-is-in-wide-format">Data is in “wide format”</h3>
+<div class="sourceCode" id="cb3" data-startFrom="4"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 3;"><span id="cb3-4"><a href="#cb3-4"></a>df.head()</span></code></pre></div>
+<pre><code>   Month  Comp_A  Comp_B
+0      0    0.00   0.000
+1      1    0.32   0.160
+2      2    0.38   0.190
+3      3    0.50   0.250
+4      4    0.55   0.275</code></pre>
+<h3 id="but-to-use-plotly-express-data-needs-to-be-in-long-format">But to use plotly-express, data needs to be in long format</h3>
+<div class="sourceCode" id="cb5" data-startFrom="5"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 4;"><span id="cb5-5"><a href="#cb5-5"></a>df_long <span class="op">=</span> df.melt(id_vars<span class="op">=</span>[<span class="st">&#39;Month&#39;</span>], value_vars<span class="op">=</span>[<span class="st">&#39;Comp_A&#39;</span>, <span class="st">&#39;Comp_B&#39;</span>])</span>
+<span id="cb5-6"><a href="#cb5-6"></a>df_long.columns <span class="op">=</span> [<span class="st">&#39;Month&#39;</span>, <span class="st">&#39;Component&#39;</span>, <span class="st">&#39;Defect_Rate&#39;</span>]</span>
+<span id="cb5-7"><a href="#cb5-7"></a>df_long</span></code></pre></div>
+<pre><code>    Month Component  Defect_Rate
+0       0    Comp_A        0.000
+1       1    Comp_A        0.320
+2       2    Comp_A        0.380
+3       3    Comp_A        0.500
+4       4    Comp_A        0.550
+5       5    Comp_A        0.670
+6       6    Comp_A        0.800
+7       7    Comp_A        0.990
+8       8    Comp_A        1.200
+9       9    Comp_A        1.500
+10     10    Comp_A        1.800
+11     11    Comp_A        2.500
+12     12    Comp_A        5.000
+13      0    Comp_B        0.000
+14      1    Comp_B        0.160
+15      2    Comp_B        0.190
+16      3    Comp_B        0.250
+17      4    Comp_B        0.275
+18      5    Comp_B        0.335
+19      6    Comp_B        0.400
+20      7    Comp_B          NaN
+21      8    Comp_B          NaN
+22      9    Comp_B          NaN
+23     10    Comp_B          NaN
+24     11    Comp_B          NaN
+25     12    Comp_B          NaN</code></pre>
+<h3 id="list-of-plotly-available-plotly-templates">List of plotly available plotly templates</h3>
+<div class="sourceCode" id="cb7" data-startFrom="8"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 7;"><span id="cb7-8"><a href="#cb7-8"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="bu">list</span>(pio.templates)</span></code></pre></div>
+<pre><code>[&#39;ggplot2&#39;,
+ &#39;seaborn&#39;,
+ &#39;plotly&#39;,
+ &#39;plotly_white&#39;,
+ &#39;plotly_dark&#39;,
+ &#39;presentation&#39;,
+ &#39;xgridoff&#39;,
+ &#39;none&#39;]</code></pre>
+<h3 id="now-plot-the-defect-rates">Now plot the defect rates</h3>
+<div class="sourceCode" id="cb9" data-startFrom="10"><pre class="sourceCode numberSource python numberLines"><code class="sourceCode python" style="counter-reset: source-line 9;"><span id="cb9-10"><a href="#cb9-10"></a>px.line(df_long, x<span class="op">=</span><span class="st">&#39;Month&#39;</span>, line_group<span class="op">=</span><span class="st">&#39;Component&#39;</span>, y<span class="op">=</span><span class="st">&#39;Defect_Rate&#39;</span>, color<span class="op">=</span><span class="st">&#39;Component&#39;</span>, title<span class="op">=</span><span class="st">&#39;Cum. Defect Rate&#39;</span>, </span>
+<span id="cb9-11"><a href="#cb9-11"></a>        template<span class="op">=</span><span class="st">&#39;presentation&#39;</span>)</span></code></pre></div>
