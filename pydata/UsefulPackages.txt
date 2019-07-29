@@ -195,3 +195,4 @@ https://github.com/Delgan/loguru
 
 # Interesting GitHub repos
 https://github.com/PhantomInsights/baby-names-analysis/blob/master/README.md
+https://github.com/firmai/industry-machine-learning
