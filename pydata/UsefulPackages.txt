@@ -20,7 +20,7 @@ fbprophet: time series forecasting (additive model) which performs best with hig
 PmProphet: https://github.com/luke14free/pm-prophet
 pyflux: time series library: https://github.com/RJT1990/pyflux
 
-# Niche stats libraries
+# For survival analysis, modeling churn and conversion rates
 lifelines: survival analysis: https://github.com/CamDavidsonPilon/lifelines
 convoys: https://better.engineering/convoys/
 
@@ -51,14 +51,13 @@ jmpy
 panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 pyqtgraph
 plotly / cufflinks (need to install cufflinks too for pandas dataframe integration)
-plotly express (competes with cufflinks): https://github.com/plotly/plotly_express
+plotly express (alternative to cufflinks): https://github.com/plotly/plotly_express
 toyplot
 ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 Edit matplotlib plots with GUI editor: https://pylustrator.readthedocs.io/en/latest/
-Dashboards with panel: https://panel.pyviz.org/
 Rain clouds viz: https://github.com/pog87/PtitPrince
 
 # Jupyter Notebook Related
