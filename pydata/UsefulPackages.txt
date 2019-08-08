@@ -12,6 +12,7 @@ pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
 memory_profiler: https://github.com/pythonprofilers/memory_profiler
 py-spy: https://github.com/benfred/py-spy/blob/master/README.md
 pyflame: https://github.com/uber/pyflame   # Does not support Windows
+https://www.markkeller.dev/2018-07-14-optimize_python/
 
 # Forecasting
 pmdarim (formerly pyramid-arima): https://github.com/tgsmith61591/pmdarima/
@@ -76,6 +77,7 @@ notebook to Excel: https://github.com/ideonate/nb2xls/blob/master/README.md
 From jupyter notebooks to apps: https://github.com/QuantStack/voila
 Executable Pandoc Markdown: https://github.com/pystitch/stitch
 Executable Pandoc Markdown: https://github.com/gpoore/codebraid
+From .py to html: https://github.com/danijar/handout
 
 # database related
 pyodbc
@@ -85,6 +87,7 @@ db.py (dead project?)
 sqlalchemy
 sqlalchemy-turbodbc
 pugsql: https://pugsql.org/tutorial
+psycopg2
 
 # ETL or data engineering related sorted from lightest to heaviest framework
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
