@@ -1,0 +1,113 @@
+#####################
+#                   #
+#   Initial Setup   #
+#                   #
+#####################
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+# Get git configuration information
+git config --list
+
+# Initialize version control of folder you are in
+git init
+
+# Create .gitignore file to ignore files
+touch .gitignore
+
+# Add file(s) to staging area
+git add -A # all files
+git add . # all files
+git add <path_to_file>
+
+# To remove file from staging area
+git reset # remove all files from staging area
+git reset <path_to_file>
+
+# To "commit"
+git commit -m "very detailed message" # or
+git commit # editor will pop up and you enter your detailed message
+
+
+#######################
+#                     #
+#   Useful commands   #
+#                     #
+#######################
+git status
+git log
+
+
+####################################################################
+#                                                                  #
+#   Working with remote repository directly with "master" branch   #
+#                                                                  #
+####################################################################
+
+
+# To "clone" a remote repository (could be URL or folder on your machine)
+git clone <ur> <where to clone to>   # Example:
+git clone https://github.com/pvcraven/arcade.git .
+git clone ../some_folder_containing_git_repo .
+
+
+################################################
+#                                              #
+#   Getting info on remote repo and branches   #
+#                                              #
+################################################
+git remote -v
+git branch -a
+
+
+# Common workflow to push changes to remote repo in master branch
+git add .
+git commit -m "blah blah"
+git pull origin master
+git push origin master
+
+
+
+###########################################################################
+# But we normally don't push changes directly to the master branch        #
+# of the remote repo.  Instead, normally create a branch, then check out  #
+# that branch, then make changes within that branch, then merge changes   #
+# within the branch to the remote repo's master branch                    #
+###########################################################################
+
+
+#############################
+#                           #
+#   Working with branches   #
+#                           #
+#############################
+
+
+# Creating a new branch
+git branch <new_branch_name>
+git checkout <new_branch_name>
+
+
+# General workflow when working with a branch
+# Makes changes
+git add -A
+git commit -m 'blah blah blah'
+git push -u origin <current_branch_name>
+git branch -a # To confirm or see that the branch is in remote repo
+git checkout master
+git pull origin master
+git branch --merge
+git merge <current_branch_name>
+# NOTE: if you cloned a local repo, then cd into that source repo folder and switch
+#       to a branch other than master, otherwise, will get error when
+#       doing this next step: git push origin master because you are
+#       "logged in" to both the remote source repo and the local repo
+git push origin master
+
+
+# Deleting branch
+git branch -d <current_branch_name> # delete branch from local repo
+git push origin --delete <branch_name> # delete branch from remote repo
+
+
+
