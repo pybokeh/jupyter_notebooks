@@ -36,6 +36,7 @@ datatable: https://github.com/h2oai/datatable (Windows not supported yet)
 
 # visualization libraries
 MATPLOTLIB
+Edit your MATPLOTLIB chart with a GUI workflow: https://pylustrator.readthedocs.io/en/latest/
 seaborn
 altair / https://github.com/justinbois/altair-catplot
 pdvega
@@ -75,9 +76,10 @@ nbinteract: https://www.nbinteract.com/index.html
 nbconflux - upload your jupyter notebook to your company's Confluence page: https://github.com/Valassis-Digital-Media/nbconflux
 notebook to Excel: https://github.com/ideonate/nb2xls/blob/master/README.md
 From jupyter notebooks to apps: https://github.com/QuantStack/voila
-Executable Pandoc Markdown: https://github.com/pystitch/stitch
-Executable Pandoc Markdown: https://github.com/gpoore/codebraid
+Markdown to html: https://github.com/pystitch/stitch
+Markdown to html: https://github.com/gpoore/codebraid
 From .py to html: https://github.com/danijar/handout
+Jupyter "books": https://github.com/jupyter/jupyter-book
 
 # database related
 pyodbc
@@ -92,6 +94,12 @@ psycopg2
 # ETL or data engineering related sorted from lightest to heaviest framework
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
 nteract-scapbook: https://github.com/nteract/scrapbook (for passing data between notebooks)
+For using papermill in JupyerLab go to: Notebook Tools -> Advanced Tools -> Cell Metadata:
+{
+    "tags": [
+        "parameters"
+    ]
+}
 dequindre: https://github.com/vogt4nick/dequindre
 petl: https://github.com/petl-developers/petl
 bonobo
@@ -100,8 +108,8 @@ botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi - (works with Windows)
-Apache Airflow - Windows not supported (it is a PITA to try to install on Windows)
-prefect: https://docs.prefect.io (windows not supported)
+Apache Airflow - Windows not officially supported
+prefect: https://docs.prefect.io - Windows not officially supported
 
 # Data validation and cleaning frameworks
 https://github.com/pyeve/cerberus
