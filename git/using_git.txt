@@ -92,7 +92,7 @@ git checkout <new_branch_name>
 # Makes changes
 git add -A
 git commit -m 'blah blah blah'
-git push -u origin <current_branch_name>
+git push origin <current_branch_name>
 git branch -a # To confirm or see that the branch is in remote repo
 git checkout master
 git pull origin master
