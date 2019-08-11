@@ -1,4 +1,4 @@
-# PyData stack
+# "Base" PyData stack
 numpy
 scipy
 pandas
@@ -7,15 +7,21 @@ jupyter
 statsmodels
 scikit-learn
 
-# Profiling
+# pandas related
 pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+Faster pandas apply: https://github.com/jmcarpenter2/swifter
+
+# Profiling
 memory_profiler: https://github.com/pythonprofilers/memory_profiler
 py-spy: https://github.com/benfred/py-spy/blob/master/README.md
 pyflame: https://github.com/uber/pyflame   # Does not support Windows
+birdseye: https://github.com/alexmojaki/birdseye
+pyheat: https://github.com/csurfer/pyheat
+heartrate: https://github.com/alexmojaki/heartrate
 https://www.markkeller.dev/2018-07-14-optimize_python/
 
 # Forecasting
-pmdarim (formerly pyramid-arima): https://github.com/tgsmith61591/pmdarima/
+pmdarima (formerly pyramid-arima): https://github.com/tgsmith61591/pmdarima/
 https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
 fbprophet: time series forecasting (additive model) which performs best with high frequency data
 PmProphet: https://github.com/luke14free/pm-prophet
@@ -27,10 +33,10 @@ convoys: https://better.engineering/convoys/
 
 # "Large Data" libraries
 dask
-pyarrow
-fastparquet
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
+pyarrow
+fastparquet
 dampr: https://github.com/Refefer/Dampr
 datatable: https://github.com/h2oai/datatable (Windows not supported yet)
 
@@ -39,28 +45,29 @@ MATPLOTLIB
 Edit your MATPLOTLIB chart with a GUI workflow: https://pylustrator.readthedocs.io/en/latest/
 seaborn
 altair / https://github.com/justinbois/altair-catplot
+plotly express: https://github.com/plotly/plotly_express
+bqplot: https://github.com/bloomberg/bqplot
 pdvega
 bokeh / HoloViews / hvplot / pandas-bokeh (pyviz stack)
-https://github.com/spotify/chartify
-dash: dashboard library from plotly
-dataspyre: dashboard framework with flask backend
+chartify: https://github.com/spotify/chartify
 folium
 geoplot
 plotnine: clone of R's ggplot2
 joypy: https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
-bqplot
 jmpy
-panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
-pyqtgraph
-plotly / cufflinks (need to install cufflinks too for pandas dataframe integration)
-plotly express (alternative to cufflinks): https://github.com/plotly/plotly_express
+real-time viz: pyqtgraph
 toyplot
 ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 probscale: easily make probability scaled axis: https://github.com/matplotlib/mpl-probscale
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
-Edit matplotlib plots with GUI editor: https://pylustrator.readthedocs.io/en/latest/
 Rain clouds viz: https://github.com/pog87/PtitPrince
+
+# Dashboarding libraries
+dash: dashboard library from plotly
+panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
+From jupyter notebooks to apps: https://github.com/QuantStack/voila
+dataspyre: https://github.com/adamhajari/spyre
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -90,8 +97,10 @@ sqlalchemy
 sqlalchemy-turbodbc
 pugsql: https://pugsql.org/tutorial
 psycopg2
+ibm_db
+ibm_db_sa
 
-# ETL or data engineering related sorted from lightest to heaviest framework
+# ETL or data engineering related
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
 nteract-scapbook: https://github.com/nteract/scrapbook (for passing data between notebooks)
 For using papermill in JupyerLab go to: Notebook Tools -> Advanced Tools -> Cell Metadata:
@@ -107,13 +116,13 @@ pypeln: https://github.com/cgarciae/pypeln/
 botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
-Spotify Luigi - (works with Windows)
+Spotify Luigi
 Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
 
 # Data validation and cleaning frameworks
-https://github.com/pyeve/cerberus
 https://github.com/great-expectations/great_expectations
+https://github.com/pyeve/cerberus
 https://github.com/cosmicBboy/pandera
 https://pyjanitor.readthedocs.io/
 https://github.com/keleshev/schema
@@ -137,6 +146,12 @@ fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
 automatic feature engineering: https://github.com/Featuretools/featuretools
 Explaining ML algorithms: https://github.com/slundberg/shap
+https://github.com/seatgeek/fuzzywuzzy
+https://github.com/RobinL/fuzzymatcher
+
+# URL related
+requests
+requests-html: https://github.com/kennethreitz/requests-html
 
 # Webscraping
 beautifulsoup4
@@ -145,22 +160,6 @@ selenium (headless-browser framework for extracting javascript data)
 scrapy (OOP framework)
 newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articles
 requests-html: requests-html: https://github.com/kennethreitz/requests-html
-
-# Utilities
-Faster pandas apply: https://github.com/jmcarpenter2/swifter
-https://github.com/tldr-pages/tldr-python-client # replacement for man pages
-bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
-https://github.com/gleitz/howdoi
-inspect https://docs.python.org/3/library/inspect.html
-prettypandas
-https://github.com/seatgeek/fuzzywuzzy
-https://github.com/RobinL/fuzzymatcher
-pytest
-requests
-requests-html: https://github.com/kennethreitz/requests-html
-psutil
-pdir2: https://github.com/laike9m/pdir2
-helping: https://github.com/ConquerProgramming1/helping
 
 # Big Data
 PyHive: https://github.com/dropbox/PyHive
@@ -177,19 +176,16 @@ tqdm: https://github.com/tqdm/tqdm
 fastprogress: https://github.com/fastai/fastprogress
 https://codingdose.info/2019/06/15/how-to-use-a-progress-bar-in-python/
 
-# Misc.
-Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
-Another Windows notification library: https://github.com/malja/zroya
-glances: CPU/memory monitoring
-pendulum: a better datetime library, better than arrow
-visidata: https://jsvine.github.io/intro-to-visidata/index.html
-schedule: job scheduling for humans:https://github.com/dbader/schedule
-pyautogui
-ptpython: better REPL
-xlwings: Excel VBA, but with Python instead
-openpyxl: https://openpyxl.readthedocs.io/en/stable/
-https://github.com/SimonBiggs/scriptedforms
-black: source code formatter
+# Working with Excel
+xlwings: www.xlwings.org
+openpyxl
+xlswriter
+xlrd
+xlrt
+
+# Alternate REPL
+ptpython
+bpython
 
 # debugging
 # https://stribny.name/blog/2019/06/debugging-python-programs
@@ -203,6 +199,28 @@ pydebug: https://github.com/benmezger/pydebug
 # logging
 https://github.com/Delgan/loguru
 
+# Testing Code
+pytest: https://github.com/pytest-dev/pytest
+
+# Windows Related
+Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
+Another Windows notification library: https://github.com/malja/zroya
+
+# System Monitoring (CPU / memory)
+psutil: https://github.com/giampaolo/psutil
+glances: https://github.com/nicolargo/glances
+
 # Interesting GitHub repos
-https://github.com/PhantomInsights/baby-names-analysis/blob/master/README.md
 https://github.com/firmai/industry-machine-learning
+
+# Misc.
+pendulum: a better datetime library, better than arrow
+schedule: job scheduling for humans:https://github.com/dbader/schedule
+pyautogui: https://github.com/asweigart/pyautogui
+black: https://github.com/psf/black
+inspect live objects: https://docs.python.org/3/library/inspect.html
+
+# Linux / CLI Utilities
+https://github.com/tldr-pages/tldr-python-client # replacement for man pages
+bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
+https://github.com/gleitz/howdoi
