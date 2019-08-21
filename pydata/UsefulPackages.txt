@@ -97,6 +97,7 @@ sqlalchemy
 sqlalchemy-turbodbc
 pugsql: https://pugsql.org/tutorial
 psycopg2
+asyncpg: https://github.com/MagicStack/asyncpg
 ibm_db
 ibm_db_sa
 
@@ -224,3 +225,6 @@ inspect live objects: https://docs.python.org/3/library/inspect.html
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
 bropages (http://bropages.org/): sudo apt-get install ruby-dev, sudo gem install bropages
 https://github.com/gleitz/howdoi
+
+# Real-time Travel Time and Distance
+https://github.com/kovacsbalu/WazeRouteCalculator
