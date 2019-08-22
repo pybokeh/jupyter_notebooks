@@ -213,6 +213,8 @@ glances: https://github.com/nicolargo/glances
 
 # Interesting GitHub repos
 https://github.com/firmai/industry-machine-learning
+https://github.com/dipanjanS/art_of_data_visualization
+https://github.com/PhantomInsights/baby-names-analysis
 
 # Misc.
 pendulum: a better datetime library, better than arrow
