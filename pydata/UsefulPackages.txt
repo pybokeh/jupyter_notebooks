@@ -87,6 +87,7 @@ Markdown to html: https://github.com/pystitch/stitch
 Markdown to html: https://github.com/gpoore/codebraid
 From .py to html: https://github.com/danijar/handout
 Jupyter "books": https://github.com/jupyter/jupyter-book
+hover tool tips: https://github.com/krassowski/jupyterlab-lsp
 
 # database related
 pyodbc
@@ -211,6 +212,21 @@ Another Windows notification library: https://github.com/malja/zroya
 psutil: https://github.com/giampaolo/psutil
 glances: https://github.com/nicolargo/glances
 
+# Concurrency
+https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
+For I/O bound: Use asyncio if you can, threading if you must
+For CPU bound: Use multiprocessing
+
+# Task Queues
+https://tests4geeks.com/python-celery-rabbitmq-tutorial/
+https://www.distributedpython.com/2018/08/21/celery-4-windows/
+Celery
+
+# Message Brokers
+RabbitMQ
+Redis
+ZeroMQ
+
 # Interesting GitHub repos
 https://github.com/firmai/industry-machine-learning
 https://github.com/dipanjanS/art_of_data_visualization
@@ -219,7 +235,8 @@ https://github.com/PhantomInsights/baby-names-analysis
 # Misc.
 pendulum: a better datetime library, better than arrow
 schedule: job scheduling for humans:https://github.com/dbader/schedule
-pyautogui: https://github.com/asweigart/pyautogui
+desktop automation: pyautogui: https://github.com/asweigart/pyautogui
+desktop automation: https://github.com/andohuman/pyKey
 black: https://github.com/psf/black
 inspect live objects: https://docs.python.org/3/library/inspect.html
 
