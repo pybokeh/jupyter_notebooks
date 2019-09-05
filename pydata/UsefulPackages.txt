@@ -9,6 +9,7 @@ scikit-learn
 
 # pandas related
 pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 
 # Profiling
@@ -68,10 +69,12 @@ dash: dashboard library from plotly
 panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 From jupyter notebooks to apps: https://github.com/QuantStack/voila
 dataspyre: https://github.com/adamhajari/spyre
+remi (most under-rated): https://github.com/dddomodossola/remi
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
 ipypivot: https://github.com/PierreMarion23/ipypivot
+jupyter_pivottablejs: https://github.com/nicolaskruchten/jupyter_pivottablejs
 ipyaggrid: https://gitlab.com/DGothrek/ipyaggrid or visit https://medium.com/@olivier.borderies/harnessing-the-power-of-ag-grid-in-jupyter-3ae27fb21012
 ipytree: https://github.com/QuantStack/ipytree
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
@@ -228,9 +231,10 @@ Redis
 ZeroMQ
 
 # Interesting GitHub repos
-https://github.com/firmai/industry-machine-learning
-https://github.com/dipanjanS/art_of_data_visualization
-https://github.com/PhantomInsights/baby-names-analysis
+ML: https://github.com/firmai/industry-machine-learning
+viz: https://github.com/dipanjanS/art_of_data_visualization
+viz: https://github.com/uwdata/visualization-curriculum/blob/master/README.md
+EDA: https://github.com/PhantomInsights/baby-names-analysis
 
 # Misc.
 pendulum: a better datetime library, better than arrow
