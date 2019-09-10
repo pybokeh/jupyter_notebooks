@@ -104,6 +104,7 @@ psycopg2
 asyncpg: https://github.com/MagicStack/asyncpg
 ibm_db
 ibm_db_sa
+jinjasql: https://github.com/hashedin/jinjasql
 
 # ETL or data engineering related
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
