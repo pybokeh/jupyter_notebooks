@@ -67,9 +67,9 @@ Rain clouds viz: https://github.com/pog87/PtitPrince
 # Dashboarding libraries
 dash: dashboard library from plotly
 panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
-From jupyter notebooks to apps: https://github.com/QuantStack/voila
+From jupyter notebooks to apps: https://github.com/voila-dashboards/voila
 dataspyre: https://github.com/adamhajari/spyre
-remi (most under-rated): https://github.com/dddomodossola/remi
+remi: https://github.com/dddomodossola/remi
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -97,6 +97,7 @@ pyodbc
 turbodbc
 ipython-sql
 db.py (dead project?)
+jaydebeapi
 sqlalchemy
 sqlalchemy-turbodbc
 pugsql: https://pugsql.org/tutorial
