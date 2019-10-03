@@ -108,6 +108,8 @@ ibm_db_sa
 jinjasql: https://github.com/hashedin/jinjasql
 
 # ETL or data engineering related
+Pipe: https://github.com/JulienPalard/Pipe
+mpipe: https://vmlaker.github.io/mpipe/
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
 nteract-scapbook: https://github.com/nteract/scrapbook (for passing data between notebooks)
 For using papermill in JupyerLab go to: Notebook Tools -> Advanced Tools -> Cell Metadata:
@@ -119,13 +121,14 @@ For using papermill in JupyerLab go to: Notebook Tools -> Advanced Tools -> Cell
 dequindre: https://github.com/vogt4nick/dequindre
 petl: https://github.com/petl-developers/petl
 bonobo
-pypeln: https://github.com/cgarciae/pypeln/
 botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi
 Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
+pypeln: https://github.com/cgarciae/pypeln/
+mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
