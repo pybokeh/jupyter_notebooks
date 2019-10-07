@@ -70,6 +70,7 @@ panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 From jupyter notebooks to apps: https://github.com/voila-dashboards/voila
 dataspyre: https://github.com/adamhajari/spyre
 remi: https://github.com/dddomodossola/remi
+streamlit: https://github.com/streamlit/streamlit
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
