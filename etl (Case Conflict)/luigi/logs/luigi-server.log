@@ -1,0 +1,18 @@
+2018-03-14 21:41:22,423 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.70ms
+2018-03-14 21:41:22,427 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.99ms
+2018-03-14 21:41:22,431 tornado.access[8314] INFO: 200 GET /api/add_worker (127.0.0.1) 0.64ms
+2018-03-14 21:41:22,436 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 0.94ms
+2018-03-14 21:41:22,508 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.83ms
+2018-03-14 21:41:22,513 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 0.71ms
+2018-03-14 21:41:22,529 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.71ms
+2018-03-14 21:41:22,533 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 0.68ms
+2018-03-14 21:41:56,751 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.68ms
+2018-03-14 21:41:56,754 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 0.71ms
+2018-03-14 21:41:56,759 tornado.access[8314] INFO: 200 GET /api/add_worker (127.0.0.1) 0.60ms
+2018-03-14 21:41:56,764 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 0.78ms
+2018-03-14 21:41:56,829 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 1.03ms
+2018-03-14 21:41:56,833 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 0.73ms
+2018-03-14 21:41:56,848 tornado.access[8314] INFO: 200 GET /api/add_task (127.0.0.1) 1.08ms
+2018-03-14 21:41:56,851 tornado.access[8314] INFO: 200 GET /api/get_work (127.0.0.1) 1.02ms
+2018-03-14 21:53:30,645 luigi.scheduler[8314] INFO: Removing task 'ReadExcelFile__99914b932b'
+2018-03-14 21:53:30,646 luigi.scheduler[8314] INFO: Removing task 'GetFqsExcel__99914b932b'
