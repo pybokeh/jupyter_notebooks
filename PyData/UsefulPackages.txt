@@ -12,6 +12,9 @@ pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
 https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 
+# Database profiling
+https://github.com/darenasc/auto-eda
+
 # Profiling
 memory_profiler: https://github.com/pythonprofilers/memory_profiler
 py-spy: https://github.com/benfred/py-spy/blob/master/README.md
