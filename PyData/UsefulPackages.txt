@@ -110,6 +110,7 @@ asyncpg: https://github.com/MagicStack/asyncpg
 ibm_db
 ibm_db_sa
 jinjasql: https://github.com/hashedin/jinjasql
+Columnar version of sqlite, duckdb: https://github.com/cwida/duckdb
 
 # ETL or data engineering related
 Pipe: https://github.com/JulienPalard/Pipe
