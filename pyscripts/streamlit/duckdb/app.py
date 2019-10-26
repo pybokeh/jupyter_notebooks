@@ -42,6 +42,13 @@ def get_distinct_passenger_count() -> List[int]:
 
 @st.cache(allow_output_mutation=True, persist=True)
 def get_query_results(payment_type: int, passenger_count: int):
+    """ Function that accepts 2 inputs:
+        - payment_type: int
+        - passenger_count: int
+
+        and then returns a pandas dataframe
+    """
+
     conn = duckdb.connect('ytd.duckdb')
     cursor = conn.cursor()
     sql = """
