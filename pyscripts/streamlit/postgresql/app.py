@@ -97,4 +97,7 @@ passenger_count = st.multiselect('Select passenger count:', passenger_count_list
 
 # When user clicks the "Execute" button, execute query and return result set
 if st.button("Execute"):
-    st.dataframe(get_query_results(payment_type, passenger_count))
+    if len(payment_type) == 0 or len(passenger_count) == 0:
+        st.warning("You have to choose at least one item for payment type and passenger count")
+    else:
+        st.dataframe(get_query_results(payment_type, passenger_count))
