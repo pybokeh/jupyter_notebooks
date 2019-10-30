@@ -3,7 +3,7 @@ from typing import List
 import os
 import pandas as pd
 import psycopg2
-import streamlit as st
+import streamlit as st  # version 0.49
 
 # Simple streamlit example to illustrate retrieving data from a database
 # based on 2 inputs provided from the user.  It also makes use of the
@@ -24,7 +24,8 @@ def get_distinct_payment_type() -> List[int]:
     """ Function to obtain distinct list of payment types so that we don't
         have to make a hard-coded list of valid values
     """
-    conn = psycopg2.connect('dbname=analysis user=pybokeh password=' + pwd)
+
+    conn = psycopg2.connect('dbname=analysis user=username password=' + pwd)
     cursor = conn.cursor()
     sql = 'select distinct payment_type from yellow_tripdata_2016_01'
     cursor.execute(sql)
@@ -40,7 +41,8 @@ def get_distinct_passenger_count() -> List[int]:
     """ Function to obtain distinct list of passenger counts so that we don't
         have to make a hard-coded list of valid values
     """
-    conn = psycopg2.connect('dbname=analysis user=pybokeh password=' + pwd)
+
+    conn = psycopg2.connect('dbname=analysis user=username password=' + pwd)
     cursor = conn.cursor()
     sql = 'select distinct passenger_count from yellow_tripdata_2016_01'
     cursor.execute(sql)
@@ -60,7 +62,7 @@ def get_query_results(payment_type: List[int], passenger_count: List[int]):
         returns a pandas dataframe
     """
 
-    with psycopg2.connect('dbname=analysis user=pybokeh password=' + pwd) as conn:
+    with psycopg2.connect('dbname=analysis user=username password=' + pwd) as conn:
         j = JinjaSql(param_style='pyformat')
 
         data = {}
@@ -97,6 +99,8 @@ passenger_count = st.multiselect('Select passenger count:', passenger_count_list
 
 # When user clicks the "Execute" button, execute query and return result set
 if st.button("Execute"):
+    # If user does not select at least one item from each multiselect widget,
+    # display a warning message
     if len(payment_type) == 0 or len(passenger_count) == 0:
         st.warning("You have to choose at least one item for payment type and passenger count")
     else:
