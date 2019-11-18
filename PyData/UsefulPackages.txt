@@ -71,6 +71,7 @@ Rain clouds viz: https://github.com/pog87/PtitPrince
 dash: dashboard library from plotly
 panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 From jupyter notebooks to apps: https://github.com/voila-dashboards/voila
+https://github.com/voila-dashboards/voila-gridstack/blob/master/README.md
 dataspyre: https://github.com/adamhajari/spyre
 remi: https://github.com/dddomodossola/remi
 streamlit: https://github.com/streamlit/streamlit
@@ -229,6 +230,7 @@ glances: https://github.com/nicolargo/glances
 https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
+concurrent.futures: https://dzone.com/articles/python-3-concurrency-the-concurrentfutures-module
 
 # Task Queues
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
@@ -242,6 +244,8 @@ ZeroMQ
 
 # Interesting GitHub repos
 ML: https://github.com/firmai/industry-machine-learning
+ML: https://github.com/WillKoehrsen/machine-learning-project-walkthrough
+ML: https://github.com/trekhleb/homemade-machine-learning
 viz: https://github.com/dipanjanS/art_of_data_visualization
 viz: https://github.com/uwdata/visualization-curriculum/blob/master/README.md
 EDA: https://github.com/PhantomInsights/baby-names-analysis
@@ -251,7 +255,7 @@ pendulum: a better datetime library, better than arrow
 schedule: job scheduling for humans:https://github.com/dbader/schedule
 desktop automation: pyautogui: https://github.com/asweigart/pyautogui
 desktop automation: https://github.com/andohuman/pyKey
-black: https://github.com/psf/black
+code formatter: https://github.com/psf/black
 inspect live objects: https://docs.python.org/3/library/inspect.html
 
 # Linux / CLI Utilities
