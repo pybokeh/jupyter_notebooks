@@ -22,7 +22,7 @@ Then at the postgres=# prompt, enter: \password postgres      You will then be p
 
  
 To create a new “role” or “user”, do this at the command prompt:
-createuser.exe -U postgres –interactive   then follow the prompts
+createuser.exe -U postgres --interactive   then follow the prompts
 
  
 Then you need to create a database as the same name as the role/user you just created:

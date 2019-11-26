@@ -1,5 +1,10 @@
 For installation steps, view this URL: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
 
+Step 2) sudo -u postgres psql
+Step 3) sudo -u postgres createuser --interactive
+Step 4) sudo -u postgres createdb pybokeh
+Step 5) sudo -u pybokeh psql
+
 But after doing Step 5, need to set password for your account or user in order to use pgAdmin4.
 
 For example, after logging in as you or in my case, pybokeh: sudo -u pybokeh psql
