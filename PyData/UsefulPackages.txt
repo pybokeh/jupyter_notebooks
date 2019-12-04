@@ -116,6 +116,7 @@ Columnar version of sqlite, duckdb: https://github.com/cwida/duckdb
 # ETL or data engineering related
 Pipe: https://github.com/JulienPalard/Pipe
 mpipe: https://vmlaker.github.io/mpipe/
+pdpipe: https://github.com/shaypal5/pdpipe
 papermill + scrapbook: https://github.com/nteract/papermill (parameterized notebooks)
 nteract-scapbook: https://github.com/nteract/scrapbook (for passing data between notebooks)
 For using papermill in JupyerLab go to: Notebook Tools -> Advanced Tools -> Cell Metadata:
@@ -135,6 +136,7 @@ Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
 pypeln: https://github.com/cgarciae/pypeln/
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
+Netflix's metaflow: https://github.com/Netflix/metaflow
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
