@@ -136,7 +136,7 @@ Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
 pypeln: https://github.com/cgarciae/pypeln/
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
-Netflix's metaflow: https://github.com/Netflix/metaflow
+Netflix's metaflow: https://github.com/Netflix/metaflow (Windows only)
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
