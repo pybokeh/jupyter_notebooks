@@ -46,6 +46,7 @@ datatable: https://github.com/h2oai/datatable (Windows not supported yet)
 
 # visualization libraries
 MATPLOTLIB
+https://github.com/lukelbd/proplot
 Edit your MATPLOTLIB chart with a GUI workflow: https://pylustrator.readthedocs.io/en/latest/
 seaborn
 altair / https://github.com/justinbois/altair-catplot
@@ -259,6 +260,7 @@ desktop automation: pyautogui: https://github.com/asweigart/pyautogui
 desktop automation: https://github.com/andohuman/pyKey
 code formatter: https://github.com/psf/black
 inspect live objects: https://docs.python.org/3/library/inspect.html
+py files to reveal slides: https://github.com/apiad/auditorium
 
 # Linux / CLI Utilities
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
