@@ -188,6 +188,7 @@ Pandas syntax with Apache Spark: koalas - https://github.com/databricks/koalas
 # CLI
 click - for making CLI
 fire - for making CLI
+typer: https://github.com/tiangolo/typer
 https://github.com/tmbo/questionary
 
 # Progress Bars
@@ -215,6 +216,15 @@ pysnooper: https://github.com/cool-RR/pysnooper  (debugging with decorators!)
 snoop built on top of pysnooper: https://github.com/alexmojaki/snoop
 pydebug: https://github.com/benmezger/pydebug
 
+# web frameworks
+assembly: https://github.com/mardix/assembly (OOP-based)
+sanic: https://github.com/huge-success/sanic
+starlette: https://github.com/encode/starlette
+fastapi: https://github.com/tiangolo/fastapi
+responder: https://github.com/taoufik07/responder
+masonite: https://github.com/MasoniteFramework/masonite
+molten: https://github.com/Bogdanp/molten
+
 # logging
 https://github.com/Delgan/loguru
 
@@ -230,10 +240,14 @@ psutil: https://github.com/giampaolo/psutil
 glances: https://github.com/nicolargo/glances
 
 # Concurrency
+For high level API, use concurrent.futures
+I/O bound: https://docs.python.org/3/library/concurrent.futures.html?highlight=concurrent.futures#threadpoolexecutor-example
+cpu bound: https://docs.python.org/3/library/concurrent.futures.html?highlight=concurrent.futures#processpoolexecutor-example
+concurrent.futures: https://dzone.com/articles/python-3-concurrency-the-concurrentfutures-module
+For low level API, use asyncio (I/O bound) or multiprocessing (CPU bound)
 https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
-concurrent.futures: https://dzone.com/articles/python-3-concurrency-the-concurrentfutures-module
 
 # Task Queues
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
