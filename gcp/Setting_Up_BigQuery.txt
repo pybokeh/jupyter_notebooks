@@ -1,0 +1,33 @@
+pip install google-cloud-bigquery
+
+Create Google Cloud account at https://cloud.google.com/gcp
+then download/install the google cloud SDK CLI at https://cloud.google.com/sdk/install
+
+Then setup authentication with GUI method per https://cloud.google.com/docs/authentication/getting-started
+follow steps for "Creating a service account" and "Setting up the environment variable"
+
+Authentication can also be setup using the CLI:
+gcloud config set project <project_id>
+gcloud auth login
+gcloud init
+gcloud iam service-accounts create <service_account_name>
+gcloud projects add-iam-policy-binding <project_id> --member "serviceAccount:<service_account_name>@<project_id>.iam.gserviceaccount.com" --role "roles/owner"
+gcloud iam service-accounts keys create <service_account_name>.json --iam-account <service_account_name>@<project_id>.iam.gserviceaccount.com
+
+Then create environment variable: export GOOGLE_APPLICATION_CREDENTIALS=/home/<user>/<service_acount_name>.json
+
+To test if we're ready to use BigQuery, run this Python script:
+
+from google.cloud import bigquery
+
+client = bigquery.Client()
+
+# NOTE: have to surround table name with back tick symbol due to hyphens in the table name.  It is NOT single quote symbol.
+sql = """
+    SELECT *
+    FROM `bigquery-public-data.samples.natality`
+    limit 10
+"""
+
+natalityDF = client.query(sql).to_dataframe()
+natalityDF.head()
