@@ -1,0 +1,12 @@
+Starting an EC2 instance:
+
+Steps:
+    - Launch Instance
+    - Select free-tier Amazon Linux AMI
+    - Review and Launch and then Launch
+    - Create key pair and save to your local machine, then: chmod 400 <path_to_key> per https://stackoverflow.com/questions/9270734/ssh-permissions-are-too-open-error
+    - Launch Instances
+    - View Instances
+    
+    After instance is up and running, ssh into it:
+    ssh -i <path_to_your_key> ec2-user@<public_ip_OR_public_DNS_ip> per https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
