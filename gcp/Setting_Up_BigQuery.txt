@@ -2,10 +2,12 @@ pip install google-cloud-bigquery
 
 Create Google Cloud account at https://cloud.google.com/gcp
 then download/install the google cloud SDK CLI at https://cloud.google.com/sdk/install
+Then at command prompt: source <path_to_your_.bashrc> so that the CLI commands will be recognized
 
-Then setup authentication with GUI method per https://cloud.google.com/docs/authentication/getting-started
+Then create a service account with GUI method per https://cloud.google.com/docs/authentication/getting-started
 follow steps for "Creating a service account" and "Setting up the environment variable"
 
+# if you haven't created a service account:
 Authentication can also be setup using the CLI:
 gcloud config set project <project_id>
 gcloud auth login
@@ -13,8 +15,13 @@ gcloud init
 gcloud iam service-accounts create <service_account_name>
 gcloud projects add-iam-policy-binding <project_id> --member "serviceAccount:<service_account_name>@<project_id>.iam.gserviceaccount.com" --role "roles/owner"
 gcloud iam service-accounts keys create <service_account_name>.json --iam-account <service_account_name>@<project_id>.iam.gserviceaccount.com
+Then create environment variable: export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_json_file>
 
-Then create environment variable: export GOOGLE_APPLICATION_CREDENTIALS=/home/<user>/<service_acount_name>.json
+# If you already have a service account:
+gcloud config set project <project_id>
+gcloud auth login
+gcloud iam service-accounts keys create <service_account_name>.json --iam-account <service_account_name>@<project_id>.iam.gserviceaccount.com
+Then create environment variable: export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_json_file>
 
 To test if we're ready to use BigQuery, run this Python script:
 
@@ -26,7 +33,7 @@ client = bigquery.Client()
 sql = """
     SELECT *
     FROM `bigquery-public-data.samples.natality`
-    limit 10
+    limit 100
 """
 
 natalityDF = client.query(sql).to_dataframe()

@@ -4,7 +4,8 @@ Steps:
     - Launch Instance
     - Select free-tier Amazon Linux AMI
     - Review and Launch and then Launch
-    - Create key pair and save to your local machine, then: chmod 400 <path_to_key> per https://stackoverflow.com/questions/9270734/ssh-permissions-are-too-open-error
+    - Create key pair and save to your local machine (dont forget where you saved it!)
+      then: chmod 400 <path_to_key> per https://stackoverflow.com/questions/9270734/ssh-permissions-are-too-open-error
     - Launch Instances
     - View Instances
     
