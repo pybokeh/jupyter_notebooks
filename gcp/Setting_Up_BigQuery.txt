@@ -7,8 +7,9 @@ Then at command prompt: source <path_to_your_.bashrc> so that the CLI commands w
 Then create a service account with GUI method per https://cloud.google.com/docs/authentication/getting-started
 follow steps for "Creating a service account" and "Setting up the environment variable"
 
+Below is using Google's SDK CLI tools instead of GUI method
+
 # if you haven't created a service account:
-Authentication can also be setup using the CLI:
 gcloud config set project <project_id>
 gcloud auth login
 gcloud init
