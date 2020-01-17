@@ -19,7 +19,13 @@ python3 -m venv pydata
 cd pydata
 source bin/activate
 pip install jupyter
+
+Then you can connect to jupyter notebook via SSH tunneling:
 Secure the jupyter notebook server per https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-config.html
 Start the jupyter server per https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-start-server.html
 Configure client to access the jupyter server per https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-configure-client-linux.html
-Test acceess to jupyter server per https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-login.html
+Test access to jupyter server per https://docs.aws.amazon.com/dlami/latest/devguide/setup-jupyter-login.html
+
+or connect with open connection with:
+jupyter notebook --ip <instance_private_ip_number>
+Copy URL with token and visit with browser with it except replace private IP number with public IP number

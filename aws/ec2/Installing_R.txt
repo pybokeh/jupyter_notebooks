@@ -1,0 +1,7 @@
+In a Amazon Linux instance:
+sudo amazon-linux-extras install epel
+sudo yum install R
+
+For installing R kernel for jupyter: https://irkernel.github.io/installation/
+Then execute the following to confirm:
+jupyter kernelspec list
