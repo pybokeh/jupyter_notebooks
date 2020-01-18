@@ -136,6 +136,7 @@ dbt: https://www.getdbt.com/
 Spotify Luigi
 Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
+dagster: https://github.com/dagster-io/dagster
 pypeln: https://github.com/cgarciae/pypeln/
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows only)
