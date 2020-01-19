@@ -68,6 +68,7 @@ probscale: easily make probability scaled axis: https://github.com/matplotlib/mp
 adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/adjustText/blob/master/docs/source/Examples.ipynb)
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 Rain clouds viz: https://github.com/pog87/PtitPrince
+jupyterplot: https://lvwerra.github.io/jupyterplot/
 
 # Dashboarding libraries
 dash: dashboard library from plotly
@@ -98,6 +99,7 @@ Markdown to html: https://github.com/gpoore/codebraid
 From .py to html: https://github.com/danijar/handout
 Jupyter "books": https://github.com/jupyter/jupyter-book
 hover tool tips: https://github.com/krassowski/jupyterlab-lsp
+real-time plots in jupyter: https://lvwerra.github.io/jupyterplot/
 
 # database related
 pyodbc
@@ -139,7 +141,7 @@ prefect: https://docs.prefect.io - Windows not officially supported
 dagster: https://github.com/dagster-io/dagster
 pypeln: https://github.com/cgarciae/pypeln/
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
-Netflix's metaflow: https://github.com/Netflix/metaflow (Windows only)
+Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
@@ -170,10 +172,6 @@ Explaining ML algorithms: https://github.com/slundberg/shap
 https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
 
-# URL related
-requests
-requests-html: https://github.com/kennethreitz/requests-html
-
 # Webscraping
 beautifulsoup4
 mechanicalsoup
@@ -183,6 +181,7 @@ newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articl
 requests-html: requests-html: https://github.com/kennethreitz/requests-html
 
 # Big Data
+boto3: Interface to S3
 PyHive: https://github.com/dropbox/PyHive
 Amazon S3 with SQL syntax: PyAthena - use plain 'ol SQL: https://github.com/laughingman7743/PyAthena
 Pandas syntax with Apache Spark: koalas - https://github.com/databricks/koalas
@@ -251,15 +250,18 @@ https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
 
-# Task Queues
+# Task Queues (most don't support Windows)
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
 https://www.distributedpython.com/2018/08/21/celery-4-windows/
 Celery
 
-# Message Brokers
+# Message Brokers (most don't support Windows)
 RabbitMQ
 Redis
 ZeroMQ
+
+# Stream processing
+faust: https://github.com/robinhood/faust (Windows supported)
 
 # Interesting GitHub repos
 ML: https://github.com/firmai/industry-machine-learning
