@@ -231,6 +231,7 @@ https://github.com/Delgan/loguru
 
 # Testing Code
 pytest: https://github.com/pytest-dev/pytest
+ward: https://wardpy.com/
 
 # Windows Related
 Sending Windows 10 notifications: https://github.com/jithurjacob/Windows-10-Toast-Notifications
