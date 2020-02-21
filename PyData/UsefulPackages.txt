@@ -171,6 +171,7 @@ automatic feature engineering: https://github.com/Featuretools/featuretools
 Explaining ML algorithms: https://github.com/slundberg/shap
 https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
+https://github.com/J535D165/recordlinkage
 
 # Webscraping
 beautifulsoup4
