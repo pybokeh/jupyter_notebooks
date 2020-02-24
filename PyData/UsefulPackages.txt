@@ -12,6 +12,7 @@ pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
 https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 framequery: https://github.com/chmp/framequery
+Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.md
 
 # Database profiling
 https://github.com/darenasc/auto-eda
@@ -135,11 +136,13 @@ bonobo
 botflow: https://github.com/kkyon/botflow
 https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
-Spotify Luigi
+Spotify Luigi (Windows supported)
 Apache Airflow - Windows not officially supported
 prefect: https://docs.prefect.io - Windows not officially supported
-dagster: https://github.com/dagster-io/dagster
+dagster: https://github.com/dagster-io/dagster  (Windows supported)
 pypeln: https://github.com/cgarciae/pypeln/
+magrittr-style piping: https://github.com/df-foundation/pipey
+Using pipe (|) operator: https://github.com/JulienPalard/Pipe
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
 

@@ -39,3 +39,4 @@ spark_installation_folder>./sbin/stop-slave.sh
 https://thegurus.tech/posts/2019/06/how-to-spark-cluster/
 https://thegurus.tech/posts/2019/05/hadoop-python/
 For windows: https://medium.com/@naomi.fridman/install-pyspark-to-run-on-jupyter-notebook-on-windows-4ec2009de21f
+or https://towardsdatascience.com/installing-apache-pyspark-on-windows-10-f5f0c506bea1
