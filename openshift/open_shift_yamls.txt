@@ -1,0 +1,261 @@
+4 OpenShift YAML "kinds" are needed at minimum to deploy a basic web application:
+- BuildConfig (this is where you define how to build your app: from git, from catalog, etc)
+- DeploymentConfig  (this is where you define CLI commands needed to actually run/execute your app)
+- Service (this is where you define how to expose containers)
+- Route (this is where you define how to expose pods)
+
+######### kind: BuildConfig #########
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: streamlit-app
+  namespace: python-project
+  selfLink: >-
+    /apis/build.openshift.io/v1/namespaces/python-project/buildconfigs/streamlit-app
+  uid: c681148c-53e1-11ea-b070-0a580a81005e
+  resourceVersion: '22830107'
+  creationTimestamp: '2020-02-20T13:06:15Z'
+  labels:
+    app: streamlit-app
+    app.kubernetes.io/component: streamlit-app
+    app.kubernetes.io/instance: streamlit-app
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: streamlit-app
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: '3.6'
+  annotations:
+    app.openshift.io/vcs-ref: master
+    app.openshift.io/vcs-uri: 'https://github.com/pybokeh/streamlit-dev'
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'streamlit-app:latest'
+  resources: {}
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        namespace: openshift
+        name: 'python:3.6'
+  postCommit: {}
+  source:
+    type: Git
+    git:
+      uri: 'https://github.com/pybokeh/streamlit-dev'
+    contextDir: /
+    sourceSecret:
+      name: gh-secret
+  triggers:
+    - type: Generic
+      generic:
+        secretReference:
+          name: streamlit-app-generic-webhook-secret
+    - type: GitHub
+      github:
+        secretReference:
+          name: streamlit-app-github-webhook-secret
+    - type: ImageChange
+      imageChange:
+        lastTriggeredImageID: >-
+          image-registry.openshift-image-registry.svc:5000/openshift/python@sha256:dda463e258d2e4ea2754bf5ab41249a38b50b6e4c32fcb6d7e82b144cfa10b4f
+    - type: ConfigChange
+  runPolicy: Serial
+status:
+  lastVersion: 1
+
+############## kind: DeploymentConfig #################
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  annotations:
+    app.openshift.io/vcs-ref: master
+    app.openshift.io/vcs-uri: 'https://github.com/pybokeh/streamlit-dev'
+  selfLink: >-
+    /apis/apps.openshift.io/v1/namespaces/python-project/deploymentconfigs/streamlit-app
+  resourceVersion: '22843949'
+  name: streamlit-app
+  uid: c68943d9-53e1-11ea-8315-0a580a800068
+  creationTimestamp: '2020-02-20T13:06:15Z'
+  generation: 4
+  namespace: python-project
+  labels:
+    app: streamlit-app
+    app.kubernetes.io/component: streamlit-app
+    app.kubernetes.io/instance: streamlit-app
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: streamlit-app
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: '3.6'
+spec:
+  strategy:
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 1
+      intervalSeconds: 1
+      timeoutSeconds: 600
+      maxUnavailable: 25%
+      maxSurge: 25%
+    resources: {}
+    activeDeadlineSeconds: 21600
+  triggers:
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+          - streamlit-app
+        from:
+          kind: ImageStreamTag
+          namespace: python-project
+          name: 'streamlit-app:latest'
+        lastTriggeredImage: >-
+          image-registry.openshift-image-registry.svc:5000/python-project/streamlit-app@sha256:81ff0815513160b9982a73e46d3b4ef7b79153e7ff737f8b59259faec84469f0
+    - type: ConfigChange
+  replicas: 1
+  revisionHistoryLimit: 10
+  test: false
+  selector:
+    app: streamlit-app
+    deploymentconfig: streamlit-app
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: streamlit-app
+        deploymentconfig: streamlit-app
+    spec:
+      containers:
+        - name: streamlit-app
+          image: >-
+            image-registry.openshift-image-registry.svc:5000/python-project/streamlit-app@sha256:81ff0815513160b9982a73e46d3b4ef7b79153e7ff737f8b59259faec84469f0
+          command:
+            - streamlit
+            - run
+            - '--server.enableCORS'
+            - 'false'
+            - app.py
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      securityContext: {}
+      schedulerName: default-scheduler
+status:
+  observedGeneration: 4
+  details:
+    message: config change
+    causes:
+      - type: ConfigChange
+  availableReplicas: 1
+  unavailableReplicas: 0
+  latestVersion: 3
+  updatedReplicas: 1
+  conditions:
+    - type: Available
+      status: 'True'
+      lastUpdateTime: '2020-02-20T13:13:11Z'
+      lastTransitionTime: '2020-02-20T13:13:11Z'
+      message: Deployment config has minimum availability.
+    - type: Progressing
+      status: 'True'
+      lastUpdateTime: '2020-02-20T13:32:36Z'
+      lastTransitionTime: '2020-02-20T13:32:33Z'
+      reason: NewReplicationControllerAvailable
+      message: replication controller "streamlit-app-3" successfully rolled out
+  replicas: 1
+  readyReplicas: 1
+
+
+######### kind: Service ###########
+kind: Service
+apiVersion: v1
+metadata:
+  name: streamlit-app
+  namespace: python-project
+  selfLink: /api/v1/namespaces/python-project/services/streamlit-app
+  uid: c68ace92-53e1-11ea-b098-0a05d249ebab
+  resourceVersion: '22834043'
+  creationTimestamp: '2020-02-20T13:06:15Z'
+  labels:
+    app: streamlit-app
+    app.kubernetes.io/component: streamlit-app
+    app.kubernetes.io/instance: streamlit-app
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: streamlit-app
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: '3.6'
+  annotations:
+    app.openshift.io/vcs-ref: master
+    app.openshift.io/vcs-uri: 'https://github.com/pybokeh/streamlit-dev'
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8501
+  selector:
+    app: streamlit-app
+    deploymentconfig: streamlit-app
+  clusterIP: 172.30.177.32
+  type: ClusterIP
+  sessionAffinity: None
+status:
+  loadBalancer: {}
+
+
+
+######### kind: Route ###########
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: streamlit-app
+  namespace: python-project
+  selfLink: /apis/route.openshift.io/v1/namespaces/python-project/routes/streamlit-app
+  uid: c67f89c1-53e1-11ea-8315-0a580a800068
+  resourceVersion: '29961419'
+  creationTimestamp: '2020-02-20T13:06:15Z'
+  labels:
+    app: streamlit-app
+    app.kubernetes.io/component: streamlit-app
+    app.kubernetes.io/instance: streamlit-app
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: streamlit-app
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: '3.6'
+  annotations:
+    app.openshift.io/vcs-ref: master
+    app.openshift.io/vcs-uri: 'https://github.com/pybokeh/streamlit-dev'
+    openshift.io/host.generated: 'true'
+spec:
+  host: streamlit-app-python-project.apps.honda-lde.rht-labs.com
+  subdomain: ''
+  to:
+    kind: Service
+    name: streamlit-app
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: streamlit-app-python-project.apps.honda-lde.rht-labs.com
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2020-02-20T13:06:15Z'
+      wildcardPolicy: None
+      routerCanonicalHostname: apps.honda-lde.rht-labs.com

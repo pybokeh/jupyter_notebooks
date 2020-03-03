@@ -138,13 +138,14 @@ https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi (Windows supported)
 Apache Airflow - Windows not officially supported
-prefect: https://docs.prefect.io - Windows not officially supported
+prefect: https://docs.prefect.io (Windows supported)
 dagster: https://github.com/dagster-io/dagster  (Windows supported)
 pypeln: https://github.com/cgarciae/pypeln/
 magrittr-style piping: https://github.com/df-foundation/pipey
 Using pipe (|) operator: https://github.com/JulienPalard/Pipe
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
+ploomber: https://github.com/ploomber/ploomber (Windows supported)
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
@@ -178,6 +179,7 @@ https://github.com/J535D165/recordlinkage
 
 # Webscraping
 beautifulsoup4
+lxml+XPath
 mechanicalsoup
 selenium (headless-browser framework for extracting javascript data)
 scrapy (OOP framework)
