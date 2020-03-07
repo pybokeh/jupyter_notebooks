@@ -14,9 +14,8 @@ cd Python-3.8.2
 ./configure --enable-optimizations
 make -j <number of cpu cores>  # To get number of cores: nproc --all
 sudo make altinstall
-sudo apt-get install python3-venv
 
-whereis python  # run this to find locations of python installations
+which python3.8  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
 /usr/local/bin/python3.8 -m venv bottle  # create virtual environment using venv
