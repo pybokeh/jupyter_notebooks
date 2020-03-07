@@ -1,19 +1,16 @@
-########### Python 3.7x ###############
-sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
-sudo apt-get install python3-dev libblas-dev libatlas-base-dev libopenblas-base liblapack-dev gcc g++ gfortran cython
-sudo apt-get install libreadline-dev libncursesw5-dev libncurses5-dev zlib1g-dev libssl-dev tk-dev
-sudo apt-get install libfreetype6-dev libpng-dev
-sudo apt-get install libjpeg-dev zlib1g-dev libtiff5-dev libfreetype6-dev liblcms2-dev libwebp-dev libopenjpeg-dev
+########### Python 3.8.x ###############
+sudo apt-get update
 
-For raspberry pi, these are needed to build Python 3 per this wiki: https://github.com/pyenv/pyenv/wiki/Common-build-problems
-sudo apt-get install gcc gfortran python-dev libopenblas-dev liblapack-dev cython
+sudo apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev \
+libsqlite3-dev tk-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev wget
+
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
-wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
-tar xf Python-3.7.2.tar.xz
-cd Python-3.7.2
+wget https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz
+tar xf Python-3.8.2.tar.xz
+cd Python-3.8.2
 ./configure --enable-optimizations
 make -j <number of cpu cores>  # To get number of cores: nproc --all
 sudo make altinstall
@@ -22,7 +19,7 @@ sudo apt-get install python3-venv
 whereis python  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
-/usr/local/bin/python3.7 -m venv bottle  # create virtual environment using venv
+/usr/local/bin/python3.8 -m venv bottle  # create virtual environment using venv
 cd bottle
 source bin/activate  # activate the environment
 pip --version        # double-check the pip version
@@ -43,25 +40,6 @@ pip install git+https://github.com/scikit-learn/scikit-learn.git
 
 # If using miniconda3, add conda-forge channel:
 conda config --add channels conda-forge
-
-###  UPDATED for pipenv which is now the official means for making Python virtual environments  ###
-
-After installing Python 3 from source, then do:
-/opt/python3.7.0/bin/pip3 install pipenv
-
-# Then:
-mkdir your_env_name
-cd your_env_name
-pipenv install   # then 2 files will be generated: Pipfile and Pipfile.lock
-
-# Activate the environment:
-pipenv shell  # the shell/terminal prompt will change to indicate virtual environment is now activated
-
-# Installing packages
-pipenv install <package_name>
-
-# To exit
-exit
 
 ### To add environment variables to your profile
 edit .profile file, then:
