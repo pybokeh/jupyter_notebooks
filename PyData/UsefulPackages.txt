@@ -70,6 +70,7 @@ adjustText: easily add non-overlapping annotated text (https://github.com/Phlya/
 make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en/stable/
 Rain clouds viz: https://github.com/pog87/PtitPrince
 jupyterplot: https://lvwerra.github.io/jupyterplot/
+cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
 
 # Dashboarding libraries
 dash: dashboard library from plotly
