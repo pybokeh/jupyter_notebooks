@@ -167,6 +167,7 @@ scikit-learn
 sklearn-pandas
 imbalanced-learn: https://github.com/scikit-learn-contrib/imbalanced-learn
 hyperopt-sklearn: https://github.com/hyperopt/hyperopt-sklearn # Not pip installable yet
+https://github.com/justmarkham/scikit-learn-tips
 tpot
 xgboost
 lightgbm
