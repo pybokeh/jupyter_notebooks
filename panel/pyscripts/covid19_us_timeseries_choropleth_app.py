@@ -17,9 +17,6 @@ DateTimeIndex = TypeVar('pd.core.indexes.datetimes.DatetimeIndex')
 Panel = TypeVar('pn.layout.Row')
 MultiChoice = TypeVar('panel.widgets.select.MultiChoice')
 Series = TypeVar('pandas.core.series.Series')
-pd.options.display.max_rows=5000
-pd.options.display.max_columns=1000
-pd.options.display.max_colwidth=100
 css = '''
 .black-theme {
   background-color: black;
@@ -36,9 +33,7 @@ pn.config.raw_css.append(css)
 url: str = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
 df: DataFrame = pd.read_csv(url)
 
-# Create input widgets: date widget and 2 selection widgets
-# There is bug in the date widget in version 0.9.3: https://github.com/holoviz/panel/issues/1173
-# Manually fixed the bug by modifying input.py source file
+# Create input widgets: date widget, multi-choice, and selection widgets
 # Make default date yesterday (today minus 1 day) since COVID-19 data is usually 1 day behind
 states_provinces: List[str] = df['Province_State'].unique().tolist()
 covid19_date: DatePicker = pn.widgets.DatePicker(name='Date:', value=(date.today() + timedelta(days=-1)), width=200, css_classes=['grey-theme'])
@@ -79,7 +74,8 @@ def covid19TimeSeriesByState(covid19_date: Date, state_province: List[str], ylog
     with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
         geo_data = json.load(response)
 
-    # Source of COVID-19 data        
+    # Source of COVID-19 data
+    # To leverage Plotly's choropleth_mapbox function, need to have FIPS as fixed length(n=5) values consisting of leading zeros
     url: str = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv'
     df: DataFrame = pd.read_csv(url, converters={'FIPS': lambda x: int(float(x)) if x != '' else x}).query("FIPS != ''")
     df['FIPS']: Series = df['FIPS'].astype('str').str.zfill(5)
@@ -107,7 +103,7 @@ def covid19TimeSeriesByState(covid19_date: Date, state_province: List[str], ylog
         print("YY year format not detected.  Using YYYY format instead.", e)
         df_by_state.index: DateTimeIndex = [datetime.strptime(date, '%m/%d/%Y') for date in df_by_state.index]
 
-    # If only one state is selected, then also provide data tables containing counts by counties and by date
+    # If only one state is selected, then also provide data tables containing counts by counties, by date, and counties choropleth map
     if len(state_province) == 1:
         fig = px.choropleth_mapbox(df_choropleth.query("Province_State in@state_province"), geojson=geo_data, locations='FIPS', color='Confirmed_Cases',
                                color_discrete_map="Viridis",
@@ -154,6 +150,7 @@ def covid19TimeSeriesByState(covid19_date: Date, state_province: List[str], ylog
                                      ),
                                      fig
                            )
+    # Else just provide line charts
     else:
         panel_app: Panel = pn.Row(df_by_state['2020-03-10':data_date].loc[:, state_province].hvplot(
                                title='Confirmed COVID-19 Cases',
