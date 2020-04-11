@@ -83,10 +83,10 @@ def covid19TimeSeriesByCountry(covid19_date: Date, country: List[str]=['US'], yl
     # JHU have not been consistent with their year format (YYYY vs YY).
     # Therefore, added try/except clause to account for both formats
     try:
-        df_countries.index: DateTimeIndex = [datetime.strptime(date, '%m/%d/%y') for date in df_countries.index]
+        df_countries.index: Date = [datetime.strptime(date, '%m/%d/%y') for date in df_countries.index]
     except ValueError as e:
         print("YY year format not detected.  Using YYYY instead.", e)
-        df_countries.index: DateTimeIndex = [datetime.strptime(date, '%m/%d/%Y') for date in df_countries.index]
+        df_countries.index: Date = [datetime.strptime(date, '%m/%d/%Y') for date in df_countries.index]
 
     # If only one country is selected, then also provide a data table containing counts by date
     if len(country) == 1:
@@ -97,11 +97,13 @@ def covid19TimeSeriesByCountry(covid19_date: Date, country: List[str]=['US'], yl
                                height=500,
                                ylabel='# of Confirmed Cases',
                                xlabel='Date',
-                               legend='bottom',
-                               yformatter='%d'
+                               legend='top',
+                               yformatter='%d',
+                               grid=True
                               ),
                               df_countries[:iso_date].loc[:, country]
                                                      .sort_values(by=df_countries[:iso_date].loc[:, country].columns[0], ascending=False)
+                                                     .reset_index().rename(columns={'index': 'Date'})
                                                      .hvplot.table(sortable=True,
                                                           selectable=True,
                                                           width=300,
@@ -116,8 +118,9 @@ def covid19TimeSeriesByCountry(covid19_date: Date, country: List[str]=['US'], yl
                                height=500,
                                ylabel='# of Confirmed Cases',
                                xlabel='Date',
-                               legend='bottom',
-                               yformatter='%d'
+                               legend='top',
+                               yformatter='%d',
+                               grid=True
                               )
                            )
 
@@ -133,7 +136,7 @@ by_country = pn.Column(
 
 states_provinces: List[str] = us_df['Province_State'].unique().tolist()
 covid19_date: DatePicker = pn.widgets.DatePicker(name='Date:', value=(date.today() + timedelta(days=-1)), width=200, css_classes=['grey-theme'])
-state_province = pn.widgets.MultiChoice(name='State of Province', value=['Ohio'], options=states_provinces)
+state_province = pn.widgets.MultiChoice(name='State(s):', value=['Ohio'], options=states_provinces)
 ylog = pn.widgets.Select(name='log-y?', value=False, options=[True, False], width=200, css_classes=['grey-theme'])
 
 @pn.depends(covid19_date.param.value, state_province.param.value, ylog.param.value)
@@ -199,8 +202,9 @@ def covid19TimeSeriesByState(covid19_date: Date, state_province: List[str], ylog
                                height=500,
                                ylabel='# of Confirmed Cases',
                                xlabel='Date',
-                               legend='bottom',
-                               yformatter='%d'
+                               legend='top',
+                               yformatter='%d',
+                               grid=True
                               ),
                               df_by_counties.query("Province_State == @state_province")
                                             .sort_values(by=df_by_counties.columns[2], ascending=False)
@@ -229,8 +233,9 @@ def covid19TimeSeriesByState(covid19_date: Date, state_province: List[str], ylog
                                height=500,
                                ylabel='# of Confirmed Cases',
                                xlabel='Date',
-                               legend='bottom',
-                               yformatter='%d'
+                               legend='top',
+                               yformatter='%d',
+                               grid=True
                               )
                            )
 
