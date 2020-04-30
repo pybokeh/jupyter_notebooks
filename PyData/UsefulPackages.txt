@@ -71,6 +71,7 @@ make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en
 Rain clouds viz: https://github.com/pog87/PtitPrince
 jupyterplot: https://lvwerra.github.io/jupyterplot/
 cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
+race bar chart using MATPLOTLIB: https://github.com/dexplo/bar_chart_race
 
 # Dashboarding libraries
 dash: dashboard library from plotly
