@@ -200,6 +200,7 @@ click - for making CLI
 fire - for making CLI
 typer: https://github.com/tiangolo/typer
 https://github.com/tmbo/questionary
+rich: https://github.com/willmcgugan/rich/blob/master/README.md
 
 # Progress Bars
 tqdm: https://github.com/tqdm/tqdm
@@ -280,6 +281,12 @@ ML: https://github.com/trekhleb/homemade-machine-learning
 viz: https://github.com/dipanjanS/art_of_data_visualization
 viz: https://github.com/uwdata/visualization-curriculum/blob/master/README.md
 EDA: https://github.com/PhantomInsights/baby-names-analysis
+
+# BioInformatics Related
+biopython
+biotite: https://github.com/biotite-dev/biotite
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2367-z
+phylopandas: https://github.com/Zsailer/phylopandas
 
 # Misc.
 pendulum: a better datetime library, better than arrow
