@@ -71,7 +71,13 @@ make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en
 Rain clouds viz: https://github.com/pog87/PtitPrince
 jupyterplot: https://lvwerra.github.io/jupyterplot/
 cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
+
+# Animation related
+celluloid: https://github.com/jwkvam/celluloid
+animatplot: https://github.com/t-makaro/animatplot/
 race bar chart using MATPLOTLIB: https://github.com/dexplo/bar_chart_race
+pandas_live: https://github.com/JackMcKew/pandas_alive
+https://jackmckew.dev/creating-animated-plots-with-pandas_alive.html
 
 # Dashboarding libraries
 dash: dashboard library from plotly
@@ -260,6 +266,7 @@ For low level API, use asyncio (I/O bound) or multiprocessing (CPU bound)
 https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
+Trio, a better asyncio?:  https://github.com/python-trio/trio
 
 # Task Queues (most don't support Windows)
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
