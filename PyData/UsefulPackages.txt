@@ -48,6 +48,7 @@ datatable: https://github.com/h2oai/datatable (Windows not supported yet)
 
 # visualization libraries
 MATPLOTLIB
+dexplot: https://github.com/dexplo/dexplot
 https://github.com/lukelbd/proplot
 Edit your MATPLOTLIB chart with a GUI workflow: https://pylustrator.readthedocs.io/en/latest/
 seaborn
