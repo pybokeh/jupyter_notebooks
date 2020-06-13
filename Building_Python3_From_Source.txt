@@ -1,6 +1,7 @@
 ########### Python 3.8.x ###############
 sudo apt-get update
 
+sudo apt-get install build-essential checkinstall
 sudo apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev \
 libsqlite3-dev tk-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev wget
 
