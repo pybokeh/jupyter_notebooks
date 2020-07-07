@@ -9,6 +9,7 @@ scikit-learn
 
 # pandas related
 pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+dataprep (EDA): https://github.com/sfu-db/dataprep
 https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 framequery: https://github.com/chmp/framequery
