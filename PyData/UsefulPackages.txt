@@ -18,7 +18,7 @@ Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.m
 # Database profiling
 https://github.com/darenasc/auto-eda
 
-# Profiling
+# CPU or Memory Profiling
 memory_profiler: https://github.com/pythonprofilers/memory_profiler
 py-spy: https://github.com/benfred/py-spy/blob/master/README.md
 pyflame: https://github.com/uber/pyflame   # Does not support Windows
@@ -41,6 +41,7 @@ convoys: https://better.engineering/convoys/
 
 # "Large Data" libraries
 dask
+dask-profiling
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
 pyarrow
