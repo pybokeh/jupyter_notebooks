@@ -7,13 +7,21 @@ jupyter
 statsmodels
 scikit-learn
 
+# statistics
+pingouin: https://pingouin-stats.org/index.html
+
 # pandas related
 pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
-dataprep (EDA): https://github.com/sfu-db/dataprep
+sidetable: https://github.com/chris1610/sidetable
 https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 framequery: https://github.com/chmp/framequery
 Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.md
+
+# Exploratory Data Analysis
+sweetviz: https://github.com/fbdesignpro/sweetviz
+dataprep: https://github.com/sfu-db/dataprep
+sidetable: https://github.com/chris1610/sidetable
 
 # Database profiling
 https://github.com/darenasc/auto-eda
@@ -34,6 +42,7 @@ fbprophet: time series forecasting (additive model) which performs best with hig
 PmProphet: https://github.com/luke14free/pm-prophet
 pyflux: time series library: https://github.com/RJT1990/pyflux
 sktime: https://github.com/alan-turing-institute/sktime
+darts: https://github.com/unit8co/darts
 
 # For survival analysis, modeling churn and conversion rates
 lifelines: survival analysis: https://github.com/CamDavidsonPilon/lifelines
@@ -82,6 +91,7 @@ animatplot: https://github.com/t-makaro/animatplot/
 race bar chart using MATPLOTLIB: https://github.com/dexplo/bar_chart_race
 pandas_live: https://github.com/JackMcKew/pandas_alive
 https://jackmckew.dev/creating-animated-plots-with-pandas_alive.html
+gif maker: https://github.com/maxhumber/gif
 
 # Dashboarding libraries
 dash: dashboard library from plotly
