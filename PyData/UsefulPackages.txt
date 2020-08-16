@@ -221,6 +221,12 @@ fire - for making CLI
 typer: https://github.com/tiangolo/typer
 https://github.com/tmbo/questionary
 rich: https://github.com/willmcgugan/rich/blob/master/README.md
+plumbum: https://plumbum.readthedocs.io/en/latest/
+bullet: https://github.com/bchao1/bullet
+
+# GUI Frameworks
+DearPyGui: https://github.com/hoffstadt/DearPyGui
+PySimpleGUI: https://github.com/PySimpleGUI/PySimpleGUI
 
 # Progress Bars
 tqdm: https://github.com/tqdm/tqdm
