@@ -85,6 +85,7 @@ make MATPLOTLIB animations with animatplot: https://animatplot.readthedocs.io/en
 Rain clouds viz: https://github.com/pog87/PtitPrince
 jupyterplot: https://lvwerra.github.io/jupyterplot/
 cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
+upsetplot: https://github.com/jnothman/UpSetPlot
 
 # Animation related
 celluloid: https://github.com/jwkvam/celluloid
@@ -169,6 +170,7 @@ Using pipe (|) operator: https://github.com/JulienPalard/Pipe
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
 ploomber: https://github.com/ploomber/ploomber (Windows supported)
+databay (data transfer library similar to Apache Camel): https://github.com/Voyz/databay
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
