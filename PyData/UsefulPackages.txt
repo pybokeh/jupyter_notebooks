@@ -202,6 +202,7 @@ Explaining ML algorithms: https://github.com/slundberg/shap
 https://github.com/seatgeek/fuzzywuzzy
 https://github.com/RobinL/fuzzymatcher
 https://github.com/J535D165/recordlinkage
+scikit-neuralnetwork: https://github.com/aigamedev/scikit-neuralnetwork
 
 # Webscraping
 beautifulsoup4
@@ -326,6 +327,7 @@ desktop automation: https://github.com/andohuman/pyKey
 code formatter: https://github.com/psf/black
 inspect live objects: https://docs.python.org/3/library/inspect.html
 py files to reveal slides: https://github.com/apiad/auditorium
+slides in terminal: https://github.com/vinayak-mehta/present
 
 # Linux / CLI Utilities
 https://github.com/tldr-pages/tldr-python-client # replacement for man pages
