@@ -1,6 +1,6 @@
+# pip install psutil
 import csv
 import psutil
-import random
 import time
 
 x_value = 0

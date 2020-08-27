@@ -1,6 +1,4 @@
-# Another way to do it without clearing the Axis
 # pip install mplcyberpunk
-from itertools import count
 import mplcyberpunk
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -27,7 +25,7 @@ def animate(i):
     
     ax.set_xlim(left=max(0, x.max()-50), right=x.max()+5)
     
-    # Run this line instead if you want the xlim to be fixed at zero
+    # Run this line instead if you want the left xlim to be fixed at zero
     # ax.set_xlim(xlim_low, (x.max() + 5))
 
     current_ymin = y.min()
@@ -39,7 +37,7 @@ def animate(i):
     
     # Unfortunately, this effect does not work when using animation
     # Set a higher linewidth as a workaround
-    #mplcyberpunk.make_lines_glow()
+    # mplcyberpunk.make_lines_glow()
 
 
 ani = FuncAnimation(plt.gcf(), animate, interval=1000)
