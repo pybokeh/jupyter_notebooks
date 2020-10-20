@@ -33,6 +33,7 @@ pyflame: https://github.com/uber/pyflame   # Does not support Windows
 birdseye: https://github.com/alexmojaki/birdseye
 pyheat: https://github.com/csurfer/pyheat
 heartrate: https://github.com/alexmojaki/heartrate
+pyinstrument: https://github.com/joerick/pyinstrument
 https://www.markkeller.dev/2018-07-14-optimize_python/
 
 # Forecasting
@@ -71,8 +72,9 @@ bqplot: https://github.com/bloomberg/bqplot
 pdvega
 bokeh / HoloViews / hvplot / pandas-bokeh (pyviz stack)
 chartify: https://github.com/spotify/chartify
-folium
-geoplot
+folium: https://github.com/python-visualization/folium
+geoplot: https://github.com/ResidentMario/geoplot
+movingpandas: https://github.com/anitagraser/movingpandas
 plotnine: clone of R's ggplot2
 joypy: https://github.com/sbebo/joypy/blob/master/Joyplot.ipynb
 jmpy
@@ -86,6 +88,14 @@ Rain clouds viz: https://github.com/pog87/PtitPrince
 jupyterplot: https://lvwerra.github.io/jupyterplot/
 cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
 upsetplot: https://github.com/jnothman/UpSetPlot
+keplergl (PITA to install onto Windows): https://github.com/keplergl/kepler.gl/issues/557
+
+# geo visualization libraries:
+folium: https://github.com/python-visualization/folium
+geoplot: https://github.com/ResidentMario/geoplot
+ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
+movingpandas: https://github.com/anitagraser/movingpandas
+keplergl: keplergl (PITA to install onto Windows): https://github.com/keplergl/kepler.gl/issues/557
 
 # Animation related
 celluloid: https://github.com/jwkvam/celluloid
@@ -204,14 +214,16 @@ https://github.com/RobinL/fuzzymatcher
 https://github.com/J535D165/recordlinkage
 scikit-neuralnetwork: https://github.com/aigamedev/scikit-neuralnetwork
 
-# Webscraping
+# HTTP / Webscraping
 beautifulsoup4
 lxml+XPath
 mechanicalsoup
 selenium (headless-browser framework for extracting javascript data)
 scrapy (OOP framework)
 newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articles
-requests-html: requests-html: https://github.com/kennethreitz/requests-html
+requests-html: requests-html: https://github.com/kennethreitz/requests-htm
+HTTPX: https://github.com/encode/httpx
+autoscraper: https://github.com/alirezamika/autoscraper
 
 # Big Data
 boto3: Interface to S3
