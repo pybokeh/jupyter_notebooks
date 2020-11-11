@@ -92,6 +92,7 @@ cyberpunk theme: https://github.com/dhaitz/mplcyberpunk/blob/master/README.md
 upsetplot: https://github.com/jnothman/UpSetPlot
 keplergl (PITA to install onto Windows): https://github.com/keplergl/kepler.gl/issues/557
 pyecharts: https://github.com/pyecharts/pyecharts (in Chinese)
+           English translated version: https://translate.google.com/translate?sl=auto&tl=en&u=https%3A%2F%2Fgithub.com%2Fpyecharts%2Fpyecharts
 
 # geo visualization libraries:
 folium: https://github.com/python-visualization/folium
@@ -143,7 +144,6 @@ real-time plots in jupyter: https://lvwerra.github.io/jupyterplot/
 pyodbc
 turbodbc
 ipython-sql
-db.py (dead project?)
 jaydebeapi
 sqlalchemy
 sqlalchemy-turbodbc
@@ -183,7 +183,7 @@ Using pipe (|) operator: https://github.com/JulienPalard/Pipe
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
 ploomber: https://github.com/ploomber/ploomber (Windows supported)
-databay (data transfer library similar to Apache Camel): https://github.com/Voyz/databay
+databay (data transfer library similar to Apache Beam): https://github.com/Voyz/databay
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
@@ -306,6 +306,7 @@ https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
 Trio, a better asyncio?:  https://github.com/python-trio/trio
+many_requests: https://github.com/joshlk/many_requests
 
 # Task Queues (most don't support Windows)
 https://tests4geeks.com/python-celery-rabbitmq-tutorial/
