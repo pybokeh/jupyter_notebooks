@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn
 sns.set_theme(style="ticks")
 
+set_theme("Cherry")
+
 # Set main window's properties
 set_main_window_title("Seaborn Chart Viewer")
 set_main_window_pos(x=0, y=0)

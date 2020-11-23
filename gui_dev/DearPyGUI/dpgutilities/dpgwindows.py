@@ -11,7 +11,9 @@ def show_update_locker_screen(sender, data):
         add_text("Enter last name:")
         add_same_line()
         add_input_text(
-            name="last_name_locker_search", label="", source="last_name_locker_search"
+            name="last_name_locker_search",
+            label="",
+            source="last_name_locker_search"
         )
         add_same_line()
         add_button(
@@ -26,7 +28,17 @@ def show_update_desk_screen(sender, data):
         add_spacing(count=10)
         add_text("Enter last name:")
         add_same_line()
-        add_input_text("", source="last_name_desk")
+        add_input_text(
+            name="last_name_desk_search",
+            label="",
+            source="last_name_desk_search"
+        )
+        add_same_line()
+        add_button(
+            name="desk_search_button",
+            label="Search",
+            callback=dbcnxns.fetch_desk_info,
+        )
 
 
 def show_update_devices_screen(sender, data):
@@ -39,7 +51,17 @@ def show_update_devices_screen(sender, data):
         add_spacing(count=10)
         add_text("Enter last name:")
         add_same_line()
-        add_input_text("", source="last_name_devices")
+        add_input_text(
+            name="last_name_devices_search",
+            label="",
+            source="last_name_devices_search"
+        )
+        add_same_line()
+        add_button(
+            name="devices_search_button",
+            label="Search",
+            callback=dbcnxns.fetch_devices_info,
+        )
 
 
 def show_update_assets_screen(sender, data):
@@ -49,7 +71,17 @@ def show_update_assets_screen(sender, data):
         add_spacing(count=10)
         add_text("Enter last name:")
         add_same_line()
-        add_input_text("", source="last_name_assets")
+        add_input_text(
+            name="last_name_assets_search",
+            label="",
+            source="last_name_assets_search"
+        )
+        add_same_line()
+        add_button(
+            name="assets_search_button",
+            label="Search",
+            callback=dbcnxns.fetch_assets_info,
+        )
 
 
 def close_locker_screen(sender, data):
