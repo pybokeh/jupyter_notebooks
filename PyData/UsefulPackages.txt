@@ -300,6 +300,7 @@ glances: https://github.com/nicolargo/glances
 For high level API, use concurrent.futures
 I/O bound: https://docs.python.org/3/library/concurrent.futures.html?highlight=concurrent.futures#threadpoolexecutor-example
 cpu bound: https://docs.python.org/3/library/concurrent.futures.html?highlight=concurrent.futures#processpoolexecutor-example
+joblib: https://github.com/joblib/joblib
 concurrent.futures: https://dzone.com/articles/python-3-concurrency-the-concurrentfutures-module
 For low level API, use asyncio (I/O bound) or multiprocessing (CPU bound)
 https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
@@ -313,7 +314,7 @@ https://tests4geeks.com/python-celery-rabbitmq-tutorial/
 https://www.distributedpython.com/2018/08/21/celery-4-windows/
 Celery
 
-# Message Brokers (most don't support Windows)
+# Message Brokers (most don't support Windows or require WSL/WSL2)
 RabbitMQ
 Redis
 ZeroMQ
@@ -328,6 +329,7 @@ ML: https://github.com/trekhleb/homemade-machine-learning
 viz: https://github.com/dipanjanS/art_of_data_visualization
 viz: https://github.com/uwdata/visualization-curriculum/blob/master/README.md
 EDA: https://github.com/PhantomInsights/baby-names-analysis
+A good panel dashboard example: https://github.com/ag-ds-bubble/tseuler
 
 # BioInformatics Related
 biopython
