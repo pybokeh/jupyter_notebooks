@@ -18,6 +18,12 @@ Faster pandas apply: https://github.com/jmcarpenter2/swifter
 framequery: https://github.com/chmp/framequery
 Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.md
 
+# Dask related YouTube videos
+dask jupyterlab extension: https://www.youtube.com/watch?v=EX_voquHdk0
+dask futures: https://www.youtube.com/watch?v=07EiCpdhtDE
+dask delayed: https://www.youtube.com/watch?v=SHqFmynRxVU
+Setting up Dask with scheduler and workers via CLI: https://www.youtube.com/watch?v=TQM9zIBzNBo
+
 # Exploratory Data Analysis
 sweetviz: https://github.com/fbdesignpro/sweetviz
 dataprep: https://github.com/sfu-db/dataprep
@@ -309,14 +315,13 @@ For CPU bound: Use multiprocessing
 Trio, a better asyncio?:  https://github.com/python-trio/trio
 many_requests: https://github.com/joshlk/many_requests
 
-# Task Queues (most don't support Windows)
-https://tests4geeks.com/python-celery-rabbitmq-tutorial/
-https://www.distributedpython.com/2018/08/21/celery-4-windows/
-Celery
+# Task Queues (almost all don't support Windows), only Dramatiq works with Windows
+https://www.fullstackpython.com/task-queues.html
+dramatiq: https://github.com/Bogdanp/dramatiq
 
 # Message Brokers (most don't support Windows or require WSL/WSL2)
 RabbitMQ
-Redis
+Redis, workaround for installing on Windows 10 wihout WSL: https://divyanshushekhar.com/how-to-install-redis-on-windows-10/
 ZeroMQ
 
 # Stream processing
