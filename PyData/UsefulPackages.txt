@@ -249,20 +249,21 @@ rich: https://github.com/willmcgugan/rich/blob/master/README.md
 plumbum: https://plumbum.readthedocs.io/en/latest/
 bullet: https://github.com/bchao1/bullet
 
-# GUI Frameworks
+# Desktop GUI Frameworks
 DearPyGui: https://github.com/hoffstadt/DearPyGui
 PySimpleGUI: https://github.com/PySimpleGUI/PySimpleGUI
 
 # Progress Bars
 tqdm: https://github.com/tqdm/tqdm
 fastprogress: https://github.com/fastai/fastprogress
+alive-progress: https://github.com/rsalmei/alive-progress
 https://codingdose.info/2019/06/15/how-to-use-a-progress-bar-in-python/
 
 # Working with Excel
 xlwings: www.xlwings.org
 openpyxl
 xlswriter
-xlrd
+xlrd (No longer supports xlsx)
 xlrt
 
 # Alternate REPL
@@ -322,6 +323,7 @@ dramatiq: https://github.com/Bogdanp/dramatiq
 # Message Brokers (most don't support Windows or require WSL/WSL2)
 RabbitMQ
 Redis, workaround for installing on Windows 10 wihout WSL: https://divyanshushekhar.com/how-to-install-redis-on-windows-10/
+New GitHub repo for Redis for Windows: https://github.com/tporadowski/redis
 ZeroMQ
 
 # Stream processing
