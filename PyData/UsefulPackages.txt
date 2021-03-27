@@ -16,7 +16,7 @@ sidetable: https://github.com/chris1610/sidetable
 https://github.com/SauceCat/pydqc
 Faster pandas apply: https://github.com/jmcarpenter2/swifter
 framequery: https://github.com/chmp/framequery
-Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.md
+DTale: Pandas dataframe viewer: https://github.com/man-group/dtale/blob/master/README.md
 
 # Dask related YouTube videos
 dask jupyterlab extension: https://www.youtube.com/watch?v=EX_voquHdk0
@@ -31,6 +31,9 @@ sidetable: https://github.com/chris1610/sidetable
 
 # Database profiling
 https://github.com/darenasc/auto-eda
+
+# Data Metadata / Discovery Frameworks
+amundsen: https://github.com/amundsen-io/amundsen
 
 # CPU or Memory Profiling
 memory_profiler: https://github.com/pythonprofilers/memory_profiler
@@ -59,6 +62,7 @@ convoys: https://better.engineering/convoys/
 
 # "Large Data" libraries
 dask
+dask-sql: https://github.com/nils-braun/dask-sql
 dask-profiling
 vaex: https://github.com/maartenbreddels/vaex
 Pandas on Ray: https://github.com/modin-project/modin
@@ -99,6 +103,7 @@ upsetplot: https://github.com/jnothman/UpSetPlot
 keplergl (PITA to install onto Windows): https://github.com/keplergl/kepler.gl/issues/557
 pyecharts: https://github.com/pyecharts/pyecharts (in Chinese)
            English translated version: https://translate.google.com/translate?sl=auto&tl=en&u=https%3A%2F%2Fgithub.com%2Fpyecharts%2Fpyecharts
+hiplot (parallel coordinates plot): https://github.com/facebookresearch/hiplot
 
 # geo visualization libraries:
 folium: https://github.com/python-visualization/folium
@@ -115,14 +120,15 @@ pandas_live: https://github.com/JackMcKew/pandas_alive
 https://jackmckew.dev/creating-animated-plots-with-pandas_alive.html
 gif maker: https://github.com/maxhumber/gif
 
-# Dashboarding libraries
+# Dashboard / Data App libraries
 dash: dashboard library from plotly
 panel: https://panel.pyviz.org/index.html (more viz agnostic with bokeh backend)
 From jupyter notebooks to apps: https://github.com/voila-dashboards/voila
 https://github.com/voila-dashboards/voila-gridstack/blob/master/README.md
-dataspyre: https://github.com/adamhajari/spyre
 remi: https://github.com/dddomodossola/remi
 streamlit: https://github.com/streamlit/streamlit
+idom: https://github.com/idom-team/idom
+pywebio: https://github.com/wang0618/PyWebIO
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -159,7 +165,7 @@ asyncpg: https://github.com/MagicStack/asyncpg
 ibm_db
 ibm_db_sa
 jinjasql: https://github.com/hashedin/jinjasql
-Columnar version of sqlite, duckdb: https://github.com/cwida/duckdb
+duckdb: columnar version of sqlite: https://github.com/cwida/duckdb
 
 # ETL or data engineering related
 Pipe: https://github.com/JulienPalard/Pipe
@@ -224,13 +230,13 @@ https://github.com/J535D165/recordlinkage
 scikit-neuralnetwork: https://github.com/aigamedev/scikit-neuralnetwork
 
 # HTTP / Webscraping
+requests-html: https://github.com/psf/requests-html(my favorite)
 beautifulsoup4
 lxml+XPath
 mechanicalsoup
 selenium (headless-browser framework for extracting javascript data)
 scrapy (OOP framework)
 newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articles
-requests-html: requests-html: https://github.com/kennethreitz/requests-htm
 HTTPX: https://github.com/encode/httpx
 autoscraper: https://github.com/alirezamika/autoscraper
 
@@ -239,6 +245,9 @@ boto3: Interface to S3
 PyHive: https://github.com/dropbox/PyHive
 Amazon S3 with SQL syntax: PyAthena - use plain 'ol SQL: https://github.com/laughingman7743/PyAthena
 Pandas syntax with Apache Spark: koalas - https://github.com/databricks/koalas
+PySpark: https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
+Dask/Coiled
+Dask-SQL: https://github.com/nils-braun/dask-sql
 
 # CLI
 click - for making CLI
