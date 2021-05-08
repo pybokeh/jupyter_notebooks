@@ -1,0 +1,14 @@
+FROM python:3.9-slim
+
+# Create a project folder
+RUN mkdir /notebooks
+
+# Change working dirtory
+WORKDIR /notebooks
+
+RUN pip install numpy scipy matplotlib seaborn pandas scikit-learn hvplot panel jupyter_bokeh jupyterlab
+
+# Have juptyerlab server listen on port 8888
+EXPOSE 8888
+
+ENTRYPOINT ["jupyter", "lab", "--ip=*", "--allow-root", "--no-browser"]
