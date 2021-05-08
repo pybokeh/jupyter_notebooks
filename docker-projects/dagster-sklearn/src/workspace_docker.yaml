@@ -1,0 +1,5 @@
+load_from:
+  - python_file:
+      relative_path: repositories/sklearn_repository.py
+      # User container's Python interpreter, not the host's
+      executable_path: /usr/local/bin/python

@@ -1,0 +1,21 @@
+FROM python:3.9-slim
+
+# Create a project folder
+RUN mkdir /dagster-sklearn
+
+# Change working dirtory
+WORKDIR /dagster-sklearn
+
+ENV DAGSTER_HOME=/dagster-sklearn/.dagster
+
+COPY  . /dagster-sklearn/
+
+RUN pip install scikit-learn dagster dagit dagster_pandas
+
+WORKDIR /dagster-sklearn/src 
+
+# For debugging purposes
+# RUN pwd
+# RUN ls -la
+
+ENTRYPOINT ["dagster-daemon", "run"]

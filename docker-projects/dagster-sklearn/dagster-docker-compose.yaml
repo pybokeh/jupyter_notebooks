@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  dagster-dagit:
+    image: dagster-sklearn
+    ports:
+      - 3000:3000
+    volumes:
+      - dagster-db:/dagster-sklearn/.dagster
+  dagster-daemon:
+    image: dagster-daemon
+    volumes:
+      - dagster-db:/dagster-sklearn/.dagster
+volumes:
+  dagster-db:
+    driver: local
