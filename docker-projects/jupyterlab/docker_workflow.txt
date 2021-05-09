@@ -1,8 +1,8 @@
 sudo docker build -t jupyter-lab -f Dockerfile_jupyterlab .
 
+# maps my personal notebooks directory to the container's notebooks director
 sudo docker run \
     --rm \
-    # map personal notebooks folder to container's notebooks folder
     -v $HOME/gitprojects/jupyter_notebooks:/notebooks \
     -p 8888:8888 \
     --name jupyter-lab \
