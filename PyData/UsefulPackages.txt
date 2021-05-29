@@ -28,6 +28,7 @@ Setting up Dask with scheduler and workers via CLI: https://www.youtube.com/watc
 sweetviz: https://github.com/fbdesignpro/sweetviz
 dataprep: https://github.com/sfu-db/dataprep
 sidetable: https://github.com/chris1610/sidetable
+dataprofiler: https://github.com/capitalone/DataProfiler
 
 # Database profiling
 https://github.com/darenasc/auto-eda
@@ -107,6 +108,7 @@ hiplot (parallel coordinates plot): https://github.com/facebookresearch/hiplot
 
 # geo visualization libraries:
 folium: https://github.com/python-visualization/folium
+leafmap: https://github.com/giswqs/leafmap
 geoplot: https://github.com/ResidentMario/geoplot
 ipyleaflet: https://github.com/jupyter-widgets/ipyleaflet/
 movingpandas: https://github.com/anitagraser/movingpandas
@@ -129,6 +131,7 @@ remi: https://github.com/dddomodossola/remi
 streamlit: https://github.com/streamlit/streamlit
 idom: https://github.com/idom-team/idom
 pywebio: https://github.com/wang0618/PyWebIO
+gradio: https://github.com/gradio-app/gradio
 
 # Jupyter Notebook Related
 ipysheet: https://github.com/QuantStack/ipysheet
@@ -187,7 +190,7 @@ https://github.com/mara/data-integration
 dbt: https://www.getdbt.com/
 Spotify Luigi (Windows supported)
 Apache Airflow - Windows not officially supported
-prefect: https://docs.prefect.io (Windows supported)
+prefect: https://docs.prefect.io ("core" is Windows supported)
 dagster: https://github.com/dagster-io/dagster  (Windows supported)
 pypeln: https://github.com/cgarciae/pypeln/
 magrittr-style piping: https://github.com/df-foundation/pipey
@@ -195,7 +198,8 @@ Using pipe (|) operator: https://github.com/JulienPalard/Pipe
 mpypl: https://github.com/shwars/mPyPl (a functional approach to data pipelines)
 Netflix's metaflow: https://github.com/Netflix/metaflow (Windows not supported)
 ploomber: https://github.com/ploomber/ploomber (Windows supported)
-databay (data transfer library similar to Apache Beam): https://github.com/Voyz/databay
+databay: https://github.com/Voyz/databay
+pydags: https://github.com/DavidTorpey/pydags
 
 # Data validation and cleaning frameworks
 https://github.com/great-expectations/great_expectations
@@ -220,6 +224,7 @@ https://github.com/justmarkham/scikit-learn-tips
 tpot
 xgboost
 lightgbm
+catboost
 fastText
 https://github.com/kvh/recurrent  - extract datetimes from English sentence
 automatic feature engineering: https://github.com/Featuretools/featuretools
@@ -234,7 +239,7 @@ requests-html: https://github.com/psf/requests-html(my favorite)
 beautifulsoup4
 lxml+XPath
 mechanicalsoup
-selenium (headless-browser framework for extracting javascript data)
+selenium
 scrapy (OOP framework)
 newspaper3k: https://newspaper.readthedocs.io  # easily extract text from articles
 HTTPX: https://github.com/encode/httpx
