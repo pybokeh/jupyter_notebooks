@@ -1,3 +1,19 @@
 # PySpark
 https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
 https://sparkbyexamples.com/
+https://phoenixnap.com/kb/install-spark-on-ubuntu
+https://www.how2shout.com/linux/installing-apache-spark-on-ubuntu-20-04-or-18-04/
+installing: https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/
+installing, win10: https://kontext.tech/column/spark/450/install-spark-300-on-windows-10
+sql: https://analyticshut.com/reading-data-from-sql-tables-in-spark/
+sql, docs: https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html
+
+# How find location of Java
+https://askubuntu.com/questions/772235/how-to-find-path-to-java
+
+# Linux
+https://tutonics.com/2012/12/linux-file-permissions-chmod-umask.html
+
+# Understanding Imports/Packaging
+https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
+https://towardsdatascience.com/on-writing-clean-jupyter-notebooks-abdf6c708c75
