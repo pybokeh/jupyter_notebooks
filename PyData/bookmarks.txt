@@ -4,6 +4,7 @@ https://sparkbyexamples.com/
 https://phoenixnap.com/kb/install-spark-on-ubuntu
 https://www.how2shout.com/linux/installing-apache-spark-on-ubuntu-20-04-or-18-04/
 installing: https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/
+installing, win10: https://phoenixnap.com/kb/install-spark-on-windows-10
 installing, win10: https://kontext.tech/column/spark/450/install-spark-300-on-windows-10
 sql: https://analyticshut.com/reading-data-from-sql-tables-in-spark/
 sql, docs: https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html
