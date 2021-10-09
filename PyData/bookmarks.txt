@@ -1,3 +1,7 @@
+# cmder
+# NOTE: cmder mini requires 7-zip
+https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
+
 # PySpark
 https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
 https://sparkbyexamples.com/
@@ -9,7 +13,7 @@ installing, win10: https://kontext.tech/column/spark/450/install-spark-300-on-wi
 sql: https://analyticshut.com/reading-data-from-sql-tables-in-spark/
 sql, docs: https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html
 
-# How find location of Java
+# How to find location of Java
 https://askubuntu.com/questions/772235/how-to-find-path-to-java
 
 # Linux
