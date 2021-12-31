@@ -12,8 +12,8 @@ https://hakibenita.com/postgresql-unknown-features
 https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
 https://sparkbyexamples.com/
 chaining: https://mungingdata.com/pyspark/chaining-dataframe-transformations/
-https://phoenixnap.com/kb/install-spark-on-ubuntu
-https://www.how2shout.com/linux/installing-apache-spark-on-ubuntu-20-04-or-18-04/
+installing: https://phoenixnap.com/kb/install-spark-on-ubuntu
+installing: https://www.how2shout.com/linux/installing-apache-spark-on-ubuntu-20-04-or-18-04/
 installing: https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/
 installing, win10: https://phoenixnap.com/kb/install-spark-on-windows-10
 installing, win10: https://kontext.tech/column/spark/450/install-spark-300-on-windows-10
@@ -29,3 +29,6 @@ https://tutonics.com/2012/12/linux-file-permissions-chmod-umask.html
 # Understanding Imports/Packaging
 https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
 https://towardsdatascience.com/on-writing-clean-jupyter-notebooks-abdf6c708c75
+
+# Cheat Sheets
+Python: https://github.com/gto76/python-cheatsheet
