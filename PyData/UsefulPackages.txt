@@ -253,6 +253,7 @@ Amazon S3 with SQL syntax: PyAthena - use plain 'ol SQL: https://github.com/laug
 PySpark: https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
 Dask/Coiled
 Dask-SQL: https://github.com/nils-braun/dask-sql
+fugue-project: https://github.com/fugue-project/fugue
 
 # CLI
 click - for making CLI
