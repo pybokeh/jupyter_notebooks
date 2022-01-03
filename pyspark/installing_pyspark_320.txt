@@ -53,3 +53,5 @@ set PYSPARK_PYTHON=<path_to_python.exe>
 Download winutils.exe from https://github.com/cdarlint/winutils, save locally to "hadoop/bin" folder and then
 set HADOOP_HOME=[path_to_hadoop_folder]
 
+# Update PATH to include hadoop/bin folder
+set PATH=%PATH%;%HADOOP_HOME%\bin
