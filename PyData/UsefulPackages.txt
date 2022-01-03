@@ -270,6 +270,7 @@ PySimpleGUI: https://github.com/PySimpleGUI/PySimpleGUI
 
 # Progress Bars
 tqdm: https://github.com/tqdm/tqdm
+pqdm: https://github.com/niedakh/pqdm
 fastprogress: https://github.com/fastai/fastprogress
 alive-progress: https://github.com/rsalmei/alive-progress
 https://codingdose.info/2019/06/15/how-to-use-a-progress-bar-in-python/
@@ -328,6 +329,7 @@ For low level API, use asyncio (I/O bound) or multiprocessing (CPU bound)
 https://realpython.com/python-concurrency/#how-to-speed-up-a-cpu-bound-program
 For I/O bound: Use asyncio if you can, threading if you must
 For CPU bound: Use multiprocessing
+An easier multiprocessing library?: https://github.com/Slimmer-AI/mpire
 Trio, a better asyncio?:  https://github.com/python-trio/trio
 many_requests: https://github.com/joshlk/many_requests
 
