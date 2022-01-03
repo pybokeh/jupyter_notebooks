@@ -46,6 +46,7 @@ pip install ipykernel
 python -m ipykernel install --user --name your_env --display-name "Py3.9 (pyspark_dev)"
 
 # Set SPARK_HOME and PYSPARK_PYTHON environment variables
+# Why point PYSPARK_PYTHON to site-packages/pyspark?  https://kontext.tech/column/spark/450/install-spark-300-on-windows-10
 set SPARK_HOME=<path_to_site_packages/pyspark_folder>
 set PYSPARK_PYTHON=<path_to_python.exe>
 
