@@ -28,8 +28,8 @@ export SPARK_HOME=/opt/spark
 # Add spark/bin and spark/sbin to the PATH environment variable
 export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 
-# Then create PYSPARK_PYTHON environment that points to your Python interpreter that has PySpark installed
-export PYSPARK_PYTHON=<path_to_python_env_with_pyspark_python>
+# Then create PYSPARK_PYTHON environment variable that points to your system Python interpreter
+export PYSPARK_PYTHON=/usr/bin/python3
 
 # Refresh .profile or .bashrc
 source ~/.profile
