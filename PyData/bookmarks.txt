@@ -2,6 +2,14 @@
 # NOTE: cmder mini requires 7-zip
 https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
 
+# git
+15-minute git: https://www.youtube.com/watch?v=USjZcfj8yxE
+and accompanying notes: https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
+SW Carpentry git novice: https://swcarpentry.github.io/git-novice/
+
+# Docker
+https://github.com/pybokeh/dagster-sklearn/blob/master/docker/docker_workflow.txt
+
 # pandas
 https://drawingfromdata.com/pandas/grouping/pandas-groupby-transform-aggregate-filter.html
 
