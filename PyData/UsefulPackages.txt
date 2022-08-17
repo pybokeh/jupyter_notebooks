@@ -57,6 +57,7 @@ pyflux: time series library: https://github.com/RJT1990/pyflux
 sktime: https://github.com/alan-turing-institute/sktime
 darts: https://github.com/unit8co/darts
 hcrystalball: https://github.com/heidelbergcement/hcrystalball
+statsforecast: https://github.com/Nixtla/statsforecast
 
 # For survival analysis, modeling churn and conversion rates
 lifelines: survival analysis: https://github.com/CamDavidsonPilon/lifelines
