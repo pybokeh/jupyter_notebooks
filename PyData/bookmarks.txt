@@ -2,6 +2,16 @@
 # NOTE: cmder mini requires 7-zip
 https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
 
+# git
+# 15-minute Git Introduction
+https://www.youtube.com/watch?v=USjZcfj8yxE
+# Getting started for local repo
+notes: https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
+# Creating SSH keys for Github access
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+# For creating new Github repo from local folder
+https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
+
 # pandas
 https://drawingfromdata.com/pandas/grouping/pandas-groupby-transform-aggregate-filter.html
 
