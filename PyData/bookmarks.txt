@@ -5,10 +5,12 @@ https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
 # git
 # 15-minute Git Introduction
 https://www.youtube.com/watch?v=USjZcfj8yxE
-# Getting started for local repo
+# Getting started with local repo
 notes: https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
 # Creating SSH keys for Github access
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+# Add SSH key to Github
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 # For creating new Github repo from local folder
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
 
@@ -40,6 +42,9 @@ https://tutonics.com/2012/12/linux-file-permissions-chmod-umask.html
 # Understanding Imports/Packaging
 https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
 https://towardsdatascience.com/on-writing-clean-jupyter-notebooks-abdf6c708c75
+
+# Visualization Related
+https://aeturrell.github.io/coding-for-economists/vis-common-plots.html
 
 # Cheat Sheets
 Python: https://github.com/gto76/python-cheatsheet
