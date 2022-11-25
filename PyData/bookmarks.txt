@@ -1,3 +1,6 @@
+# bioinformatics
+https://www.biostarhandbook.com/
+
 # cmder
 # NOTE: cmder mini requires 7-zip
 https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
