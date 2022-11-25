@@ -16,6 +16,8 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 # For creating new Github repo from local folder
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
+# Renaming branch (ex master to main)
+https://www.git-tower.com/learn/git/faq/git-rename-master-to-main
 
 # pandas
 https://drawingfromdata.com/pandas/grouping/pandas-groupby-transform-aggregate-filter.html
