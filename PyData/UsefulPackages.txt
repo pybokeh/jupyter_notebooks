@@ -106,6 +106,7 @@ keplergl (PITA to install onto Windows): https://github.com/keplergl/kepler.gl/i
 pyecharts: https://github.com/pyecharts/pyecharts (in Chinese)
            English translated version: https://translate.google.com/translate?sl=auto&tl=en&u=https%3A%2F%2Fgithub.com%2Fpyecharts%2Fpyecharts
 hiplot (parallel coordinates plot): https://github.com/facebookresearch/hiplot
+MATPLOTLIB themes: https://github.com/lgienapp/aquarel
 
 # geo visualization libraries:
 folium: https://github.com/python-visualization/folium
