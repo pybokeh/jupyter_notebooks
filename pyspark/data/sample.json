@@ -1,0 +1,70 @@
+{
+    "digitalInsuranceBuildData": {
+    	"vin": "1FBZX2ZMREDACTED",
+    	"buildDate": "2015-12-20",
+    	"year": 2016,
+    	"make": "FORD",
+    	"model": "TRANSIT",
+    	"vehicleEngineerDescription": "FORD  TRANSIT T350 WAGON LOW ROOF LONG WB 60/40 CARGO DR",
+    	"plantName": "KANSAS CITY ASSY",
+    	"trimLevel": "XLT",
+    	"dealer": {
+    		"countryCode": "USA"
+    	},
+    	"configuration": {
+    		"siriusXm": {
+    			"capable": true
+    		},
+    		"sync": {
+    			"capable": true
+    		}
+    	},
+    	"invoice": {
+    		"currencyCode": "USD",
+    		"orders": [
+    			{
+    				"orderCode": "X2Z",
+    				"orderType": "BODY"
+    			}
+    		],
+    		"price": {
+    			"manufacturerSuggestedRetailPrice": 39180.0
+    		}
+    	},
+    	"features": [
+    		{
+    			"featureWersCode": "A22AA",
+    			"engineerDescription": "LESS D PILLAR ASSIST HANDLE",
+    			"familyEngineerDescription": "D PILLAR ASSIST HANDLE"
+    		},
+            {
+    			"featureWersCode": "EN-RM",
+    			"engineerDescription": "3.7L 4V-DAMB PFI V6 NA GAS",
+    			"familyEngineerDescription": "ENGINE-CAR/LT TRK",
+    			"featureGroupType": "ENGINE"
+    		},
+    		{
+    			"featureWersCode": "A4MAA",
+    			"engineerDescription": "LESS DIESEL PARTICULATE FILTER",
+    			"familyEngineerDescription": "DIESEL PARTICULATE FILTERS"
+    		},
+            {
+    			"featureWersCode": "TR-C3",
+    			"engineerDescription": "6 SPD AUTO TRANS (6R80)",
+    			"familyEngineerDescription": "TRANSMISSION-CAR/LT TRK",
+    			"featureGroupType": "TRANSMISSION"
+    		},
+    		{
+    			"featureWersCode": "YZKAB",
+    			"engineerDescription": "FLEET",
+    			"familyEngineerDescription": "FLEET"
+    		},
+            {
+    			"featureWersCode": "DR--B",
+    			"engineerDescription": "2 WHL L/H REAR DRIVE",
+    			"familyEngineerDescription": "DRIVE-CAR/LT TRK",
+    			"featureGroupType": "DRIVETRAIN"
+    		}
+    	]
+    }
+}
