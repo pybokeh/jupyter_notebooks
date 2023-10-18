@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blsutils"
+version = "0.0.1"
+description = "Utilities for working with BLS data or its api"
+authors = [
+  { name = "Daniel J. Kim", email = "pybokeh@protonmail.com" },
+]
+requires-python = ">=3.8"
