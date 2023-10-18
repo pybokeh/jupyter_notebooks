@@ -24,3 +24,6 @@ plot_bls_series_id(
     bls_key=bls_key
 )
 ```
+
+If you want the actual, low-level Python code used to create the plots, look at the [BLS_API.ipynb](BLS_API.ipynb) 
+notebook or the `blsutils` package found in the `src` directory.
