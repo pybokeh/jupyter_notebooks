@@ -1,0 +1,150 @@
+# Cheat Sheets
+Python: https://github.com/gto76/python-cheatsheet
+PySpark: https://github.com/cartershanklin/pyspark-cheatsheet/tree/master
+
+# cmder
+https://medium.com/talpor/windows-terminal-cmder-%EF%B8%8F-573e6890d143
+This article is outdate, just need to add the following to the windows terminal JSON settings file:
+"commandline": "cmd.exe /k %CMDER_ROOT%\\vendor\\init.bat"
+"icon": "%CMDER_ROOT%\\icons\\cmder.ico"
+Where %CMDR_ROOT% is the root installation folder for your cmder
+
+# dagster
+blog post: https://dagster.io/blog/dagster-script-to-assets
+code example: https://github.com/petehunt/dagster-script-to-assets
+YT video: https://youtu.be/sCUYBa-glh0
+Another good tutorial: https://www.youtube.com/live/kpco5u1zG9Y
+partitioning: https://dagster.io/blog/partitioned-data-pipelines
+YT video example partitioning: https://www.youtube.com/watch?v=LFOikWqCOAM
+io manager example: https://www.youtube.com/watch?v=f1TbVGdhmYg
+YT video for io manager: https://www.youtube.com/watch?v=f1TbVGdhmYg
+
+# data engineering
+design patterns: https://www.startdataengineering.com/post/design-patterns/
+blogs: https://tech.marksblogg.com/
+
+# dbt
+# In setting up dbt, tedious or important part is making sure info in profiles.yml matches your dbt_project.yml
+Quick start guide: https://docs.getdbt.com/docs/quickstarts/dbt-core/quickstart
+Setting up dbt with Snowflake profile with SSO externalbrowser authentication: https://docs.getdbt.com/reference/warehouse-setups/snowflake-setup#sso-authentication
+Using python with dbt: https://www.datafold.com/blog/dbt-python
+
+# duckdb
+json: https://duckdb.org/2023/03/03/json.html
+
+# git
+# 15-minute Git Introduction
+https://www.youtube.com/watch?v=USjZcfj8yxE
+# Getting started with local repo
+notes: https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
+# Creating SSH keys for Github access
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+# Add SSH key to Github
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+# For creating new Github repo from local folder
+https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
+
+# ibis
+Short practical example: https://ibis-project.org/blog/rendered/campaign-finance/
+map() with lambda for applying scalar function to an array: https://www.youtube.com/watch?v=6TgpRMmvNQs
+pivot_longer: https://www.youtube.com/watch?v=-0pjPE6VgDs
+pivot_longer with selector: https://www.youtube.com/watch?v=2Ff031w9ULs
+Snowflake udf scalar function: https://www.youtube.com/watch?v=VyGuIuaufCk
+ibis UDF: https://gist.github.com/pybokeh/9fd661dd3c430da2a8dcbb65c8e3d007?permalink_comment_id=4722957
+
+# Linux command line tips n tricks
+Printing the 5th line in csv file using sed: sed -n '5p' yourfile.csv
+Printing a range of lines in csv file using sed: sed -n '5,10p' yourfile.csv
+Printing the 5th line in csv file using head/tail combo: head -n 5 yourfile.csv | tail -n 1
+Printing a range of lines in csv file using head/tail combo: head -n 10 yourfile.csv | tail -n +5
+Limiting or filtering output in terminal using grep:  man ls | grep "list"
+Limiting or filtering output in terminal using grep using OR logic: man ls | grep -E "list|List"
+
+# Java How to find location of Java
+https://askubuntu.com/questions/772235/how-to-find-path-to-java
+
+# JSON related
+flatten JSON using pandas: https://github.com/BindiChen/machine-learning/blob/main/data-analysis/028-pandas-json_normalize/pandas-json_normalize.ipynb
+Using Snowflake: https://docs.snowflake.com/en/user-guide/querying-semistructured
+
+# Jupyter related
+nbsanity.com: https://nbsanity.com/your_github_username/repo/your_notebook.ipynb
+Creating a public gist from a notebook: https://stackoverflow.com/questions/42678737/creating-gist-directly-from-jupyper-notebook
+Basically, navigate to https://gist.github.com/YOUR-GITHUB-USERNAME/ then add new gist / plus sign.  Drag/Drop your .ipynb file
+Registering jupyter kernel: https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments
+Installing R kernel: https://irkernel.github.io/installation/
+# Autoreload changes to environment or packages
+%load_ext autoreload
+%autoreload 2
+
+
+# Linux
+https://tutonics.com/2012/12/linux-file-permissions-chmod-umask.html
+
+# pandas
+https://drawingfromdata.com/pandas/grouping/pandas-groupby-transform-aggregate-filter.html
+
+# pip installing from master branch
+https://pip.pypa.io/en/stable/topics/vcs-support/#url-fragments
+new syntax: pip install 'ibis-framework[duckdb]@git+https://github.com/ibis-project/ibis@master'
+old syntax: pip install git+https://github.com/ibis-project/ibis.git@master
+
+# PostgreSQL
+https://hakibenita.com/postgresql-unknown-features
+https://wiki.postgresql.org/wiki/Don%27t_Do_This
+
+# PySpark
+https://jacobcelestine.com/knowledge_repo/colab_and_pyspark/
+https://sparkbyexamples.com/
+sql: https://pl.seequality.net/pyspark-cheatsheet-with-comparison-to-sql/
+https://github.com/cartershanklin/pyspark-cheatsheet
+https://mlwhiz.com/blog/2020/06/06/spark_df_complete_guide/
+https://www.sparkcodehub.com/pyspark-tutorial
+chaining: https://mungingdata.com/pyspark/chaining-dataframe-transformations/
+installing: https://phoenixnap.com/kb/install-spark-on-ubuntu
+installing: https://www.how2shout.com/linux/installing-apache-spark-on-ubuntu-20-04-or-18-04/
+installing: https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/
+installing, win10: https://phoenixnap.com/kb/install-spark-on-windows-10
+installing, win10: https://kontext.tech/column/spark/450/install-spark-300-on-windows-10
+sql: https://analyticshut.com/reading-data-from-sql-tables-in-spark/
+sql, docs: https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html
+Snowflake: https://www.phdata.io/blog/how-to-connect-snowflake-using-spark/
+Data wrangling exercises: https://www.machinelearningplus.com/pyspark/pyspark-exercises-101-pyspark-exercises-for-data-analysis/
+
+# Python development workflow: git to pypi
+Pay special attention to the 3rd video on "Setup": https://calmcode.io/setup/introduction.html
+Minimal pyproject.toml file in order to install python packages globally using "editable" pip install via "pip install -e ." :
+https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+https://dagster.io/blog/python-packages-primer-1
+https://dagster.io/blog/python-packages-primer-2
+https://dagster.io/blog/python-project-best-practices
+Need to include the following in your pyproject.toml file:
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+# Snowflake
+Tutorials: https://share-docs.clickup.com/37466271/d/h/13qc4z-104/d4346819bd8d510
+Working with JSON: https://medium.com/snowflake/working-with-semi-structured-data-in-snowflake-e74525c5514
+
+# Tableau
+https://www.youtube.com/watch?v=jEgVto5QME8
+
+# Time Series Forecasting
+https://github.com/zgana/fpp3-python-readalong
+https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf
+https://github.com/marcopeix/TimeSeriesForecastingInPython
+https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
+https://www.machinelearningplus.com/time-series/time-series-analysis-python/
+
+# Understanding Imports/Packaging
+https://dagster.io/blog/python-packages-primer-1
+https://dagster.io/blog/python-packages-primer-2
+https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/
+https://towardsdatascience.com/on-writing-clean-jupyter-notebooks-abdf6c708c75
+
+# Visualization Related
+https://aeturrell.github.io/coding-for-economists/vis-common-plots.html
+
+# Unofficial Python Wheels for Geospatial
+https://github.com/cgohlke/geospatial-wheels/

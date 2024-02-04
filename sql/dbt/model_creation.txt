@@ -1,0 +1,39 @@
+# Helpful Youtube tutorial: https://www.youtube.com/watch?v=toSAAgLUHuk#t=20m
+
+# 2 ways to set materialization type (view vs table)
+- from dbt_project.yml file
+- Embed config in your model .sql file with jinja syntax.  For example:
+{{
+    config(
+        materialized='table' | 'view'
+    )
+}}
+
+# To choose or select which models to materialize:
+dbt run --select <model_name>
+
+
+# In the models folder, create new text file where the file name will be the table or model name with .sql extension
+
+
+# Referencing dbt models/tables
+select * from {{ ref('dbt_table_name') }}
+
+# To ensure full refresh
+dbt run --ful-refresh
+
+# Testing in dbt - 4 assertion types
+- unique
+- not_null
+- accepted_values
+- relationships
+
+# To test dbt models
+- Create schema.yml file
+- Then run: dbt test
+
+# To generate docs (.html) file
+dbt docs generate
+
+# To view the docs in browser
+dbt docs serve

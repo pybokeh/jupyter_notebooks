@@ -1,25 +1,22 @@
-########### Python 3.8.x ###############
+########### Python 3.11.x ###############
 sudo apt-get update
 
-sudo apt-get install build-essential checkinstall
-sudo apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev \
-libsqlite3-dev tk-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev wget
+sudo apt install build-essential checkinstall
+sudo apt install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
-
-wget https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz
-tar xf Python-3.8.2.tar.xz
-cd Python-3.8.2
-./configure --enable-optimizations
-make -j <number of cpu cores>  # To get number of cores: nproc --all
+wget https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz
+tar xf Python-3.11.4.tar.xz
+cd Python-3.11.4
+./configure --prefix=/usr/local --enable-optimizations
+make -j <number of cpu cores>  # To get number of cores: nproc --all or do:
+make -j $(nproc)
 sudo make altinstall
+sudo apt-get install python3-venv
 
-which python3.8  # run this to find locations of python installations
+whereis python  # run this to find locations of python installations
 mkdir ~/envs
 cd ~/envs    # move to envs directory
-/usr/local/bin/python3.8 -m venv bottle  # create virtual environment using venv
+/usr/local/bin/python3.11 -m venv bottle  # create virtual environment using venv
 cd bottle
 source bin/activate  # activate the environment
 pip --version        # double-check the pip version
@@ -37,9 +34,13 @@ pip install -r installed.txt (current Python version)
 pip install <package-name>
 pip install git+https://github.com/scikit-learn/scikit-learn.git
 
+### Installing the master branch
+pip install 'ibis-framework[duckdb]@git+https://github.com/ibis-project/ibis@master'
+
 
 # If using miniconda3, add conda-forge channel:
 conda config --add channels conda-forge
+
 
 ### To add environment variables to your profile
 edit .profile file, then:

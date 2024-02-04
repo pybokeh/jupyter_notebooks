@@ -1,0 +1,36 @@
+https://docs.getdbt.com/docs/quickstarts/dbt-core/manual-install
+
+1) pip install dbt-core
+2) Install database adapter.  For example: pip install dbt-postgres
+3) Create .dbt folder in user's home directory.  Example: mkdir ~/.dbt (non-Windows) or mkdir %USERPROFILE%\.dbt (Windows)
+4) Create dbt project
+    - dbt init <project_name>
+5) Update db_project.yml file
+6) Create profiles.yml file typically they recommend ~/.dbt folder
+
+In profiles.yml file, for example, postgres profile, it would look something like:
+https://docs.getdbt.com/reference/warehouse-setups/postgres-setup
+[name that matches the dbt_project.yml]:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: [hostname]
+      user: [username]
+      password: [password]        NOTE: Enclose in double-quotes
+      port: [port]
+      dbname: [database name] # or database instead of dbname
+      schema: [dbt schema]
+      threads: [optional, 1 or more]
+      keepalives_idle: 0 # default 0, indicating the system default. See below
+      connect_timeout: 10 # default 10 seconds
+      retries: 1  # default 1 retry on error/timeout when opening connections
+      search_path: [optional, override the default postgres search_path]
+      role: [optional, set the role dbt assumes when executing queries]
+      sslmode: [optional, set the sslmode used to connect to the database]
+      sslcert: [optional, set the sslcert to control the certifcate file location]
+      sslkey: [optional, set the sslkey to control the location of the private key]
+      sslrootcert: [optional, set the sslrootcert config value to a new file path in order to customize the file location that contain root certificates]
+
+7) Run: dbt debug    in the same directory that contains dbt_project.yml file
+  

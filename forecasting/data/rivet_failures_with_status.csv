@@ -1,0 +1,9 @@
+serial_number,failure_time_minutes,failure_mode,status
+1,90,Flair Failure,failed
+2,96,Flair Failure,failed
+3,100,Flair loosened,suspended
+4,30,Flair Failure,failed
+5,49,Flair Failure,failed
+6,45,Flair loosened,suspended
+7,10,Lug failed,suspended
+8,82,Flair Failure,failed
